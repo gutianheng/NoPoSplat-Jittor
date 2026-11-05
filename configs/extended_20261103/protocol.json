@@ -1,0 +1,62 @@
+{
+  "status": "executed_reduced_protocol_see_results_summary",
+  "selection_seed": 20261104,
+  "training": {
+    "candidate_scenes": 3000,
+    "prior_1000_preserved": true,
+    "raw_source_bytes": 23791003408,
+    "chunks": 224
+  },
+  "testing": {
+    "re10k": {
+      "scenes": 500,
+      "prior_100_preserved": true,
+      "official_available_group_counts": {
+        "small": 1403,
+        "medium": 2568,
+        "large": 1630
+      },
+      "selected_group_counts": {
+        "small": 125,
+        "medium": 229,
+        "large": 146
+      },
+      "raw_source_bytes": 35704381864,
+      "chunks": 336
+    },
+    "acid": {
+      "scenes": 500,
+      "prior_100_preserved": true,
+      "official_available_group_counts": {
+        "small": 249,
+        "medium": 644,
+        "large": 448
+      },
+      "selected_group_counts": {
+        "small": 93,
+        "medium": 240,
+        "large": 167
+      },
+      "raw_source_bytes": 29370794904,
+      "chunks": 238
+    }
+  },
+  "training_schedule": {
+    "initialization": "Fresh author-filtered MASt3R, seed111123. Existing 500-step models are preserved as a separate experiment.",
+    "maximum_horizon": 5000,
+    "shared_curriculum_warmup": 2500,
+    "primary_equal_budget_comparison_updates": 3000,
+    "optional_default_extension_to": 5000,
+    "microbatch": 4,
+    "accumulation": 2,
+    "effective_batch": 8,
+    "note": "All three configurations share the same 5000-step LR/curriculum horizon. The equal-budget ablation baseline is default at3000, not default at5000."
+  },
+  "scientific_limits": [
+    "Not2.4million training pairs; maximum40000 sample occurrences for default vs paper2.4million.",
+    "500-scene estimates do not equal full-test paper results; do not select by metric values.",
+    "No guarantee to match paper convergence; increasing test size does not itself improve rendered quality.",
+    "The prior strict gradient failures remain disclosed; no thresholds are loosened."
+  ],
+  "original_planning_status": "protocol_prepared_not_executed"
+}

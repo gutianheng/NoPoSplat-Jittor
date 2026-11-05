@@ -1,0 +1,2 @@
+# Preserve executed-source byte hashes; do not apply workstation CRLF filters.
+* -text

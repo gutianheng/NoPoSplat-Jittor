@@ -1,0 +1,17 @@
+# Shape/gradient smoke test ONLY. This is not a paper model and takes no paper weights.
+base: re10k.yaml
+model:
+  enc_dim: 32
+  enc_depth: 2
+  enc_heads: 4
+  dec_dim: 32
+  dec_depth: 4
+  dec_heads: 4
+  feature_dim: 16
+  layer_dims: [8, 16, 24, 32]
+  sh_degree: 1
+data:
+  image_shape: [32, 32]
+train:
+  max_steps: 3
+

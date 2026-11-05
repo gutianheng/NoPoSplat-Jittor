@@ -1,0 +1,11 @@
+Composite research-code distribution — see component licences
+
+This repository does not assert a single blanket MIT or commercial-use grant.
+The NoPoSplat MIT notice is retained at vendor/licenses/NoPoSplat-LICENSE.
+Derived CroCo/DUSt3R/DPT portions retain CC BY-NC-SA 4.0 conditions and attribution.
+The Inria-derived Gaussian rasteriser retains vendor/rasterizer/LICENSE.md.
+GLM retains its bundled licence. Refer to THIRD_PARTY.md before reuse.
+
+Original adaptation work and documentation by Gu Tianheng (2026) are distributed
+under CC BY-NC-SA 4.0, without changing the licences of the other components.
+https://creativecommons.org/licenses/by-nc-sa/4.0/

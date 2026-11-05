@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite the original NoPoSplat paper and acknowledge this unofficial Jittor migration."
+title: "NoPoSplat: Jittor migration and paired reproduction"
+type: software
+version: 0.1.0
+date-released: 2026-11-05
+authors:
+  - family-names: Gu
+    given-names: Tianheng
+repository-code: "https://github.com/gutianheng/NoPoSplat-Jittor"
+url: "https://github.com/gutianheng/NoPoSplat-Jittor"

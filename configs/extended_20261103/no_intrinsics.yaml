@@ -1,0 +1,74 @@
+model:
+  enc_dim: 1024
+  enc_depth: 24
+  enc_heads: 16
+  dec_dim: 768
+  dec_depth: 12
+  dec_heads: 12
+  patch_size: 16
+  mlp_ratio: 4
+  rope_base: 100.0
+  layer_norm_eps: 1.0e-06
+  feature_dim: 256
+  layer_dims:
+  - 96
+  - 192
+  - 384
+  - 768
+  sh_degree: 4
+  opacity_initial: 0.0
+  opacity_final: 0.0
+  opacity_warmup: 1
+  intrinsics_mode: none
+data:
+  root: data/extended_20261103/re10k
+  eval_index: configs/extended_20261103/evaluation_index_re10k.json
+  image_shape:
+  - 256
+  - 256
+  original_shape:
+  - 360
+  - 640
+  near: 0.1
+  far: 100.0
+  max_fov: 100.0
+  baseline_min: 0.001
+  baseline_max: 10000000000.0
+  gap_min: 45
+  gap_max: 90
+  initial_gap_min: 25
+  initial_gap_max: 25
+  gap_warmup: 2500
+  target_views: 1
+  augment: true
+train:
+  batch_size: 4
+  accumulate: 2
+  max_steps: 5000
+  lr: 0.0002
+  backbone_lr_multiplier: 0.1
+  warmup: 125
+  weight_decay: 0.05
+  betas:
+  - 0.9
+  - 0.95
+  gradient_clip: 0.5
+  lpips_weight: 0.05
+  checkpoint_every: 500
+  log_every: 10
+  keep_last_checkpoints: 2
+test:
+  align_pose: true
+  pose_steps: 100
+  pose_lr: 0.005
+  save_images: true
+renderer:
+  scale_invariant: true
+  background:
+  - 0.0
+  - 0.0
+  - 0.0
+  backend: native
+seed: 111123
+runtime:
+  math_mode: fp32

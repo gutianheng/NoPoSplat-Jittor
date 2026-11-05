@@ -1,0 +1,16 @@
+{
+  "version": "ICLR2025 official proceedings PDF",
+  "source_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/857b34d81f0a8bfe3e18879dee3b5086-Paper-Conference.pdf",
+  "pdf_sha256": "143284931bcecb63de8d8e75c7808f6f788c4ca0b864435dc59c0d41b1ccb216",
+  "visually_verified_pdf_pages": [7, 10],
+  "main_tables": {
+    "re10k": {"table": 1, "average": {"psnr": 25.033, "ssim": 0.838, "lpips": 0.160}, "small": {"psnr": 22.514, "ssim": 0.784, "lpips": 0.210}, "medium": {"psnr": 24.899, "ssim": 0.839, "lpips": 0.160}, "large": {"psnr": 27.411, "ssim": 0.883, "lpips": 0.119}},
+    "acid": {"table": 2, "average": {"psnr": 25.961, "ssim": 0.781, "lpips": 0.189}, "small": {"psnr": 23.087, "ssim": 0.685, "lpips": 0.258}, "medium": {"psnr": 25.624, "ssim": 0.777, "lpips": 0.193}, "large": {"psnr": 28.043, "ssim": 0.841, "lpips": 0.144}}
+  },
+  "ablation_table5": {
+    "default": {"psnr": 25.033, "ssim": 0.838, "lpips": 0.160},
+    "no_intrinsics": {"psnr": 23.543, "ssim": 0.780, "lpips": 0.186},
+    "no_rgb": {"psnr": 24.279, "ssim": 0.810, "lpips": 0.183}
+  },
+  "comparison_limits": "Paper values use full original evaluation; our fixed500-scene estimates are not an identical sample. Paper Table5 variants are fully trained, whereas our variants have equal3000 updates. No pixel-identical recreation is claimed. All main quantitative comparisons are256x256; Figure7 in-the-wild uses a512 model and is not this target."
+}

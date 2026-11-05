@@ -1,0 +1,13 @@
+{
+  "status": "passed_with_explicit_skips",
+  "tests_discovered": 74,
+  "passed": 71,
+  "skipped": 3,
+  "skip_reason": "Optional Torch archive-fixture tests; PyTorch is not installed in the CPU release-check interpreter.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "gpu_tests_rerun_for_release": false,
+  "core_mathematical_files_verified": 26,
+  "note": "Release packaging checks do not supersede historical GPU numerical failures."
+}

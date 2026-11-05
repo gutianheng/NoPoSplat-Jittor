@@ -1,0 +1,109 @@
+{
+  "scope": "Byte-identical mathematical core and native bridge from executed server snapshot; publication only reorganises documentation and portable launch scripts.",
+  "files": [
+    {
+      "file": "noposplat_jittor/checkpointing.py",
+      "sha256": "b5ee33ee97e54ae06273a5a0a59f8551158fac6bd62f4a39bd4c492f0cb41a3d"
+    },
+    {
+      "file": "noposplat_jittor/chunk_stream.py",
+      "sha256": "9363aca7fa5b6946cc43afea809c7f3324c68edc733468780aca6475b2b02b26"
+    },
+    {
+      "file": "noposplat_jittor/cli.py",
+      "sha256": "d9bde7ceca3e82d49a816df7f81372215ec262512c50c5064dc5c10e357fcc59"
+    },
+    {
+      "file": "noposplat_jittor/config.py",
+      "sha256": "542a5a521c67353b793dd9a73461ba6a4136b4a2da5af8bbc34d560c85255759"
+    },
+    {
+      "file": "noposplat_jittor/data.py",
+      "sha256": "f8c47c788012a7706bab8e658a6e68d6bc779c836e5f56110b0f410899c258fb"
+    },
+    {
+      "file": "noposplat_jittor/dataset_conversion.py",
+      "sha256": "f76c940c890bcbd7011f43d6bf36514c7b383f7342b454b14f5650ec59860a57"
+    },
+    {
+      "file": "noposplat_jittor/evaluation_journal.py",
+      "sha256": "97d031e05ac947c6c84141694fb87f25468cfc4aeca7258605ef564ba1469258"
+    },
+    {
+      "file": "noposplat_jittor/evaluation_summary.py",
+      "sha256": "09cd1148ca4a016484714543a0531eede4f2a3f0c0e8ef6320f3c01639e88cad"
+    },
+    {
+      "file": "noposplat_jittor/geometry_numpy.py",
+      "sha256": "b3e7d46a07ce10b9f69623f256e51463f8c158f257e6f32f8106be69e919c648"
+    },
+    {
+      "file": "noposplat_jittor/losses.py",
+      "sha256": "3d28d1982fd63ffdc71e251b853ecfce89ea3f542df93e41dfd16adcda7ab3e9"
+    },
+    {
+      "file": "noposplat_jittor/lpips.py",
+      "sha256": "12f47f1bcde0a1eb78da4dfb05f9fa249f0611ab6e6094c4ed3250bc4c841a97"
+    },
+    {
+      "file": "noposplat_jittor/metrics.py",
+      "sha256": "8ffcdc2f30236ff1ef1cb1f0b386af35794a1d4f7041bb95ce9d2b9865a7e67f"
+    },
+    {
+      "file": "noposplat_jittor/model.py",
+      "sha256": "e5998bb4c720d74e9911f6c3b242f50ac6788361f7f7270bb716da80a5dddc24"
+    },
+    {
+      "file": "noposplat_jittor/optim.py",
+      "sha256": "1294699db233ff1c1b1ca8be91a3d7bfff7c93cc60a7630409a46f15796bc229"
+    },
+    {
+      "file": "noposplat_jittor/pose_alignment.py",
+      "sha256": "5290c87c349129a1f57b1fc2bf885096ce3ae7da89132e460ffcc735b7881af4"
+    },
+    {
+      "file": "noposplat_jittor/precision.py",
+      "sha256": "4ebf39d12ae9a7b3cf10890fb4e0e677c7ed4ed3227817b8a860b5d1aa55cfc6"
+    },
+    {
+      "file": "noposplat_jittor/rasterizer.py",
+      "sha256": "0875ff3361d3ebc9b65d0c9b093ea7fa5977054557dc3afbcc77986d884f3111"
+    },
+    {
+      "file": "noposplat_jittor/renderer.py",
+      "sha256": "c990940cfc02b140e0fff440e55b74b4f33ca68c24ec38995aaba8eba4567716"
+    },
+    {
+      "file": "noposplat_jittor/source_store.py",
+      "sha256": "37ee694791615360e1413dedf7c404eb9fa329f3f22e0495ec9491f8f9cf0e19"
+    },
+    {
+      "file": "noposplat_jittor/spherical_harmonics.py",
+      "sha256": "d4eeac667484a2d9e135dee08fcadcdf7b0df0425fce04c44bb5b6b990910779"
+    },
+    {
+      "file": "noposplat_jittor/verified_download.py",
+      "sha256": "5ad5749ee4cab1d621e641c77c834be6827609d5e6b686b58870daaabbf9da33"
+    },
+    {
+      "file": "noposplat_jittor/weights.py",
+      "sha256": "167353d108afa8d5f5040d4c1b8e1bbb30f24d8e3d0e0f45da7fa877eca6172a"
+    },
+    {
+      "file": "noposplat_jittor/__init__.py",
+      "sha256": "58f49b065f557fe24cdb33c1a9e20f04ab891a63edd7830e2806f201cab0eacf"
+    },
+    {
+      "file": "native/bridge.cu",
+      "sha256": "f65f5e3d20c03841fddfae7d2645ecec0341fa3a06a529541efc78ed8782542e"
+    },
+    {
+      "file": "native/bridge.h",
+      "sha256": "fd478fe20882a539c6d63ed2d642c8aace484faf26716fc537a0ef4c7abc8b35"
+    },
+    {
+      "file": "native/CMakeLists.txt",
+      "sha256": "b4555b8479d1509e9b2c270921e71e7f0ef1a1eda8e1919b6e9906d38c9fe4aa"
+    }
+  ]
+}

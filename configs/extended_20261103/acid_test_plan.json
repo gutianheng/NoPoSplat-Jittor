@@ -1,0 +1,2430 @@
+{
+  "version": 1,
+  "dataset": "acid",
+  "stage": "test",
+  "repository": "lhmd/acid_torch",
+  "commit": "7f9def2d181c8051c061234b982d6c7278993622",
+  "source_index_sha256": "2cb932c03ddda5a8c7d0d1131e0fd537b08d1c0df917f0b527bb256e75163cdf",
+  "selection": "nested_proportional_overlap_stratified_subset",
+  "evaluation_index_sha256": "e3983f0e7d2ddda9627478139f6fc4bb1e166fa19a934c33d43bb613e5e1be89",
+  "source_scene_count": 1972,
+  "selected_scene_count": 500,
+  "source_chunk_bytes": 29370794904,
+  "chunks": [
+    {
+      "path": "test/000000.torch",
+      "bytes": 109912617,
+      "sha256": "6e2f7142fe245ecd006c8c4229d700bccd7ea5c05e5b6f605a369779efb9c443",
+      "scenes": [
+        "7be681ab79350714"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000000.torch"
+    },
+    {
+      "path": "test/000001.torch",
+      "bytes": 107712337,
+      "sha256": "a7a9227dc0482a7ad0dc0c630e08ef4e339239521dd96108eda09f9b90fac125",
+      "scenes": [
+        "0c24d66ce8159b79",
+        "2af46be517a82ff2",
+        "405dcfc20f9ba5cb"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000001.torch"
+    },
+    {
+      "path": "test/000002.torch",
+      "bytes": 116444779,
+      "sha256": "0a7a279ef35634bf6128f02ac9019149fdc83cf7c3415c45e31a8d1ae2f3ec8a",
+      "scenes": [
+        "3fcb7b6b398b4064",
+        "43ffdf806f0879cf"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000002.torch"
+    },
+    {
+      "path": "test/000003.torch",
+      "bytes": 111328305,
+      "sha256": "31dd10783f5d072b6dc5185b218dedcd9b6175efb31a40ee94ce8f9de938c204",
+      "scenes": [
+        "39ba2649416ac03f",
+        "7836f4279f78e738",
+        "8310fe74e48ea0e1"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000003.torch"
+    },
+    {
+      "path": "test/000004.torch",
+      "bytes": 121476087,
+      "sha256": "905c18a86686dcf224a5daf5ec048728e7899316bc97d7623134b6bd70e6633b",
+      "scenes": [
+        "3ab39e0523895124",
+        "875ac9985c4f7b08",
+        "cd7fde67bb2577b9"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000004.torch"
+    },
+    {
+      "path": "test/000006.torch",
+      "bytes": 104058659,
+      "sha256": "cd1aa60d4375f4893b719157177ec396261f8d8a4f41a1a60aac6a034a3681d1",
+      "scenes": [
+        "0df51e71a15e3d25",
+        "917f071271d6cbff"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000006.torch"
+    },
+    {
+      "path": "test/000008.torch",
+      "bytes": 108541829,
+      "sha256": "8a7b99b18caca1812a1f3720cffee010487638b917ee4d65ace600744189e72f",
+      "scenes": [
+        "35edb07d6dcd2856",
+        "382a8b4c9259933c"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000008.torch"
+    },
+    {
+      "path": "test/000010.torch",
+      "bytes": 101322765,
+      "sha256": "0abee1b84bb98f1f3969e31c6b02d7fc6acb51b40cb4c8a15a16c89ae6150fcf",
+      "scenes": [
+        "4b86e20268277098"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000010.torch"
+    },
+    {
+      "path": "test/000011.torch",
+      "bytes": 171604145,
+      "sha256": "aa202088eca12ad4e7e3490a5759b97ce94348148eda61072e8558bbf8262edf",
+      "scenes": [
+        "baffadd77dd51422",
+        "ce49ac70b85b9752",
+        "f31b3bb307daf84a"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000011.torch"
+    },
+    {
+      "path": "test/000012.torch",
+      "bytes": 104271845,
+      "sha256": "6260261d5429f7e7afd89b51174ed7d22ed06a410150ddbd45a3dd686c63eb94",
+      "scenes": [
+        "9b3b7bea66018db1"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000012.torch"
+    },
+    {
+      "path": "test/000013.torch",
+      "bytes": 105640585,
+      "sha256": "dc88bef7ce11f59daee40524a3313832748d00645c520691363b11b7dc50497b",
+      "scenes": [
+        "099fb204d10afe19",
+        "6f0d88c92b1a2696",
+        "c3c2e2fcf5ad12f4",
+        "e01374cb9dd1f09a",
+        "fbc7bf83e0ae84d3"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000013.torch"
+    },
+    {
+      "path": "test/000014.torch",
+      "bytes": 127891447,
+      "sha256": "070d63d8ab813c23135f1387e43db41ce6665d94ab4554e51e49d8ea8f0f1b62",
+      "scenes": [
+        "a3fc30cc33b1147a"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000014.torch"
+    },
+    {
+      "path": "test/000016.torch",
+      "bytes": 108802769,
+      "sha256": "cc4f23743c953e5ea8a630019a1b78b75756045ea78b51b2a8beb6c8d1af25cc",
+      "scenes": [
+        "edeb8a878709b716"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000016.torch"
+    },
+    {
+      "path": "test/000018.torch",
+      "bytes": 110082877,
+      "sha256": "bb85f52cf8965a101a720099dab9a567f5d1a82a3efad018fc7f7fa7bb009798",
+      "scenes": [
+        "6398fae4577af7c0",
+        "80d54dda26a85ed0",
+        "87e06ce43653608a",
+        "8e24bbb41fb64606",
+        "eb8596da8ffc2252",
+        "ffaf580ea1e3658e"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000018.torch"
+    },
+    {
+      "path": "test/000019.torch",
+      "bytes": 122290389,
+      "sha256": "2490e8ccfcf241d318d9ac2d3b30ca93d327ee871c3e0303615f472efea3bde7",
+      "scenes": [
+        "c03c34ce6a6d08f3"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000019.torch"
+    },
+    {
+      "path": "test/000020.torch",
+      "bytes": 157853553,
+      "sha256": "3fe7c5b8a9ebf51fb891e6dc32456488de71ed4a1f54567f68eeca145e0040fa",
+      "scenes": [
+        "3ab14a0f254ad0e6",
+        "65234a61fe215953"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000020.torch"
+    },
+    {
+      "path": "test/000021.torch",
+      "bytes": 167699539,
+      "sha256": "f62cd2f1a2c3ca37d05226f04cb086feef82ac194af7ebb5d578785a49918c4a",
+      "scenes": [
+        "895c948807401baa"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000021.torch"
+    },
+    {
+      "path": "test/000022.torch",
+      "bytes": 114719261,
+      "sha256": "73a4a1e628f17110996a292aa6e3a916b13ba9f7ab24f3f1c1e124eff98b9fad",
+      "scenes": [
+        "1d6345b3dc82646a",
+        "e28fb40231cc8e31",
+        "fd012e8d736a6c8e"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000022.torch"
+    },
+    {
+      "path": "test/000023.torch",
+      "bytes": 117875987,
+      "sha256": "bc0e63926d0b70acd6bf1f7efcd393635d69c32019a43ed464a08db3337e3433",
+      "scenes": [
+        "48d63c978a4cdec0",
+        "fcbd42c6ad4b2529"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000023.torch"
+    },
+    {
+      "path": "test/000024.torch",
+      "bytes": 104226343,
+      "sha256": "a5f783c327830da14fb5c571b9f0ad9f0bd77a044b1228aec2aa73bbc74d9889",
+      "scenes": [
+        "1dbf0e72c0db3fd2"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000024.torch"
+    },
+    {
+      "path": "test/000025.torch",
+      "bytes": 133539227,
+      "sha256": "ffb00f86be212170aed8dd5041b9f90c37ea333985a6252085dc7892f91be0ed",
+      "scenes": [
+        "ef0753c88ee52b6f"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000025.torch"
+    },
+    {
+      "path": "test/000026.torch",
+      "bytes": 101406145,
+      "sha256": "b0c437205662f5c8f9f41218e6f8682daad313b67b4b9e8dff810bc370e7c504",
+      "scenes": [
+        "fc00edbd1d936174"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000026.torch"
+    },
+    {
+      "path": "test/000027.torch",
+      "bytes": 170768515,
+      "sha256": "dbd23f9b2da9df43845aef5338a2e59086eccd612ba13da9c0ac066451533c44",
+      "scenes": [
+        "d3835cc526e338bc",
+        "fd9d98306e9bf7d0"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000027.torch"
+    },
+    {
+      "path": "test/000028.torch",
+      "bytes": 125978331,
+      "sha256": "305fe62a3ca9c087e05fca274aad00e65c3feacd16136881b3c38e33ba986d50",
+      "scenes": [
+        "9664e5e215c60555",
+        "df93cf79e9069eb7"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000028.torch"
+    },
+    {
+      "path": "test/000029.torch",
+      "bytes": 105146549,
+      "sha256": "9b832921e1a43c9b14e357f8376da30797016afa7a6073d86fd98676466a5845",
+      "scenes": [
+        "fa0d910e19270413"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000029.torch"
+    },
+    {
+      "path": "test/000030.torch",
+      "bytes": 104102347,
+      "sha256": "54b725b5f02d40e7153166ddee9096b806f4c949170af688163b8e0cc681e60a",
+      "scenes": [
+        "a24cbd83a1b53061"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000030.torch"
+    },
+    {
+      "path": "test/000031.torch",
+      "bytes": 120880063,
+      "sha256": "5e23a881370c22ab091280686bf2e322356878188427ceb797131084e75b1f19",
+      "scenes": [
+        "922de723105f9d04"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000031.torch"
+    },
+    {
+      "path": "test/000033.torch",
+      "bytes": 132470211,
+      "sha256": "bd96740d347938470664e0e1117ab225746c266f570426f1872fef7682ab978c",
+      "scenes": [
+        "7aba499225c31282",
+        "85652f0e86bb936b"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000033.torch"
+    },
+    {
+      "path": "test/000034.torch",
+      "bytes": 106248107,
+      "sha256": "8fc066934f06d420afddcae430a18c0add22056f8923be13917b98f05516b404",
+      "scenes": [
+        "3903e757d0c0d985",
+        "547fc2dff875a822",
+        "68d9679403f23b04",
+        "d6cf2995d0ee0f30"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000034.torch"
+    },
+    {
+      "path": "test/000035.torch",
+      "bytes": 139978785,
+      "sha256": "b89c2714535b43af389338096bf00fdbbde9685c250a3e7cdfde9d153ef37687",
+      "scenes": [
+        "062c543dc222877f",
+        "083d20badd34a029",
+        "db593b5b5fa8324a"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000035.torch"
+    },
+    {
+      "path": "test/000036.torch",
+      "bytes": 156283995,
+      "sha256": "50abac937593b2c86174ba2d3018ae23cb5155e6bcabc2d65a58c4b3118282ab",
+      "scenes": [
+        "17dc8443823b3ee1",
+        "c54fd09051818ffd",
+        "c57267ff74d72019"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000036.torch"
+    },
+    {
+      "path": "test/000037.torch",
+      "bytes": 105330273,
+      "sha256": "c69494488b398277e0d824484e64378082f52e352b9ae18506415d044051db22",
+      "scenes": [
+        "2453559da3f4ee2e",
+        "ff1eea24b6d9fd2f"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000037.torch"
+    },
+    {
+      "path": "test/000039.torch",
+      "bytes": 102679119,
+      "sha256": "a608bdcdf4be7dea530022b8501a7ec1c86089952e9e014a1beee2101f71e24c",
+      "scenes": [
+        "229d895eb856c8ed",
+        "e8ae68242ace9ee1"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000039.torch"
+    },
+    {
+      "path": "test/000040.torch",
+      "bytes": 113931385,
+      "sha256": "f2eb326aa2bf181b805d33f244d92a4f7f3df5374e0431d6fb992611f69d5a7a",
+      "scenes": [
+        "45e8567d1083e9bf",
+        "567914e599d3365f"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000040.torch"
+    },
+    {
+      "path": "test/000042.torch",
+      "bytes": 137623827,
+      "sha256": "e64fbc2326dac9b57f8ed7092e9f8a63fa24f39a7089f31af5321e191e4ee638",
+      "scenes": [
+        "44a6fa071ea770d1",
+        "7e4a28198f212b3d"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000042.torch"
+    },
+    {
+      "path": "test/000044.torch",
+      "bytes": 104641617,
+      "sha256": "74f247c9c1d609c37c00a5b8c827d16b7d9601a79b3e5e0d0574d5f88c830eb5",
+      "scenes": [
+        "f2a34c7254940f53"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000044.torch"
+    },
+    {
+      "path": "test/000046.torch",
+      "bytes": 119807837,
+      "sha256": "ad08c7ee9c2b3a4831ca14ef4dc486d9559f2d9d1323faddc304648d01bc4ce2",
+      "scenes": [
+        "8d37859d2335d1ca",
+        "fbb3b9089e873acf"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000046.torch"
+    },
+    {
+      "path": "test/000047.torch",
+      "bytes": 120939479,
+      "sha256": "4418794bce757b492ecbbf13cf61c825a3108f7296e8ee9a6602ab40b23173c2",
+      "scenes": [
+        "758c2c80a0a3571c",
+        "75b80bc28aea42e5"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000047.torch"
+    },
+    {
+      "path": "test/000048.torch",
+      "bytes": 101719677,
+      "sha256": "781a48d7c0a5361c320df3e6da3b9300c7d23d82e0e12402e98656df93e73984",
+      "scenes": [
+        "1980466d9ae2108b",
+        "670781af677d3ac4"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000048.torch"
+    },
+    {
+      "path": "test/000049.torch",
+      "bytes": 189820623,
+      "sha256": "61b5eb47295cb2806c4aa650835f4bdf9e7f21eed434615c014675c71302bfb4",
+      "scenes": [
+        "4166252fe8add99c"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000049.torch"
+    },
+    {
+      "path": "test/000050.torch",
+      "bytes": 143745861,
+      "sha256": "ea9d254430e7acafea34fc060324cf4cc27e837ad187ce052f7b5d07d403f6c1",
+      "scenes": [
+        "0191035290dc50a2",
+        "6fa8232617e77870",
+        "828923f6f44b86aa"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000050.torch"
+    },
+    {
+      "path": "test/000051.torch",
+      "bytes": 133514833,
+      "sha256": "19c3de49b14b1705ee43332d8f8726b18439c78d1a50ea922b534138105897af",
+      "scenes": [
+        "d19c9fe809c57c92"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000051.torch"
+    },
+    {
+      "path": "test/000053.torch",
+      "bytes": 200995643,
+      "sha256": "2b37af4e57fa15a44f1cf36c9bc81d74787d7ccf221de7906aebc33eb1f14f2c",
+      "scenes": [
+        "61046e82d96c1611",
+        "6121eab6ad1b382e",
+        "92f3cf5c201058d6"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000053.torch"
+    },
+    {
+      "path": "test/000054.torch",
+      "bytes": 101619167,
+      "sha256": "6529e47ab831de0d2ff27a924aec7298a389ea7097984261f32dcb132d45f4df",
+      "scenes": [
+        "00c313231f445b05",
+        "19f8b4037341bf18",
+        "8960f77d1e5653f5"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000054.torch"
+    },
+    {
+      "path": "test/000055.torch",
+      "bytes": 105990469,
+      "sha256": "f221da1cd3ac72e4491f9c465cb4cf12edb31c0ec391dbd027a0a21e2927dd0f",
+      "scenes": [
+        "a51e627ba30002c4",
+        "cf1bad1dd88e5b58"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000055.torch"
+    },
+    {
+      "path": "test/000056.torch",
+      "bytes": 107923105,
+      "sha256": "19c3f2567c0688ed3fa250c74b30366af2d7816615d9c7eb34d0328d2ee58045",
+      "scenes": [
+        "d0ecf84f2f843ffb"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000056.torch"
+    },
+    {
+      "path": "test/000057.torch",
+      "bytes": 112373685,
+      "sha256": "bbac6fb6898899218fe4ac6a15db7ec7352838453a3d25d4a306b2e1283e0982",
+      "scenes": [
+        "0103b4ebac33aa38",
+        "391b4acdceb69fb2",
+        "adec4bb51a768361",
+        "f3218100d129be59"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000057.torch"
+    },
+    {
+      "path": "test/000058.torch",
+      "bytes": 105340045,
+      "sha256": "98ecece9d8452d61eec97b9f269e0e6889d9230134e91781be102a0817cdaf69",
+      "scenes": [
+        "3aa79d0690b7a3b3"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000058.torch"
+    },
+    {
+      "path": "test/000059.torch",
+      "bytes": 104445371,
+      "sha256": "75ba4e9a9610ef2deaa362cc36e8789fe3159b61c56c05aa1ccbced64b93f21c",
+      "scenes": [
+        "18eeaf295230a26e",
+        "4770e3bfc1d35cb5",
+        "94379104dd0e1356",
+        "d1512dba43b6ebd8"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000059.torch"
+    },
+    {
+      "path": "test/000060.torch",
+      "bytes": 106322491,
+      "sha256": "62fa3536d28d9f963769821f68d43c29a7ce59246183d9b881c1709ef86f008a",
+      "scenes": [
+        "1f7c440e81664248",
+        "9ad099220431c8db",
+        "b9bb528b50d13308"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000060.torch"
+    },
+    {
+      "path": "test/000061.torch",
+      "bytes": 162133249,
+      "sha256": "0f69c551fc87e56ba9540c37bc14f7eaa6a0c583c7de0c8f29ee60eee0974856",
+      "scenes": [
+        "cc3d70c2c2b13e55"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000061.torch"
+    },
+    {
+      "path": "test/000063.torch",
+      "bytes": 159547449,
+      "sha256": "081c13d28e35d9e12fcf3c581ff88ba3ec7158e7ef882d9e0dd4b61e16f9fc45",
+      "scenes": [
+        "295d72462f4152a4",
+        "6e24976270af3f27"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000063.torch"
+    },
+    {
+      "path": "test/000064.torch",
+      "bytes": 115392237,
+      "sha256": "30af1806c010f80cd729edbe72fce8e4314f74574eed9fb61bf89becc781a640",
+      "scenes": [
+        "14746f492a88b83f",
+        "1c3910d7ff960584",
+        "9499082525103953"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000064.torch"
+    },
+    {
+      "path": "test/000065.torch",
+      "bytes": 127469361,
+      "sha256": "3b2aec1fe46363d20d27503c35a8c1d16e81dfc6a1bb46a4bef7d2e55d5732bf",
+      "scenes": [
+        "5e985b6b210e0f92"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000065.torch"
+    },
+    {
+      "path": "test/000066.torch",
+      "bytes": 110679195,
+      "sha256": "4ed36a0da1dcac31d3523d0620851571d368d66e904794fcb165bb6850fb7abd",
+      "scenes": [
+        "44a9b55ea7357831",
+        "e0fb6bc955dc2827"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000066.torch"
+    },
+    {
+      "path": "test/000067.torch",
+      "bytes": 129103903,
+      "sha256": "6410f0eac3df7c7a30f02b248ac651c961e80f0cb3330559e71ccdf39366ebd4",
+      "scenes": [
+        "dc4002fc40c73bcc"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000067.torch"
+    },
+    {
+      "path": "test/000068.torch",
+      "bytes": 149990643,
+      "sha256": "1f57c60e36f8940dd9d98c814278475cec2e850eef8093fd6e14de00ab137def",
+      "scenes": [
+        "1caafadbebb32b1d",
+        "73df5a5fe4942f55",
+        "7581c2bdbce622f0",
+        "b26421eae2692450"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000068.torch"
+    },
+    {
+      "path": "test/000069.torch",
+      "bytes": 141283785,
+      "sha256": "0cd0e21b10bf4e8cd38276affa22d0498a0c4f748928fb66bdad981d14d45e2e",
+      "scenes": [
+        "11cc7d45f4d6bc3f",
+        "89248b7e11fe8139",
+        "ed0e643389fb2c0f"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000069.torch"
+    },
+    {
+      "path": "test/000070.torch",
+      "bytes": 110218117,
+      "sha256": "c3b8b51a5a63c38bef04951355a4d735aba89986574001e7c6e13d46f17fe19f",
+      "scenes": [
+        "20a2b54bb845c6e8",
+        "63a08a93045363ae"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000070.torch"
+    },
+    {
+      "path": "test/000071.torch",
+      "bytes": 125218383,
+      "sha256": "1664efa7a2b9302303c903089d17eae1551ca2132e5dc91326127f978bf711c3",
+      "scenes": [
+        "a563d0e75e6821b1",
+        "e02ba6089a8e6996"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000071.torch"
+    },
+    {
+      "path": "test/000072.torch",
+      "bytes": 141044019,
+      "sha256": "b35af768a817d71b0291dba1e46cd07f3b5bd750d4ebc6ed3dc4b6eac8d9f3d6",
+      "scenes": [
+        "b64bfa5a2bf059b9"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000072.torch"
+    },
+    {
+      "path": "test/000073.torch",
+      "bytes": 168909101,
+      "sha256": "a3ff76c5e30c4c7e3e3b2de98767bf2b407eb571229b87b997a5a9a8613401c7",
+      "scenes": [
+        "2e0b315cf94cce57",
+        "daa02bdc0b99c679"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000073.torch"
+    },
+    {
+      "path": "test/000074.torch",
+      "bytes": 104328349,
+      "sha256": "c637eccab890a72d807cc98b7ca9e45219cc367dbb0532210738871529821aa1",
+      "scenes": [
+        "3e75ea203615e8a9",
+        "c8684a9c89d9d179"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000074.torch"
+    },
+    {
+      "path": "test/000075.torch",
+      "bytes": 115598637,
+      "sha256": "d80b09214f0ac0cb4c8f85c027532beba4ab836f78020a4acb6d91f9201a41ac",
+      "scenes": [
+        "19a53dbe44b4a58e",
+        "3e25c50130309089",
+        "449260c5f4eb4d5d"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000075.torch"
+    },
+    {
+      "path": "test/000076.torch",
+      "bytes": 132473519,
+      "sha256": "19f7d32403fdd6a4bf20342eeaeda32775bc833add846586c1a1da62028ad122",
+      "scenes": [
+        "2ca869a493624a89",
+        "a8b9c6408af6fdb8"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000076.torch"
+    },
+    {
+      "path": "test/000077.torch",
+      "bytes": 129993347,
+      "sha256": "adda6ae7805314cb645c067ac25532a59233ca8dc7b5848c85a166db6f5d2fe4",
+      "scenes": [
+        "e33da2efe5ad29ac",
+        "f91e3039f88375a3"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000077.torch"
+    },
+    {
+      "path": "test/000078.torch",
+      "bytes": 136544613,
+      "sha256": "ea87bfd2230cf46469b5161f1af4001f1e5372d2b26eff0ff64ecc3db5894a97",
+      "scenes": [
+        "076f808b38a3d2ea",
+        "1e890165a1a64e2a"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000078.torch"
+    },
+    {
+      "path": "test/000079.torch",
+      "bytes": 117790431,
+      "sha256": "11122e770a1e14fb83d2bc5095fccc70e4c954a0ad8a99df060262bf7c0b6632",
+      "scenes": [
+        "9b3280acc91e598e",
+        "d82270f5d9180bb6"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000079.torch"
+    },
+    {
+      "path": "test/000080.torch",
+      "bytes": 107585959,
+      "sha256": "bb5299ce51e2ecec85816e8ca6861d23e759cb813547c4fae30ad16a6f759252",
+      "scenes": [
+        "60d467d3f41e99fa",
+        "8c2f6e2bd500239b"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000080.torch"
+    },
+    {
+      "path": "test/000084.torch",
+      "bytes": 198528679,
+      "sha256": "ead87dacc23cc6f4f63f4509cd743c5482963e563b7a56882568e5b7bdf8a016",
+      "scenes": [
+        "18c5d2ea2eea7b08"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000084.torch"
+    },
+    {
+      "path": "test/000085.torch",
+      "bytes": 103343257,
+      "sha256": "661a2cad401efbb88c4c78479fd841265ecf7ef16a6102689327a29a46a4e5b8",
+      "scenes": [
+        "1d374747431cf805"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000085.torch"
+    },
+    {
+      "path": "test/000086.torch",
+      "bytes": 183451555,
+      "sha256": "84bd5c2046b72872cc2bcf079de4cf440f62d7a663841ffd6ad70f14aa73f94e",
+      "scenes": [
+        "2d74ab65425f9ab7",
+        "5762a0df40827efb",
+        "efac9ec1baefb384",
+        "f8c20188f144dbd5"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000086.torch"
+    },
+    {
+      "path": "test/000087.torch",
+      "bytes": 141575947,
+      "sha256": "e34a2ebfb80ace9315144f4be42256538d22efca814e94d8452abb10d21496c2",
+      "scenes": [
+        "03bbacb32327227d",
+        "34a64b56846075f1",
+        "3ecc3b195114e8c1",
+        "4e4fb4e0b0b3a3cf",
+        "d5ba03abe3fc9db0"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000087.torch"
+    },
+    {
+      "path": "test/000088.torch",
+      "bytes": 104222201,
+      "sha256": "26fa47d87b57677fd27f9bfa3a452a4050c3074175bce819153645c7e234b2e9",
+      "scenes": [
+        "f25679893bad20c4"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000088.torch"
+    },
+    {
+      "path": "test/000089.torch",
+      "bytes": 115705437,
+      "sha256": "38bc78500db359bf453997346da9a219bb24067b0d0f70f2a93b5587b0b0a50e",
+      "scenes": [
+        "d302555fc170d6bd"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000089.torch"
+    },
+    {
+      "path": "test/000090.torch",
+      "bytes": 120421907,
+      "sha256": "be61851cab66aead18c8530abbb5dac54275ca5030ef2918bcff706249ddba7b",
+      "scenes": [
+        "80b26f2f05984765"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000090.torch"
+    },
+    {
+      "path": "test/000091.torch",
+      "bytes": 137079813,
+      "sha256": "b80d1eb7a0a594ebcce1ce70c34a9e7044816a7e89edd1ea5278828f10fa8dad",
+      "scenes": [
+        "c4486f0c88d8dbda"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000091.torch"
+    },
+    {
+      "path": "test/000092.torch",
+      "bytes": 125184409,
+      "sha256": "a18160abcc4000be21eec1f28a9bd163ab65e9efdcae81c19fdcc994d7917566",
+      "scenes": [
+        "d080086d1e293422"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000092.torch"
+    },
+    {
+      "path": "test/000093.torch",
+      "bytes": 171328483,
+      "sha256": "3ae5c0f893601a96b1bff38c64e372e26b225679dee0087ae31b9fc5bb065952",
+      "scenes": [
+        "942b3260e55ccf77",
+        "d700902e18fb0db1"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000093.torch"
+    },
+    {
+      "path": "test/000094.torch",
+      "bytes": 122857429,
+      "sha256": "4b5a6ce87040e87cb346533081710d04632886edc60807849b8c13626a2a3ab9",
+      "scenes": [
+        "866a2d3d249b3a4c",
+        "b21598263bc71a44"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000094.torch"
+    },
+    {
+      "path": "test/000095.torch",
+      "bytes": 118353055,
+      "sha256": "df1dee2f330070aacf0771c969073b5a59bc4b7c00f27f464a3f9c04b1479c33",
+      "scenes": [
+        "4b454cec4dbe02c2"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000095.torch"
+    },
+    {
+      "path": "test/000096.torch",
+      "bytes": 137152903,
+      "sha256": "f94c7b242171ef1fb890f36d02d77993dcc2963f38027e75c831aff2433a36f8",
+      "scenes": [
+        "21e1dde7a8313464"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000096.torch"
+    },
+    {
+      "path": "test/000099.torch",
+      "bytes": 105979393,
+      "sha256": "a627d15da66709c2dcbbe8b6c02037ccb6c8e89454be62468f235c4c9e89c980",
+      "scenes": [
+        "410af2eb32658199",
+        "595c133aeb084924",
+        "670beef5fa4e7b65"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000099.torch"
+    },
+    {
+      "path": "test/000100.torch",
+      "bytes": 119402761,
+      "sha256": "9de7887d448ef6964241e57229772006b014bc8a670dc7523bb1d022ebfd6570",
+      "scenes": [
+        "0a6d679da1d11d4a",
+        "5bf5bdc1589542f0"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000100.torch"
+    },
+    {
+      "path": "test/000102.torch",
+      "bytes": 119436369,
+      "sha256": "48a038da42559299ede17771c551eab330ba32d8f9899939d3e097739f74e022",
+      "scenes": [
+        "20a3577043ffc06a"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000102.torch"
+    },
+    {
+      "path": "test/000103.torch",
+      "bytes": 136883675,
+      "sha256": "2d95cb3b66c400a9a32bcca0a0feb7089829a1d93085cae5a937a1597688fa76",
+      "scenes": [
+        "113f8c763e168dbc"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000103.torch"
+    },
+    {
+      "path": "test/000104.torch",
+      "bytes": 102503045,
+      "sha256": "f67eb2dd928ab50aad6469584c8414bbf0e54d5a6f6c478bfa03dc64933dadf2",
+      "scenes": [
+        "04ad13224cd51f02",
+        "450313fbfcd2ebc7"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000104.torch"
+    },
+    {
+      "path": "test/000105.torch",
+      "bytes": 108229437,
+      "sha256": "809e41d9618c0347395ae89f321307c6d2b68a46d46079a4b5a92a3d26d09de8",
+      "scenes": [
+        "38c135ddade21a13",
+        "52407adb4896fb1d",
+        "7d7ff2d78f2993a8",
+        "f7806d519c485c58"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000105.torch"
+    },
+    {
+      "path": "test/000106.torch",
+      "bytes": 110502735,
+      "sha256": "accf4a540712daedf4a9b103f463f115210b41f7cf13052d9b053b63139707ac",
+      "scenes": [
+        "a63cbde013a51c09"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000106.torch"
+    },
+    {
+      "path": "test/000107.torch",
+      "bytes": 113847333,
+      "sha256": "2e81793a3c1a551d916a20d0129f3e45ff9ff65e5b86ef69594542d012629937",
+      "scenes": [
+        "0a9c670fdc395fcd"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000107.torch"
+    },
+    {
+      "path": "test/000108.torch",
+      "bytes": 149264327,
+      "sha256": "d195de5165d2bf8a18930aa5b4ad9a2d0ca5ba95c98f7e7ee695a70013eccb3f",
+      "scenes": [
+        "26949644553e7230",
+        "3053aba3cfd39bad"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000108.torch"
+    },
+    {
+      "path": "test/000109.torch",
+      "bytes": 118578679,
+      "sha256": "a88bf8e7bbf95c12e748be4b8a638cb8528d21ec8744dae44e886ebb0769b811",
+      "scenes": [
+        "53854d104681b27f"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000109.torch"
+    },
+    {
+      "path": "test/000110.torch",
+      "bytes": 115658561,
+      "sha256": "8fac2fa4a5aa12641b8d76c4ab904f06f55b7827d287d02de542b8fc3ba68b3d",
+      "scenes": [
+        "73ce14d10249504f"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000110.torch"
+    },
+    {
+      "path": "test/000112.torch",
+      "bytes": 125827193,
+      "sha256": "9cb36d3ddda06bdcb0f2bd8dcf2a3866532ba13d99488df0a63b13f73f434074",
+      "scenes": [
+        "28852d5415c0085f",
+        "47d759e11935fbef"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000112.torch"
+    },
+    {
+      "path": "test/000113.torch",
+      "bytes": 100825849,
+      "sha256": "781369a7fbaa0efee451474fff3b052a7950d99c91955b77bdc05505f3d9bc92",
+      "scenes": [
+        "a50f9f188decb035",
+        "b348747987125fad",
+        "b36b5847e6f8e1a1",
+        "f630e6a98697e4ce"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000113.torch"
+    },
+    {
+      "path": "test/000114.torch",
+      "bytes": 103333187,
+      "sha256": "6195e0765f472e4270ae6792739afdefb21a3bd9588dea32ead0b09297355daf",
+      "scenes": [
+        "4a7e6d2ac6dab9bc",
+        "89a5186f6112b517",
+        "df4ef677e29feada"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000114.torch"
+    },
+    {
+      "path": "test/000115.torch",
+      "bytes": 113852971,
+      "sha256": "4d8879eb64ee3976a7534df2684c9295ab0beb650eca2722dc99c01d1dc52dd9",
+      "scenes": [
+        "1cba2c24f074bb16",
+        "711ba84a4be7b2da"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000115.torch"
+    },
+    {
+      "path": "test/000116.torch",
+      "bytes": 107190587,
+      "sha256": "afea4727501a7c3690c03b7b02de2a90d022b9aa4e1639e783277aec24978d87",
+      "scenes": [
+        "7dd5bc67d8dcdaeb",
+        "c4c1ca07508e70d5"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000116.torch"
+    },
+    {
+      "path": "test/000117.torch",
+      "bytes": 106907207,
+      "sha256": "4667db56dd960cb1fa5ada7b504510d9e11afd856188b501c3e38c212f2f0bb8",
+      "scenes": [
+        "143e8538e36672cd",
+        "6d57bde89155f058"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000117.torch"
+    },
+    {
+      "path": "test/000118.torch",
+      "bytes": 107563413,
+      "sha256": "a9311c158f45d37e914f166156bfaed0074cacceb3dc7f4de61f159e5705c08f",
+      "scenes": [
+        "bc2e07a4da864c33"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000118.torch"
+    },
+    {
+      "path": "test/000119.torch",
+      "bytes": 163124253,
+      "sha256": "63a52f4b02e87d3b48fd3b1dc994b9f33cd90e12f332925f751da3336340d2cd",
+      "scenes": [
+        "3b8483135d1ad077",
+        "50ba943961781a8b",
+        "70a4921edcf5a089",
+        "9a4a197c031d0edb",
+        "a301819de97f0d5a",
+        "c88d1cfec03bf49a"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000119.torch"
+    },
+    {
+      "path": "test/000120.torch",
+      "bytes": 104477881,
+      "sha256": "547dad626279697dc377fdb95b708b6d42c3a0399396f25b2ea293d445552dbb",
+      "scenes": [
+        "121e31903ea61448",
+        "172b51a65ce22055",
+        "703ce6aa46e6354a"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000120.torch"
+    },
+    {
+      "path": "test/000121.torch",
+      "bytes": 116322987,
+      "sha256": "71527a900d9d05a1098d0517600347e8fd000f232d444dde9b1e584543cd9127",
+      "scenes": [
+        "b13af8703ea4ae43",
+        "e5285fae2e7328d7"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000121.torch"
+    },
+    {
+      "path": "test/000122.torch",
+      "bytes": 102854657,
+      "sha256": "0d18098e0f67f16a86d22d02bb6c503855c2e236dcf30b0fef4ea113c4932d68",
+      "scenes": [
+        "34f3bd810264226f",
+        "b5e1320081d73234"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000122.torch"
+    },
+    {
+      "path": "test/000123.torch",
+      "bytes": 114491673,
+      "sha256": "bdeb3d0923fd4eb3f5db1b74b4840fa61845aa9df571efd249b050f8bff79d91",
+      "scenes": [
+        "a6b61faeb94a8257",
+        "b82d27a1f2a41b1a"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000123.torch"
+    },
+    {
+      "path": "test/000125.torch",
+      "bytes": 103211171,
+      "sha256": "f4c9a47c737bc521e4a715b786317475a5423dd8aa9e2b5f7b672b09077dbc4d",
+      "scenes": [
+        "0e2e222bbab4e1a2",
+        "4033b3e53954967f"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000125.torch"
+    },
+    {
+      "path": "test/000126.torch",
+      "bytes": 118886953,
+      "sha256": "2bdb2dce4638904137b5ea81004530de2c1cc6028f866e1292cf43d14bd9a336",
+      "scenes": [
+        "0436aed306ec8d54",
+        "93c144cc6cb42a93",
+        "ace8b55382d5d708",
+        "c0cb80e8b4d1f7eb"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000126.torch"
+    },
+    {
+      "path": "test/000127.torch",
+      "bytes": 103715553,
+      "sha256": "fe4714ac7399b35f9681b0993fb9a29f39cc9525cf1e68e58ccb2edf1fdff64f",
+      "scenes": [
+        "0bbf1c2ad88e15ec",
+        "1b7d58282b961b3d",
+        "bc129cd0a554354b",
+        "c7513e5901486550",
+        "f830083184521d34"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000127.torch"
+    },
+    {
+      "path": "test/000128.torch",
+      "bytes": 109077865,
+      "sha256": "d0fd6703decf97be800e105abee08b90425e3b8ac7be87841402ffcaebf8c1cb",
+      "scenes": [
+        "19b71cd36fa2c092",
+        "3710a16f0404a249",
+        "3e283c0a8f08efc5"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000128.torch"
+    },
+    {
+      "path": "test/000129.torch",
+      "bytes": 139683307,
+      "sha256": "cd15e1f6148fe6ae5380f765613bd50bafbd7d4ac7f6e85d469786ead5899a4a",
+      "scenes": [
+        "c7e75594dfd7188c"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000129.torch"
+    },
+    {
+      "path": "test/000130.torch",
+      "bytes": 123658907,
+      "sha256": "2c61fc518b1c00023406c8f9187156623d4ff69ebaa4824d54d9a9b6a419bf02",
+      "scenes": [
+        "01bc3344ef9aba40",
+        "12799c753806e8ca",
+        "9035421fc0846273",
+        "a793a0a337e8e6c5",
+        "bd7e748549d2d780"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000130.torch"
+    },
+    {
+      "path": "test/000131.torch",
+      "bytes": 141112225,
+      "sha256": "ec3a9cbc33ff59a6828ba057052a4ee84a82acb2d42fccf6e19cd8851a8e71dd",
+      "scenes": [
+        "de813f957e093bd9"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000131.torch"
+    },
+    {
+      "path": "test/000132.torch",
+      "bytes": 172583381,
+      "sha256": "6e068687647a64b64c16849e5053401c7949f3140d53921126d1195499cd84e3",
+      "scenes": [
+        "89686c8c2694168e"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000132.torch"
+    },
+    {
+      "path": "test/000133.torch",
+      "bytes": 120174127,
+      "sha256": "9718eb6f19c2cdc6f7bb14601e645145309210632eb24839fd6a9e3fadaa8198",
+      "scenes": [
+        "73e241ed19162cc6",
+        "f4ce75753de06c58"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000133.torch"
+    },
+    {
+      "path": "test/000134.torch",
+      "bytes": 104724941,
+      "sha256": "0b22fc72db755488869963d36906b8aa11232e9eaa8e0a66a75fbf3c6c2fa1c9",
+      "scenes": [
+        "1d0c38dd8dbcdf71"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000134.torch"
+    },
+    {
+      "path": "test/000135.torch",
+      "bytes": 119274639,
+      "sha256": "494fa842b62fce1c8029e24835d42d23c8f6d278503d7cb62960214b5d3effcb",
+      "scenes": [
+        "72af4810c751ddb1",
+        "90462f6feb6d475e",
+        "c07ea09fd0073622",
+        "ce20e1fc02fe6e7c"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000135.torch"
+    },
+    {
+      "path": "test/000137.torch",
+      "bytes": 114119771,
+      "sha256": "1af7a7fa1bf1b5b98377209aba3d8196c84d580c4baedfe15f168cddf554f496",
+      "scenes": [
+        "27f60df3083a529b",
+        "855ea3fb3d1ea540"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000137.torch"
+    },
+    {
+      "path": "test/000138.torch",
+      "bytes": 104091119,
+      "sha256": "df55ae2080cf67a1745434dc9c9998b0059dc4b8239d7ac773a4a469e656132a",
+      "scenes": [
+        "1f2ae6289af7f75f",
+        "911f8def73247901"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000138.torch"
+    },
+    {
+      "path": "test/000139.torch",
+      "bytes": 126387057,
+      "sha256": "971b1b3df503347b13adec65e7fac3cf077c0e5e687ccb8aad066d5f281ab439",
+      "scenes": [
+        "8eaa0dc8d84a4dfa",
+        "be157a4c3ee30747"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000139.torch"
+    },
+    {
+      "path": "test/000140.torch",
+      "bytes": 110209195,
+      "sha256": "2e19ceb0b8908e98595821a3384156de626b56ab00ab9d8a15b8e34f4da31120",
+      "scenes": [
+        "d0126a869518014c",
+        "f16b9ff7838b81c6"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000140.torch"
+    },
+    {
+      "path": "test/000141.torch",
+      "bytes": 102413587,
+      "sha256": "8f21135421fe846f8487a4c4ab035d808247d76bbfa64f7c06d4d0f2a930a3b4",
+      "scenes": [
+        "5cc2910d92fedfb2",
+        "67ad3dcd07683c46"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000141.torch"
+    },
+    {
+      "path": "test/000142.torch",
+      "bytes": 183097763,
+      "sha256": "bb2fa6040adbe1beaaeffe2e3d15259352c6cb0d49b429dccd78670d68e77ea3",
+      "scenes": [
+        "95ed6c24844a5ced",
+        "c897297a9ca4b1a5",
+        "caf33f1723611a4d"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000142.torch"
+    },
+    {
+      "path": "test/000143.torch",
+      "bytes": 111646649,
+      "sha256": "8f637a7df8e833241ae4277732303ad2ff99035843e0ddbd7066fad8e2f4bd4f",
+      "scenes": [
+        "26622fb6892e45e4"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000143.torch"
+    },
+    {
+      "path": "test/000144.torch",
+      "bytes": 104325833,
+      "sha256": "c19c4cf38757cfbf46c211a19cf17509e2a187fd5fb3adcb246be7270efc7fd7",
+      "scenes": [
+        "89aea51313b22351"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000144.torch"
+    },
+    {
+      "path": "test/000145.torch",
+      "bytes": 176230337,
+      "sha256": "ca7c23f255a7a5d84b9dfab1f2dc9823c12c7e7ba05aa9a5fc4d2057fb3b2f61",
+      "scenes": [
+        "a18d0993c9873df3",
+        "adb92b6662497511",
+        "fcb2b819d6f16d91"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000145.torch"
+    },
+    {
+      "path": "test/000146.torch",
+      "bytes": 105665065,
+      "sha256": "31d0fe8d136ff86a7730276ef15b7c787d5d97128c750d60f800d4236a3f931e",
+      "scenes": [
+        "54c6fcd7a0941ee2",
+        "9013b35cce2b7784",
+        "946f2e1b72272d1c"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000146.torch"
+    },
+    {
+      "path": "test/000147.torch",
+      "bytes": 103583857,
+      "sha256": "de5821b1bf3088956f6a5e67677618724e3d1e6dcb57aa75eaf4b000988cc08d",
+      "scenes": [
+        "dce19ade8961ed43"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000147.torch"
+    },
+    {
+      "path": "test/000148.torch",
+      "bytes": 101854081,
+      "sha256": "db85d893d7ec64130a15e8c6afb2a313f3f9924225457df20a7201a420f883aa",
+      "scenes": [
+        "064cc91679310a7a",
+        "427f7676b9934f43"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000148.torch"
+    },
+    {
+      "path": "test/000149.torch",
+      "bytes": 115445335,
+      "sha256": "47d34a67f17ab7468084c7dd8ff8a2dbc8e4d2585a60769d2f30a0956eb89eab",
+      "scenes": [
+        "6dedaa607546e831"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000149.torch"
+    },
+    {
+      "path": "test/000150.torch",
+      "bytes": 101069821,
+      "sha256": "3e10becf20e2a9e103f84b89c4bf0e3e079f04e356c976eaff6b29328f863b32",
+      "scenes": [
+        "14674cb35e86f209",
+        "c0d427772deb0dab",
+        "e51f49d598c1431f"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000150.torch"
+    },
+    {
+      "path": "test/000151.torch",
+      "bytes": 102360783,
+      "sha256": "c2145c9fb568820f62fbb3690646449716c72637785299da9825fbfd88da76d4",
+      "scenes": [
+        "8e66614c5b3b32ff"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000151.torch"
+    },
+    {
+      "path": "test/000152.torch",
+      "bytes": 130679723,
+      "sha256": "dffaf15ec49a4f78d0edbe21883ae39645ab6cf6fddbfc285050117429dd0e16",
+      "scenes": [
+        "c5fd408f7298b11e",
+        "f57c01dc7dca16d2",
+        "fc831e1648e7721e"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000152.torch"
+    },
+    {
+      "path": "test/000153.torch",
+      "bytes": 102621839,
+      "sha256": "3da37baff57b6bbee0df61470cd0e0d23f7a4fa2b49112b0a6cfc1134a5310cd",
+      "scenes": [
+        "6f7e3e5e0af67ea8",
+        "a8721e5b916c7c5f"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000153.torch"
+    },
+    {
+      "path": "test/000154.torch",
+      "bytes": 110686051,
+      "sha256": "5923bd931ab20c02d371554b4b239e0876b6b850499a0ba0fef5ec30f639e3da",
+      "scenes": [
+        "46f12397659ec279",
+        "9dda9eff5f5f0fa0"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000154.torch"
+    },
+    {
+      "path": "test/000155.torch",
+      "bytes": 117944009,
+      "sha256": "4134c7e832b9f3ac5ca424fe2de8d6d2682c7955d6bc92159aabe6cf5858785c",
+      "scenes": [
+        "1baf1527bdd98f71",
+        "f8524f0e5a843ba5"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000155.torch"
+    },
+    {
+      "path": "test/000157.torch",
+      "bytes": 182744141,
+      "sha256": "e042785c31fe22b30e8028c60f136f520d7d8c7df8045c30124cfb5d141176e0",
+      "scenes": [
+        "26c08dc17a56adab",
+        "789a60541d2a35d7",
+        "9bd2420d9540f3d9",
+        "a7dd0e9f015032b3",
+        "fdef1fdfa002ea6d"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000157.torch"
+    },
+    {
+      "path": "test/000158.torch",
+      "bytes": 141102537,
+      "sha256": "574a2acee7beb45ce49698dd46bc99015960f846e774a1c836fc28c35f77b6b9",
+      "scenes": [
+        "54e06e3fda9e3df9",
+        "8dcc22e955c2d929",
+        "d780938ec2198cf5"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000158.torch"
+    },
+    {
+      "path": "test/000159.torch",
+      "bytes": 101189189,
+      "sha256": "5768a9629fbd9e68019330722cb86dfc04bb28eab0601e9d98c2a6a1c647e19c",
+      "scenes": [
+        "23b1dfb32733a007",
+        "9990bdafb9b0a605"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000159.torch"
+    },
+    {
+      "path": "test/000160.torch",
+      "bytes": 125100563,
+      "sha256": "5c0f0720f3deabe07169fa8330106e1010d7510708a3e694f61668f0abcf0734",
+      "scenes": [
+        "3fd301c29fcbf0a0"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000160.torch"
+    },
+    {
+      "path": "test/000161.torch",
+      "bytes": 130821127,
+      "sha256": "d05d97625fccee29615ad7c2648d1ba1a2d6eba71e8ac5106fd86b00795bd10b",
+      "scenes": [
+        "1184def7a5fa9094"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000161.torch"
+    },
+    {
+      "path": "test/000162.torch",
+      "bytes": 180713821,
+      "sha256": "a3866dba49a92a1b30043728b4f3c4704a279f2fbd1719862448b68fecb33254",
+      "scenes": [
+        "4325168487348577",
+        "57f56099cd5d0ba4",
+        "a292de6150d60c4f",
+        "fa329483307d59ac"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000162.torch"
+    },
+    {
+      "path": "test/000163.torch",
+      "bytes": 105915817,
+      "sha256": "211acf0089dcb04632b74f58790c7bd9dba7e441b4ca0fa0a2a5b77cfdfb639a",
+      "scenes": [
+        "20e05d539ac698ef",
+        "51ea8ea8cc608bad",
+        "c57386c90f44efb3"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000163.torch"
+    },
+    {
+      "path": "test/000164.torch",
+      "bytes": 173833079,
+      "sha256": "ae4c1577ef5189c7c7f44635a85d617eae320c6532d783d0d36521074e68b9cb",
+      "scenes": [
+        "ed29587ce3e9c577"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000164.torch"
+    },
+    {
+      "path": "test/000165.torch",
+      "bytes": 104246589,
+      "sha256": "036d76f3c205d3b549bc76e9a1c9fc9cad50cca873d7ec0d32e128233825909e",
+      "scenes": [
+        "6835a6e795eeb823"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000165.torch"
+    },
+    {
+      "path": "test/000167.torch",
+      "bytes": 103402733,
+      "sha256": "e83ae5aac746ba57c21ee597cf707cd5254d9af50a2702a735530fb4ca8de9c2",
+      "scenes": [
+        "e21d596c980fb1ae"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000167.torch"
+    },
+    {
+      "path": "test/000168.torch",
+      "bytes": 119726725,
+      "sha256": "4a4fc740a9cdb60791e8897b4b6215914b2037977ca851d48dfac25368df8015",
+      "scenes": [
+        "006f7d3e79e08670",
+        "44670523a11c881f",
+        "ca521eda54424ce7"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000168.torch"
+    },
+    {
+      "path": "test/000169.torch",
+      "bytes": 110960903,
+      "sha256": "56f386228db2690bc818c04d2282b12344e050c3db6e52c4e651022b464462aa",
+      "scenes": [
+        "39400b8897450337",
+        "3a421a359c3b743e",
+        "94754dace844ec83",
+        "defa0b73220c9d57"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000169.torch"
+    },
+    {
+      "path": "test/000170.torch",
+      "bytes": 101384471,
+      "sha256": "d064e18ce14b7cb7a696aba1479366b9074fac4f9b719e045cd451dac6786c4c",
+      "scenes": [
+        "6d90c54ca6238553"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000170.torch"
+    },
+    {
+      "path": "test/000172.torch",
+      "bytes": 113121495,
+      "sha256": "bf1304fbb3d0807c8c37ad0f0246523b7cdf3ccb022b30c4acd4cbf5334d4ab0",
+      "scenes": [
+        "602534fab0f83ed7",
+        "cf665093edaea5d6"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000172.torch"
+    },
+    {
+      "path": "test/000177.torch",
+      "bytes": 138612899,
+      "sha256": "4b334f8b3b752903f55c5ad8b3f02212cac9e2eddd7c772eb5b20af28938318c",
+      "scenes": [
+        "4e78c6ef9fee6dd6",
+        "6dc1e746d2bf4843",
+        "ebebf0093b9c63f7"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000177.torch"
+    },
+    {
+      "path": "test/000178.torch",
+      "bytes": 102964045,
+      "sha256": "bd85ed51c118a0655c68c525b448408d2d55fffa1f780ceae5a321a8f5c7cde1",
+      "scenes": [
+        "94c4d0dc1d7ae774"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000178.torch"
+    },
+    {
+      "path": "test/000179.torch",
+      "bytes": 131145379,
+      "sha256": "88f98ce329992657617a2360f96e7366b1ca14ba7cbd14cc6b21b10a1ca76fc0",
+      "scenes": [
+        "8806a95a59beb268",
+        "ae20075f79cbda90"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000179.torch"
+    },
+    {
+      "path": "test/000180.torch",
+      "bytes": 145822669,
+      "sha256": "421b69f1e7a55f2ec867da80760cdf2859cf34f2d4b212654f1db67ffadff7ee",
+      "scenes": [
+        "e3792317ae266d83"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000180.torch"
+    },
+    {
+      "path": "test/000181.torch",
+      "bytes": 130823237,
+      "sha256": "f997f3bd1f4f07bc38e186d3f843729426f2d55fbaef92b70336c2ef9db465c9",
+      "scenes": [
+        "6cb9e5da962a07ee"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000181.torch"
+    },
+    {
+      "path": "test/000182.torch",
+      "bytes": 147950765,
+      "sha256": "9b5c332026a6b587780cfa4ec62200a880211f9a5d614d011940739ba77b70f9",
+      "scenes": [
+        "7a21bb497731831d",
+        "a98fd13e6115559b",
+        "f7bf32621bfaa258"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000182.torch"
+    },
+    {
+      "path": "test/000183.torch",
+      "bytes": 100573941,
+      "sha256": "e1aa1e1e0fa6ff0cb282042661b213bab28737429b742440c5acb9d020f54100",
+      "scenes": [
+        "0279d21cccedb54c",
+        "79ecf4737fa62d10"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000183.torch"
+    },
+    {
+      "path": "test/000184.torch",
+      "bytes": 100392717,
+      "sha256": "efc253381321717c2073f9e3643cd4a99394a82d8776632119429c2200b820b5",
+      "scenes": [
+        "1cef85cf0645fcd8",
+        "c95121e20649046c"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000184.torch"
+    },
+    {
+      "path": "test/000185.torch",
+      "bytes": 145536445,
+      "sha256": "716512a6e82c5de09e0bc5de36e85464f564aa806c2472f958b9f1b6169b4263",
+      "scenes": [
+        "4b7cbabaeacf7513",
+        "4e87b6169c9b092b",
+        "7c9494fd4f106d9c",
+        "a33934bb7d2a928f"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000185.torch"
+    },
+    {
+      "path": "test/000186.torch",
+      "bytes": 114552957,
+      "sha256": "59fcb37d8e8f45cf09ce6008985b3c8b6ae467ffd6478ce74f4f05d768d7e56e",
+      "scenes": [
+        "4f4d7cda50fa758d",
+        "c4a2198f7205b880"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000186.torch"
+    },
+    {
+      "path": "test/000188.torch",
+      "bytes": 100903255,
+      "sha256": "13f3e02677989958b7468ecdd00b240ff9b61f906dfa12ed7ac62e7ba9062b3a",
+      "scenes": [
+        "57b09b1e586445e0",
+        "f53006119622ad0d"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000188.torch"
+    },
+    {
+      "path": "test/000189.torch",
+      "bytes": 108620177,
+      "sha256": "988e2a5ab56bf2c4d8cd6dc8e6b672a16d48a5b92e6085557dfd86a45f32678b",
+      "scenes": [
+        "8c4c6bcef0e2d33d",
+        "8ca1ffda1f768960"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000189.torch"
+    },
+    {
+      "path": "test/000190.torch",
+      "bytes": 109893105,
+      "sha256": "0fd7dfe3f7048a7e6ec14768a92b509954680b8bb613f6fba9d47015b6b02e04",
+      "scenes": [
+        "2267b226127f827d",
+        "fb41ffdbb916526b"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000190.torch"
+    },
+    {
+      "path": "test/000191.torch",
+      "bytes": 112592717,
+      "sha256": "1b7f39090918912077a81b8f92defeee388b9bf9624326414748560dbc49f9cc",
+      "scenes": [
+        "114cdbd4c82e30cc",
+        "2ad1344b3956f4ae"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000191.torch"
+    },
+    {
+      "path": "test/000192.torch",
+      "bytes": 112458211,
+      "sha256": "784d0f5aa1d92de4d2125c1ecb1e30a8e360fa81a8c30d38e8cf8ff5e4eea638",
+      "scenes": [
+        "476a807e215ad286",
+        "de1e00c50f887ffe"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000192.torch"
+    },
+    {
+      "path": "test/000194.torch",
+      "bytes": 126060611,
+      "sha256": "a5641dba6b00ba77d348c27f981226a7e3ca9305773aa6b493dc72685df6b9e4",
+      "scenes": [
+        "2f029fafab9d7b2b",
+        "8437833500f497d9",
+        "9d7057c0125a74e5"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000194.torch"
+    },
+    {
+      "path": "test/000195.torch",
+      "bytes": 103370955,
+      "sha256": "3596b021c4a54ddb102340b35a99c23923a6e060f164b1c525074dd513b30f1c",
+      "scenes": [
+        "60c91365d2365cb5"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000195.torch"
+    },
+    {
+      "path": "test/000196.torch",
+      "bytes": 140065203,
+      "sha256": "b1ff059263dfbd9e7d1c6e588c0a1b9ac0751bde5da988f915fda676b4d26029",
+      "scenes": [
+        "6690d8decce051bf",
+        "82f250c6f8255db7",
+        "9c418564b594c66f"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000196.torch"
+    },
+    {
+      "path": "test/000198.torch",
+      "bytes": 150294629,
+      "sha256": "13e0c9d5cd871602280eddfa0be771b82928d7b2249dda28476ab25702266486",
+      "scenes": [
+        "9479541b53b2692c",
+        "cb6ef6e04ed82ce8"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000198.torch"
+    },
+    {
+      "path": "test/000200.torch",
+      "bytes": 107361863,
+      "sha256": "889d0e981c03f4e2c7f3c65aa9d59ecc31a00f2d1f8df32fcb771741926210a1",
+      "scenes": [
+        "c3dbc4009851f125"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000200.torch"
+    },
+    {
+      "path": "test/000201.torch",
+      "bytes": 100645495,
+      "sha256": "2127e640f9b5f1466f67f172330ff08914bcc7d7f7d158a4d8bbf7ffda7538e2",
+      "scenes": [
+        "3ba87af66c22caaf",
+        "d60884a98e4608c7"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000201.torch"
+    },
+    {
+      "path": "test/000203.torch",
+      "bytes": 104873787,
+      "sha256": "358d2d98b83d8b80792d992b8ea661d84ab682222f5dee8b3e43d6f53a749e9a",
+      "scenes": [
+        "1b7fd801c4944443",
+        "bcafea7b8fb8c43e"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000203.torch"
+    },
+    {
+      "path": "test/000204.torch",
+      "bytes": 111712917,
+      "sha256": "39c8fadd67c099166b79545795ae56dbd044d503ec644d9f636235da22845aa4",
+      "scenes": [
+        "550959d4466c414f",
+        "994f8b4836ac3da2",
+        "de5bf13b2552766e"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000204.torch"
+    },
+    {
+      "path": "test/000205.torch",
+      "bytes": 112446723,
+      "sha256": "643b51034477eadb517504322cd06798708b37e9ad9bccc5a33bb04741a15b8a",
+      "scenes": [
+        "18fce40f4009ff78",
+        "d93af9b55cfac3d6"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000205.torch"
+    },
+    {
+      "path": "test/000206.torch",
+      "bytes": 103246381,
+      "sha256": "e72bbca2b8510287b5a3407942c55ed87ed59f8d64ccd5e32965353a341c52d1",
+      "scenes": [
+        "41d6727cfcbd6232",
+        "bc5d91b1357247b7"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000206.torch"
+    },
+    {
+      "path": "test/000207.torch",
+      "bytes": 158705573,
+      "sha256": "ae9d73d6e296cb149b1b580b3c216f1840fa9cf06d3d4c7c5ef7ac762d89f70f",
+      "scenes": [
+        "9efbc62b5455aafe",
+        "f23cd2826eff1565"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000207.torch"
+    },
+    {
+      "path": "test/000208.torch",
+      "bytes": 104190787,
+      "sha256": "f75109726affe15be82c85229329557d580abeb7cb13d7169131b9fc62044189",
+      "scenes": [
+        "5c3d406b44d1d473",
+        "6a25a52cfd99b6a2",
+        "78e2605df8aa837c",
+        "d674021d935b083e"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000208.torch"
+    },
+    {
+      "path": "test/000209.torch",
+      "bytes": 127424445,
+      "sha256": "ed8df98083e9cb733fd0a2f39a7df0af1c0c30eaaa5ee7a5dd7797ba53596ca1",
+      "scenes": [
+        "793efeb35eefe335"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000209.torch"
+    },
+    {
+      "path": "test/000210.torch",
+      "bytes": 140800371,
+      "sha256": "b83e652fea90072615f354b61fb484b5db35224d66d5d84085838c1774e6498a",
+      "scenes": [
+        "9c6c97db6143d7c0",
+        "b4cd2a9010e24c63"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000210.torch"
+    },
+    {
+      "path": "test/000211.torch",
+      "bytes": 131138025,
+      "sha256": "54b54a6e27ed9e610a3cef999580c791c84a7f88727a1c0e1f44d0276d18342a",
+      "scenes": [
+        "6859fd8150fb5f16",
+        "6b583722bbdf4c0b"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000211.torch"
+    },
+    {
+      "path": "test/000212.torch",
+      "bytes": 141207551,
+      "sha256": "ff4e5b7e796b154950ebc2f37317ed82344b874b5196e03435df0117af3de9f3",
+      "scenes": [
+        "0c3629afbd6095eb",
+        "49433e841b101e1a"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000212.torch"
+    },
+    {
+      "path": "test/000214.torch",
+      "bytes": 122964265,
+      "sha256": "1e2587c7f0fd1d1a0c40e4195eff7a083d54636a7834b40457be0539ee364a33",
+      "scenes": [
+        "457d541b6dc16ca5",
+        "e668f185a5ba7c38"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000214.torch"
+    },
+    {
+      "path": "test/000216.torch",
+      "bytes": 104256501,
+      "sha256": "090ba9ce1bc2a2db7b4289060c7c090785e6c9c7533c5f9b18a94667f69a01a2",
+      "scenes": [
+        "6ae991e371ad38c2"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000216.torch"
+    },
+    {
+      "path": "test/000217.torch",
+      "bytes": 103422475,
+      "sha256": "eb1008a36a668f0ab6de4ba895c3c923771a9e0aebaaade197418392f77534aa",
+      "scenes": [
+        "2937009b1837b74b",
+        "a65fd22b8b9ae0e7"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000217.torch"
+    },
+    {
+      "path": "test/000218.torch",
+      "bytes": 104562559,
+      "sha256": "cb0ed8e119570c67e739550ca828ccf4acd6354dec3f153917089796f145adc3",
+      "scenes": [
+        "6fa2c1792c2e4ff3",
+        "b552d5cdeb40162c"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000218.torch"
+    },
+    {
+      "path": "test/000219.torch",
+      "bytes": 118332349,
+      "sha256": "db2a03251e3aa2a66da280b365017267a6e0fb1d02674a1ed65e0b2ed0a66f4c",
+      "scenes": [
+        "a1d044672b27685c",
+        "ac7ad8304197fcf3"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000219.torch"
+    },
+    {
+      "path": "test/000222.torch",
+      "bytes": 101570473,
+      "sha256": "5a0fa84db4b7eb7f02a46c829124d273808053acfe078573b57b2c6b4b518829",
+      "scenes": [
+        "cdf5cb6894eba2c4"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000222.torch"
+    },
+    {
+      "path": "test/000223.torch",
+      "bytes": 152731233,
+      "sha256": "91d7821e95f229574ba01c89111e92a09013f7b73d2286c276f990b44fe2fa3f",
+      "scenes": [
+        "212349981f727589",
+        "29bafc403452b0d9",
+        "6d2737bd9410e0a4",
+        "b9a9fb59a6c8b5bc"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000223.torch"
+    },
+    {
+      "path": "test/000224.torch",
+      "bytes": 152534403,
+      "sha256": "e79942a59471c5a401f53725ab03cb8a39251f8e8402bad693e036ac2a7fb870",
+      "scenes": [
+        "76b049da18eda649"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000224.torch"
+    },
+    {
+      "path": "test/000225.torch",
+      "bytes": 108088709,
+      "sha256": "cf1a0ef722d67f7dc1f19443fb7659afbca3537a140cba21db296ae769daa6d2",
+      "scenes": [
+        "71b1e041a1479db2"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000225.torch"
+    },
+    {
+      "path": "test/000226.torch",
+      "bytes": 124653037,
+      "sha256": "36d53039a6e5e2a9355eda6459a566df8834a50c80f665eb297c14a9b939950b",
+      "scenes": [
+        "30f877b87aa199c9"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000226.torch"
+    },
+    {
+      "path": "test/000228.torch",
+      "bytes": 125721415,
+      "sha256": "14081141ce965af82534ff188e5719ba87c09ff7375eff848f6ef7191abf0e09",
+      "scenes": [
+        "b896ebcbe8d18553",
+        "bd8c7956eedc7838"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000228.torch"
+    },
+    {
+      "path": "test/000230.torch",
+      "bytes": 177987795,
+      "sha256": "38db40260bba0da7b16a57dcf55d1693abd16702a9835375e5227ffede6631ed",
+      "scenes": [
+        "0847113caca0bbb2",
+        "a2f101debdeed5c5"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000230.torch"
+    },
+    {
+      "path": "test/000231.torch",
+      "bytes": 103004769,
+      "sha256": "1a167f61bff78ff4a3f5d30afbb21db27f44ae430f116d930d032abfe03d88ba",
+      "scenes": [
+        "60698bf4aee35104"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000231.torch"
+    },
+    {
+      "path": "test/000233.torch",
+      "bytes": 113775977,
+      "sha256": "a8be14449bdc71a3a728818167392a8a6c9345fd38b6d634c87fca66f380b267",
+      "scenes": [
+        "05abdde1c971100f",
+        "4693933cb8edd53e"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000233.torch"
+    },
+    {
+      "path": "test/000234.torch",
+      "bytes": 135466805,
+      "sha256": "90ff3ec9c5b3bf76eb8a50cc9a1d21b46c2e1924fb8fbe896778d34c5ceda461",
+      "scenes": [
+        "1e5c64350767444c",
+        "39a809f07b144d42",
+        "4596e730e9aafe9d"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000234.torch"
+    },
+    {
+      "path": "test/000235.torch",
+      "bytes": 134259895,
+      "sha256": "fbbcf6816c1a99bb8e452a645b033be53a856e467c3259c815097e169260b63a",
+      "scenes": [
+        "1ed1c4b7851e2c7a"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000235.torch"
+    },
+    {
+      "path": "test/000236.torch",
+      "bytes": 133261225,
+      "sha256": "46ce4c975fe10fca9513f84fb550fde5a80539e3a9f4f9cbcc165d00c8dada68",
+      "scenes": [
+        "346aa8dc351d2dba"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000236.torch"
+    },
+    {
+      "path": "test/000237.torch",
+      "bytes": 106912591,
+      "sha256": "a639ecc9584793f4a1409650a69dc7fb0f1b24061a8d3d9141c5e294085e6aed",
+      "scenes": [
+        "3a0b33f4e4f4dfca",
+        "f05b0c3b0890b675"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000237.torch"
+    },
+    {
+      "path": "test/000238.torch",
+      "bytes": 102091411,
+      "sha256": "caa7b71b7b33914872353c871995a9817c877799f3df2ed3c1a0ecfcd96ca1ec",
+      "scenes": [
+        "de4786a1fe7ef075"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000238.torch"
+    },
+    {
+      "path": "test/000239.torch",
+      "bytes": 126160839,
+      "sha256": "6361fb67a75b9d79e6bc66ea5a418f3ce16dd1ae5a443e0b9592e8b83b90fe13",
+      "scenes": [
+        "4cf9669bcf2f0a0c"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000239.torch"
+    },
+    {
+      "path": "test/000240.torch",
+      "bytes": 103555435,
+      "sha256": "f747bfc33da3f876d3ad8862c37d96e8cab0d5cbb8a647e0a70cfe2a43e401df",
+      "scenes": [
+        "2faef15e32d61d4b",
+        "c3e0e154dfe1c060",
+        "d23181ed09b3233c",
+        "faf3bb76a633f435"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000240.torch"
+    },
+    {
+      "path": "test/000241.torch",
+      "bytes": 102006953,
+      "sha256": "c1176a99e2429ced3e6a093fce2176cdcff53ecc1ab2afaf1bd605bdf5793107",
+      "scenes": [
+        "73b80c3623412dd2",
+        "db18bbcefe49f79f"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000241.torch"
+    },
+    {
+      "path": "test/000242.torch",
+      "bytes": 105681893,
+      "sha256": "d74f36d4d0927d0e8a218a6390255cf008cd520f9e266d7a6a3e18252c367fc4",
+      "scenes": [
+        "63494124e84bdc27",
+        "9540f1cc58960426",
+        "a54ec3e5ba5675c2"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000242.torch"
+    },
+    {
+      "path": "test/000244.torch",
+      "bytes": 148849221,
+      "sha256": "76381d9ef09692c922e8a3e849c164eb26e3687965c637d8e36b83c698892ab4",
+      "scenes": [
+        "2d02b95abb3fc3ef",
+        "abd43fb26c3298ba",
+        "db5184b7af9fd1c2"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000244.torch"
+    },
+    {
+      "path": "test/000245.torch",
+      "bytes": 127994283,
+      "sha256": "26b3ffc6c1d8538002923bca93f05bcdf9de2e0aaf81917706672316a70eeb29",
+      "scenes": [
+        "52359f2d202aad3f",
+        "9f4660642840d303",
+        "a9033a583b255ddd"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000245.torch"
+    },
+    {
+      "path": "test/000246.torch",
+      "bytes": 103844473,
+      "sha256": "c3b9db4b157a83ebb4c29d1100fb12d11c6f338cbb5d4ee1116a004436f00b1b",
+      "scenes": [
+        "1eff31d30a7aad1f",
+        "60d34f17a830cb21",
+        "b7c5f7da4f388768"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000246.torch"
+    },
+    {
+      "path": "test/000247.torch",
+      "bytes": 108593329,
+      "sha256": "005918b8e11715b0bba3f0f5414ccdb9129bcf143317df92ba50d22b22ffe9d8",
+      "scenes": [
+        "2cf1ec5bd7fd1ff8"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000247.torch"
+    },
+    {
+      "path": "test/000250.torch",
+      "bytes": 100818649,
+      "sha256": "ad3737d65364e484d21c172b057f95e5638286914fc1b57f589a7c95f87c180a",
+      "scenes": [
+        "26c6856ec18ffa62",
+        "5a8f7293af4b07f4"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000250.torch"
+    },
+    {
+      "path": "test/000251.torch",
+      "bytes": 117147999,
+      "sha256": "0c3e32b966948f96c614cfec093f8cc20f07b310f228c2c8b2363f877258f60b",
+      "scenes": [
+        "416359e24dae447c",
+        "60b6739485ef504f",
+        "9ba9afc6dcd9cd7d",
+        "b47bf6c3829e392c"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000251.torch"
+    },
+    {
+      "path": "test/000252.torch",
+      "bytes": 138359101,
+      "sha256": "06a19f9b63c213ead6ce0f4ffbd9f4a1fe60b5da3014808606b371d35fb442d4",
+      "scenes": [
+        "02d49e015f290446"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000252.torch"
+    },
+    {
+      "path": "test/000254.torch",
+      "bytes": 117199639,
+      "sha256": "f21744896885559073f4c57388e5990769700bc28d9182f8faa6080dc9614e12",
+      "scenes": [
+        "6fd98bc8550432c2"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000254.torch"
+    },
+    {
+      "path": "test/000257.torch",
+      "bytes": 116088337,
+      "sha256": "c8e41573df98c3b0dd11ca1e232475dbbc489bdd5e7e23eb575df95eedc350c1",
+      "scenes": [
+        "228ec55918d915ea",
+        "45b5ad68ef7faeb4"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000257.torch"
+    },
+    {
+      "path": "test/000258.torch",
+      "bytes": 131124867,
+      "sha256": "f7dd0b1b32823ad63e129d452deba69d87765e65a48f6a0b620b3fd33c30ce8e",
+      "scenes": [
+        "01fb55cb6f93e9f4",
+        "788752825e8bf958",
+        "797af3cb054090f7"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000258.torch"
+    },
+    {
+      "path": "test/000259.torch",
+      "bytes": 138283743,
+      "sha256": "b0e46c04c74052e416590a16f7e2f7798b36afed473a4f25e08f8225490b4e87",
+      "scenes": [
+        "4a96126441e9c2bf",
+        "8a22aabb7198bba0"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000259.torch"
+    },
+    {
+      "path": "test/000261.torch",
+      "bytes": 106038193,
+      "sha256": "d1ae71c2ff25d0b8e633a186cd3a7dafcab2c8889315425de04dd96c76c08afc",
+      "scenes": [
+        "28dbe538b3d2d335",
+        "7dcc3ad6e6590217"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000261.torch"
+    },
+    {
+      "path": "test/000263.torch",
+      "bytes": 108537223,
+      "sha256": "2198ae32b2b764d0e2300391344efb44915777fc61a9a672166529ba07d0b0e5",
+      "scenes": [
+        "634f5578ff1a6531",
+        "ac83617b45c08713"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000263.torch"
+    },
+    {
+      "path": "test/000264.torch",
+      "bytes": 104311721,
+      "sha256": "0adcc5da38bf2445e9d56dbbdf0d1e43b5e5fcbfab75e80fe547d59eb75350a5",
+      "scenes": [
+        "4ee9b2da75f9291f",
+        "80bc6c583f6d7e05",
+        "b2199f6b8f368119",
+        "ce990744080fa3dc"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000264.torch"
+    },
+    {
+      "path": "test/000265.torch",
+      "bytes": 181251759,
+      "sha256": "24685ad1945b6aa85b0f984fd3259a45539032c6d9366249a6b8ace68aff6eea",
+      "scenes": [
+        "51e78da930cd34ba",
+        "66e9c644daed8140"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000265.torch"
+    },
+    {
+      "path": "test/000266.torch",
+      "bytes": 118475039,
+      "sha256": "00d296cb4955ef6a3760583646df8f1d028afc8ccb5128afa7acd18fb20214f4",
+      "scenes": [
+        "2bf86acbd5ab3598",
+        "e9828e82fe988c70",
+        "f735dcf19a840f6d"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000266.torch"
+    },
+    {
+      "path": "test/000268.torch",
+      "bytes": 144057567,
+      "sha256": "abae18db8b3d46624da282faad600b672085a0cfcb0a6e8d06d6a906b8215fe5",
+      "scenes": [
+        "c1b40e24d5c982ba"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000268.torch"
+    },
+    {
+      "path": "test/000269.torch",
+      "bytes": 112079443,
+      "sha256": "d4a45ea1107be087cb4719650cd97e3528e6edb5819b1b4acfd0733d6c1088fc",
+      "scenes": [
+        "07a87c3f870db731",
+        "6a7b857730349e65",
+        "9082c0ea8e973309",
+        "c72fcc8fbb7021a0"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000269.torch"
+    },
+    {
+      "path": "test/000271.torch",
+      "bytes": 107195109,
+      "sha256": "9f3fb5f10adb75d3b06eda5857e5ff8643fdaa2175f1d200c24be00dc276ac77",
+      "scenes": [
+        "0071e92e75528444",
+        "223b4cb8344cbef5"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000271.torch"
+    },
+    {
+      "path": "test/000272.torch",
+      "bytes": 123568941,
+      "sha256": "78db046614cadfbebbd555e34a6e871ac8de5d9576ac78924df2049ce7960c3e",
+      "scenes": [
+        "446c3ccaa5d4b7aa",
+        "632ca65afb7d4f7c",
+        "9ced6792ba9bc7c2"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000272.torch"
+    },
+    {
+      "path": "test/000273.torch",
+      "bytes": 141600963,
+      "sha256": "55d85a0c2ccea9b62c633f059bb164454dd1001b715d5f71331a938ca9742861",
+      "scenes": [
+        "21ec06965e6bd821",
+        "f93cd4d2a4313d38"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000273.torch"
+    },
+    {
+      "path": "test/000274.torch",
+      "bytes": 151707367,
+      "sha256": "dc78770ffa987b2c934ea0a70cfa5dda1c4ffc3e799dfbe43bfc3e1ea4f536f7",
+      "scenes": [
+        "370e339b0ff3fb3a"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000274.torch"
+    },
+    {
+      "path": "test/000275.torch",
+      "bytes": 121030745,
+      "sha256": "cee1ae164520b0f6842d81107cc903ce9bb17f288edb66d03c9d04d1ad30ab3e",
+      "scenes": [
+        "8d3989a5152c685b"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000275.torch"
+    },
+    {
+      "path": "test/000276.torch",
+      "bytes": 139885669,
+      "sha256": "73fcc3b72ef0c7d69e9177df33e1dd2a39f5201526602a4ee55132c230fda3cc",
+      "scenes": [
+        "54a0ddd237b064ac"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000276.torch"
+    },
+    {
+      "path": "test/000277.torch",
+      "bytes": 130099787,
+      "sha256": "e2aa1f788e0bfb71033b5e8c41dbacda60af269ff35e9ff764a5055e52cd879d",
+      "scenes": [
+        "65747b3045373c33",
+        "8be2a6795faf945b"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000277.torch"
+    },
+    {
+      "path": "test/000278.torch",
+      "bytes": 103558913,
+      "sha256": "897a0a51a44acd1eba53ddd2849dc19854a8c789fe6dd34dbc220c6ca0d7a947",
+      "scenes": [
+        "7436de9bca9c4415",
+        "d68495d47bf40a86"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000278.torch"
+    },
+    {
+      "path": "test/000279.torch",
+      "bytes": 104696873,
+      "sha256": "c2fd96602be6fbc271d785049f9d3ac94302323b770842dfdf90c9e8041b65d3",
+      "scenes": [
+        "2c7ec509d5181cd0",
+        "681a9439efce1433"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000279.torch"
+    },
+    {
+      "path": "test/000280.torch",
+      "bytes": 103809401,
+      "sha256": "63e24bf0e0a51c1084289c9cbe5c021f83aec491736c429fd2d4e60b3cd40599",
+      "scenes": [
+        "4746acfcf9769cfa"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000280.torch"
+    },
+    {
+      "path": "test/000282.torch",
+      "bytes": 118511137,
+      "sha256": "4f70470681189cbeb6d247e31e0c4fbb5b3decbe848028c1b3d4b5ae4ebf8670",
+      "scenes": [
+        "1e9cadf7d67ee02c",
+        "71e511713c076f0b"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000282.torch"
+    },
+    {
+      "path": "test/000285.torch",
+      "bytes": 113341473,
+      "sha256": "ebfb6e7676154e383e86f9039a82a2de6623b0465c98aed8647eb5c8ab2662a9",
+      "scenes": [
+        "e0b669c5a9af8487"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000285.torch"
+    },
+    {
+      "path": "test/000286.torch",
+      "bytes": 101246563,
+      "sha256": "57ef796bbb58a5d11bf69ef165a9e0a75e3df077ca2e2ad433a6da33970cee13",
+      "scenes": [
+        "7b4a2f22da537243"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000286.torch"
+    },
+    {
+      "path": "test/000287.torch",
+      "bytes": 152631743,
+      "sha256": "f45349e8794f215b18817345d0feb5360bd9e4da0ce7758dc4d87726cecab93f",
+      "scenes": [
+        "183888ad23f2b08a",
+        "8c03b224652f7a26",
+        "a436b76ff090d73f"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000287.torch"
+    },
+    {
+      "path": "test/000288.torch",
+      "bytes": 137748071,
+      "sha256": "f787cce7aef8d1c84e2023b044a4e4ed817081ffd7bbc49da01a3c1f9685a876",
+      "scenes": [
+        "961a53bab43aebfc",
+        "99849970a479bc3a",
+        "a6a6f05551083df7",
+        "b9e5161cdbdc567b",
+        "c05598685527b96c"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000288.torch"
+    },
+    {
+      "path": "test/000289.torch",
+      "bytes": 170739017,
+      "sha256": "d20430d5773f880e4e9c3247b29b891aa2c9dc14780def7ed40861c944599961",
+      "scenes": [
+        "7b428f5e0d81176a",
+        "a24db5a4acf98096",
+        "f2aa477766df229c"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000289.torch"
+    },
+    {
+      "path": "test/000290.torch",
+      "bytes": 181289125,
+      "sha256": "c8afdcc5e6eb3011b96bd5865a8a2fdb8e759a872ca510dcfbb5cb5c8c4c54be",
+      "scenes": [
+        "3a813fc60a0b6614",
+        "ad602e3e9a41ecf9"
+      ],
+      "url": "https://huggingface.co/datasets/lhmd/acid_torch/resolve/7f9def2d181c8051c061234b982d6c7278993622/test/000290.torch"
+    }
+  ],
+  "selection_seed": 20261104,
+  "full_available_overlap_counts": {
+    "small": 249,
+    "medium": 644,
+    "large": 448
+  },
+  "selected_overlap_counts": {
+    "small": 93,
+    "medium": 240,
+    "large": 167
+  }
+}

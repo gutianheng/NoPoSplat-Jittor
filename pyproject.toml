@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "noposplat-jittor"
+version = "0.1.0"
+description = "Research Jittor port of the default two-view NoPoSplat path"
+requires-python = ">=3.10"
+dependencies = ["jittor==1.3.11.0", "numpy==1.26.4", "Pillow==10.4.0", "PyYAML==6.0.2", "scipy==1.13.1", "scikit-image==0.24.0", "tqdm==4.67.1"]
+
+[project.scripts]
+noposplat-jt = "noposplat_jittor.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["noposplat_jittor*"]
+

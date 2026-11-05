@@ -1,0 +1,4658 @@
+{
+  "status": "evaluation_completed",
+  "scene_count": 500,
+  "target_count": 1500,
+  "binding": {
+    "framework": "author_torch",
+    "weights_role": "own_reduced_training",
+    "weights_sha256": "ed0695b7533b2b096565d88ed365810ed958901d3485d910effe8db75553df1b",
+    "lpips_sha256": "bdd12bab9e4812629d8225bcd12f41fbc0cdcf1167d9007a427411e8d348ab0f",
+    "config": {
+      "model": {
+        "enc_dim": 1024,
+        "enc_depth": 24,
+        "enc_heads": 16,
+        "dec_dim": 768,
+        "dec_depth": 12,
+        "dec_heads": 12,
+        "patch_size": 16,
+        "mlp_ratio": 4,
+        "rope_base": 100.0,
+        "layer_norm_eps": 1e-06,
+        "feature_dim": 256,
+        "layer_dims": [
+          96,
+          192,
+          384,
+          768
+        ],
+        "sh_degree": 4,
+        "opacity_initial": 0.0,
+        "opacity_final": 0.0,
+        "opacity_warmup": 1
+      },
+      "data": {
+        "root": "data/extended_20261103/re10k",
+        "eval_index": "configs/extended_20261103/validated/evaluation_index_re10k.json",
+        "image_shape": [
+          256,
+          256
+        ],
+        "original_shape": [
+          360,
+          640
+        ],
+        "near": 0.1,
+        "far": 100.0,
+        "max_fov": 100.0,
+        "baseline_min": 0.001,
+        "baseline_max": 10000000000.0,
+        "gap_min": 45,
+        "gap_max": 90,
+        "initial_gap_min": 25,
+        "initial_gap_max": 25,
+        "gap_warmup": 2500,
+        "target_views": 1,
+        "augment": true
+      },
+      "train": {
+        "batch_size": 4,
+        "accumulate": 2,
+        "max_steps": 5000,
+        "lr": 0.0002,
+        "backbone_lr_multiplier": 0.1,
+        "warmup": 125,
+        "weight_decay": 0.05,
+        "betas": [
+          0.9,
+          0.95
+        ],
+        "gradient_clip": 0.5,
+        "lpips_weight": 0.05,
+        "checkpoint_every": 500,
+        "log_every": 10,
+        "keep_last_checkpoints": 2
+      },
+      "test": {
+        "align_pose": true,
+        "pose_steps": 100,
+        "pose_lr": 0.005,
+        "save_images": true
+      },
+      "renderer": {
+        "scale_invariant": true,
+        "background": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "backend": "native"
+      },
+      "seed": 111123,
+      "runtime": {
+        "math_mode": "fp32"
+      }
+    },
+    "index_sha256": "686e87d19acc8052dbfb4f36fc3186630ed4626a2d2bbf721d9983ab65950256",
+    "limit": null
+  },
+  "scene_mean": {
+    "psnr": 21.567467635154724,
+    "ssim": 0.7282188237044029,
+    "lpips": 0.24582103006541728
+  },
+  "image_mean": {
+    "psnr": 21.567467635154724,
+    "ssim": 0.7282188237044029,
+    "lpips": 0.24582103006541728
+  },
+  "overlap_groups": {
+    "small": {
+      "scene_count": 125,
+      "target_count": 375,
+      "scene_mean": {
+        "psnr": 20.025523395538325,
+        "ssim": 0.6922042029102643,
+        "lpips": 0.30386068854729326
+      },
+      "image_mean": {
+        "psnr": 20.02552339553833,
+        "ssim": 0.6922042029102643,
+        "lpips": 0.30386068854729337
+      }
+    },
+    "medium": {
+      "scene_count": 229,
+      "target_count": 687,
+      "scene_mean": {
+        "psnr": 21.595100148796515,
+        "ssim": 0.7302839993482274,
+        "lpips": 0.2445279880707441
+      },
+      "image_mean": {
+        "psnr": 21.595100148796515,
+        "ssim": 0.7302839993482274,
+        "lpips": 0.2445279880707441
+      }
+    },
+    "large": {
+      "scene_count": 146,
+      "target_count": 438,
+      "scene_mean": {
+        "psnr": 22.844283966168966,
+        "ssim": 0.7558140454635228,
+        "lpips": 0.19815766915134642
+      },
+      "image_mean": {
+        "psnr": 22.844283966168966,
+        "ssim": 0.7558140454635228,
+        "lpips": 0.19815766915134644
+      }
+    }
+  },
+  "per_scene": [
+    {
+      "scene": "0196dedebec3dad2",
+      "targets": 3,
+      "overlap": 0.5027300119400024,
+      "overlap_group": "medium",
+      "psnr": 23.80560366312663,
+      "ssim": 0.8132375677426656,
+      "lpips": 0.15885256230831146
+    },
+    {
+      "scene": "01cefee9563f691a",
+      "targets": 3,
+      "overlap": 0.3569299876689911,
+      "overlap_group": "medium",
+      "psnr": 14.694364229838053,
+      "ssim": 0.5475736657778422,
+      "lpips": 0.5029376596212387
+    },
+    {
+      "scene": "021575237abe0684",
+      "targets": 3,
+      "overlap": 0.241799995303154,
+      "overlap_group": "small",
+      "psnr": 23.826440811157227,
+      "ssim": 0.7533733248710632,
+      "lpips": 0.2024762531121572
+    },
+    {
+      "scene": "025192166c704a39",
+      "targets": 3,
+      "overlap": 0.3986400067806244,
+      "overlap_group": "medium",
+      "psnr": 20.31571388244629,
+      "ssim": 0.47748175263404846,
+      "lpips": 0.3354030251502991
+    },
+    {
+      "scene": "02b59cd60efb924e",
+      "targets": 3,
+      "overlap": 0.3468799889087677,
+      "overlap_group": "medium",
+      "psnr": 20.916097005208332,
+      "ssim": 0.7322341203689575,
+      "lpips": 0.24185518423716226
+    },
+    {
+      "scene": "02c485bd207116d4",
+      "targets": 3,
+      "overlap": 0.5575399994850159,
+      "overlap_group": "large",
+      "psnr": 25.389439900716145,
+      "ssim": 0.8709859848022461,
+      "lpips": 0.15233829617500305
+    },
+    {
+      "scene": "02e6fb86b0172f0b",
+      "targets": 3,
+      "overlap": 0.6254299879074097,
+      "overlap_group": "large",
+      "psnr": 21.354238510131836,
+      "ssim": 0.881969153881073,
+      "lpips": 0.11071236183245976
+    },
+    {
+      "scene": "03fe94a439456692",
+      "targets": 3,
+      "overlap": 0.5114700198173523,
+      "overlap_group": "medium",
+      "psnr": 23.788681666056316,
+      "ssim": 0.8056609829266866,
+      "lpips": 0.17673673729101816
+    },
+    {
+      "scene": "04422a07336e32da",
+      "targets": 3,
+      "overlap": 0.6694700121879578,
+      "overlap_group": "large",
+      "psnr": 26.689114888509113,
+      "ssim": 0.9226891001065572,
+      "lpips": 0.10974502315123875
+    },
+    {
+      "scene": "04e4c841b349bf5c",
+      "targets": 3,
+      "overlap": 0.1624699980020523,
+      "overlap_group": "small",
+      "psnr": 19.728757858276367,
+      "ssim": 0.7030776341756185,
+      "lpips": 0.3667680323123932
+    },
+    {
+      "scene": "0516a5d959b58cb3",
+      "targets": 3,
+      "overlap": 0.5835700035095215,
+      "overlap_group": "large",
+      "psnr": 22.48568280537923,
+      "ssim": 0.77534947792689,
+      "lpips": 0.17216659088929495
+    },
+    {
+      "scene": "052430ff6e2c07c4",
+      "targets": 3,
+      "overlap": 0.23524999618530273,
+      "overlap_group": "small",
+      "psnr": 20.999162038167317,
+      "ssim": 0.7405834396680196,
+      "lpips": 0.25506268441677094
+    },
+    {
+      "scene": "05e2f342142bc50d",
+      "targets": 3,
+      "overlap": 0.7826700210571289,
+      "overlap_group": "large",
+      "psnr": 25.217222849527996,
+      "ssim": 0.816294272740682,
+      "lpips": 0.10663190235694249
+    },
+    {
+      "scene": "06c71ce295284689",
+      "targets": 3,
+      "overlap": 0.49296998977661133,
+      "overlap_group": "medium",
+      "psnr": 18.386958440144856,
+      "ssim": 0.6076481938362122,
+      "lpips": 0.19222382207711539
+    },
+    {
+      "scene": "06d8995be6aa4db6",
+      "targets": 3,
+      "overlap": 0.6103299856185913,
+      "overlap_group": "large",
+      "psnr": 23.297345479329426,
+      "ssim": 0.7084524830182394,
+      "lpips": 0.15522484481334686
+    },
+    {
+      "scene": "06ffaa9ffc2eea95",
+      "targets": 3,
+      "overlap": 0.5176200270652771,
+      "overlap_group": "medium",
+      "psnr": 20.508012771606445,
+      "ssim": 0.677300492922465,
+      "lpips": 0.226340189576149
+    },
+    {
+      "scene": "0718f733a326d65f",
+      "targets": 3,
+      "overlap": 0.5412600040435791,
+      "overlap_group": "medium",
+      "psnr": 26.278933842976887,
+      "ssim": 0.8884162902832031,
+      "lpips": 0.14470607539017996
+    },
+    {
+      "scene": "075654f497170f90",
+      "targets": 3,
+      "overlap": 0.7665899991989136,
+      "overlap_group": "large",
+      "psnr": 22.359578450520832,
+      "ssim": 0.798043966293335,
+      "lpips": 0.1704759399096171
+    },
+    {
+      "scene": "084fe29cd9d008db",
+      "targets": 3,
+      "overlap": 0.23871999979019165,
+      "overlap_group": "small",
+      "psnr": 22.400157928466797,
+      "ssim": 0.7753601868947347,
+      "lpips": 0.20346240202585855
+    },
+    {
+      "scene": "08868143749f321b",
+      "targets": 3,
+      "overlap": 0.27656999230384827,
+      "overlap_group": "small",
+      "psnr": 19.125769933064777,
+      "ssim": 0.6468180418014526,
+      "lpips": 0.3671646515528361
+    },
+    {
+      "scene": "08c9e7365f0707a4",
+      "targets": 3,
+      "overlap": 0.35607999563217163,
+      "overlap_group": "medium",
+      "psnr": 17.744984944661457,
+      "ssim": 0.5911996165911356,
+      "lpips": 0.27710089087486267
+    },
+    {
+      "scene": "0951fdaf9d399411",
+      "targets": 3,
+      "overlap": 0.6052700281143188,
+      "overlap_group": "large",
+      "psnr": 25.880823135375977,
+      "ssim": 0.8687435984611511,
+      "lpips": 0.15204850335915884
+    },
+    {
+      "scene": "0a5eeb4466dd19bb",
+      "targets": 3,
+      "overlap": 0.31488001346588135,
+      "overlap_group": "medium",
+      "psnr": 22.611663818359375,
+      "ssim": 0.8419197003046671,
+      "lpips": 0.19593447943528494
+    },
+    {
+      "scene": "0bcef9ed1c18f74d",
+      "targets": 3,
+      "overlap": 0.5967699885368347,
+      "overlap_group": "large",
+      "psnr": 23.89359982808431,
+      "ssim": 0.8134296536445618,
+      "lpips": 0.22826301554838815
+    },
+    {
+      "scene": "0c209edeb7637dff",
+      "targets": 3,
+      "overlap": 0.24040000140666962,
+      "overlap_group": "small",
+      "psnr": 18.197389602661133,
+      "ssim": 0.6366525491078695,
+      "lpips": 0.3100472688674927
+    },
+    {
+      "scene": "0cb83cef3177a006",
+      "targets": 3,
+      "overlap": 0.5378199815750122,
+      "overlap_group": "medium",
+      "psnr": 28.988187154134113,
+      "ssim": 0.9192741910616556,
+      "lpips": 0.09810249010721843
+    },
+    {
+      "scene": "0cd63c88350eef60",
+      "targets": 3,
+      "overlap": 0.48458001017570496,
+      "overlap_group": "medium",
+      "psnr": 25.249144236246746,
+      "ssim": 0.8876832922299703,
+      "lpips": 0.13674411922693253
+    },
+    {
+      "scene": "0d01d4d6c5d5297e",
+      "targets": 3,
+      "overlap": 0.20021000504493713,
+      "overlap_group": "small",
+      "psnr": 23.35585339864095,
+      "ssim": 0.7563061316808065,
+      "lpips": 0.2794888913631439
+    },
+    {
+      "scene": "0d06be83296cf911",
+      "targets": 3,
+      "overlap": 0.5993899703025818,
+      "overlap_group": "large",
+      "psnr": 23.150588989257812,
+      "ssim": 0.8460024197896322,
+      "lpips": 0.13384023308753967
+    },
+    {
+      "scene": "0d22ced53b1db7d3",
+      "targets": 3,
+      "overlap": 0.476859986782074,
+      "overlap_group": "medium",
+      "psnr": 24.028319040934246,
+      "ssim": 0.8309899767239889,
+      "lpips": 0.17058194677035013
+    },
+    {
+      "scene": "0eadbf8806794990",
+      "targets": 3,
+      "overlap": 0.630620002746582,
+      "overlap_group": "large",
+      "psnr": 17.29453468322754,
+      "ssim": 0.5946816205978394,
+      "lpips": 0.4577326675256093
+    },
+    {
+      "scene": "0f7e8bf1137abcac",
+      "targets": 3,
+      "overlap": 0.6317300200462341,
+      "overlap_group": "large",
+      "psnr": 24.94847806294759,
+      "ssim": 0.8939690192540487,
+      "lpips": 0.10476040095090866
+    },
+    {
+      "scene": "1047cc04fa16e0d7",
+      "targets": 3,
+      "overlap": 0.6822100281715393,
+      "overlap_group": "large",
+      "psnr": 22.298184076944988,
+      "ssim": 0.6743036905924479,
+      "lpips": 0.24100168546040854
+    },
+    {
+      "scene": "11357e0934f26aed",
+      "targets": 3,
+      "overlap": 0.36555999517440796,
+      "overlap_group": "medium",
+      "psnr": 24.27303632100423,
+      "ssim": 0.8311855991681417,
+      "lpips": 0.19642209013303122
+    },
+    {
+      "scene": "1203cc23b881ab8d",
+      "targets": 3,
+      "overlap": 0.29528000950813293,
+      "overlap_group": "small",
+      "psnr": 18.88925043741862,
+      "ssim": 0.6656997998555502,
+      "lpips": 0.25274161001046497
+    },
+    {
+      "scene": "12b7562944c06836",
+      "targets": 3,
+      "overlap": 0.5486199855804443,
+      "overlap_group": "medium",
+      "psnr": 25.840315500895183,
+      "ssim": 0.8644242286682129,
+      "lpips": 0.1256277933716774
+    },
+    {
+      "scene": "12f45658983d380d",
+      "targets": 3,
+      "overlap": 0.17753000557422638,
+      "overlap_group": "small",
+      "psnr": 23.47246487935384,
+      "ssim": 0.8195592363675436,
+      "lpips": 0.22114427387714386
+    },
+    {
+      "scene": "13ac6a6a3a4f5e5d",
+      "targets": 3,
+      "overlap": 0.3218599855899811,
+      "overlap_group": "medium",
+      "psnr": 24.458808263142902,
+      "ssim": 0.8103430072466532,
+      "lpips": 0.19394631683826447
+    },
+    {
+      "scene": "13adf913ea857ddf",
+      "targets": 3,
+      "overlap": 0.5625600218772888,
+      "overlap_group": "large",
+      "psnr": 25.030463536580402,
+      "ssim": 0.7209076484044393,
+      "lpips": 0.18034329017003378
+    },
+    {
+      "scene": "13c510a7403f8231",
+      "targets": 3,
+      "overlap": 0.6650099754333496,
+      "overlap_group": "large",
+      "psnr": 22.1431458791097,
+      "ssim": 0.8225781520207723,
+      "lpips": 0.12656026085217795
+    },
+    {
+      "scene": "145da324f69d1c6b",
+      "targets": 3,
+      "overlap": 0.5498999953269958,
+      "overlap_group": "medium",
+      "psnr": 25.3978697458903,
+      "ssim": 0.8557799259821574,
+      "lpips": 0.16890525817871094
+    },
+    {
+      "scene": "1593596b99e2dde9",
+      "targets": 3,
+      "overlap": 0.3276999890804291,
+      "overlap_group": "medium",
+      "psnr": 24.081946690877277,
+      "ssim": 0.7932095328966776,
+      "lpips": 0.2015386869510015
+    },
+    {
+      "scene": "15d4a976e4e7d3dd",
+      "targets": 3,
+      "overlap": 0.35152000188827515,
+      "overlap_group": "medium",
+      "psnr": 23.599743525187176,
+      "ssim": 0.7929129203160604,
+      "lpips": 0.30452869832515717
+    },
+    {
+      "scene": "165696025b477097",
+      "targets": 3,
+      "overlap": 0.7495099902153015,
+      "overlap_group": "large",
+      "psnr": 24.3520565032959,
+      "ssim": 0.8591692248980204,
+      "lpips": 0.16866614917914072
+    },
+    {
+      "scene": "171b3a4c2f95f981",
+      "targets": 3,
+      "overlap": 0.6228700280189514,
+      "overlap_group": "large",
+      "psnr": 24.032211303710938,
+      "ssim": 0.8892562588055929,
+      "lpips": 0.14002167681852976
+    },
+    {
+      "scene": "17535adda2aa3b90",
+      "targets": 3,
+      "overlap": 0.434579998254776,
+      "overlap_group": "medium",
+      "psnr": 24.996994654337566,
+      "ssim": 0.8320976297060648,
+      "lpips": 0.1940967837969462
+    },
+    {
+      "scene": "179ff8424ec7ad13",
+      "targets": 3,
+      "overlap": 0.5267099738121033,
+      "overlap_group": "medium",
+      "psnr": 26.611839294433594,
+      "ssim": 0.8405352234840393,
+      "lpips": 0.15548760195573172
+    },
+    {
+      "scene": "18c6473be3bd827a",
+      "targets": 3,
+      "overlap": 0.425680011510849,
+      "overlap_group": "medium",
+      "psnr": 23.221281051635742,
+      "ssim": 0.7743462920188904,
+      "lpips": 0.187614177664121
+    },
+    {
+      "scene": "19310eb8261d4bb2",
+      "targets": 3,
+      "overlap": 0.29618000984191895,
+      "overlap_group": "small",
+      "psnr": 19.875689188639324,
+      "ssim": 0.6869860291481018,
+      "lpips": 0.18136139959096909
+    },
+    {
+      "scene": "196069a792ebbf31",
+      "targets": 3,
+      "overlap": 0.4092499911785126,
+      "overlap_group": "medium",
+      "psnr": 21.9644718170166,
+      "ssim": 0.6674688657124838,
+      "lpips": 0.23576787114143372
+    },
+    {
+      "scene": "19ea6a2de5c6b077",
+      "targets": 3,
+      "overlap": 0.6721100211143494,
+      "overlap_group": "large",
+      "psnr": 22.366790135701496,
+      "ssim": 0.8047508597373962,
+      "lpips": 0.13858077923456827
+    },
+    {
+      "scene": "1a22c18ef654437d",
+      "targets": 3,
+      "overlap": 0.3188999891281128,
+      "overlap_group": "medium",
+      "psnr": 21.490280151367188,
+      "ssim": 0.5856090386708578,
+      "lpips": 0.36894093950589496
+    },
+    {
+      "scene": "1aa94a69594df8a6",
+      "targets": 3,
+      "overlap": 0.5618900060653687,
+      "overlap_group": "large",
+      "psnr": 28.206289291381836,
+      "ssim": 0.9164213935534159,
+      "lpips": 0.1510456254084905
+    },
+    {
+      "scene": "1b065d2ce77f9862",
+      "targets": 3,
+      "overlap": 0.5935500264167786,
+      "overlap_group": "large",
+      "psnr": 17.188198725382488,
+      "ssim": 0.5976495146751404,
+      "lpips": 0.2576249937216441
+    },
+    {
+      "scene": "1b2937e192040745",
+      "targets": 3,
+      "overlap": 0.46156999468803406,
+      "overlap_group": "medium",
+      "psnr": 18.026715596516926,
+      "ssim": 0.5030805567900339,
+      "lpips": 0.47193508346875507
+    },
+    {
+      "scene": "1b2e15e6c257fa5e",
+      "targets": 3,
+      "overlap": 0.5486199855804443,
+      "overlap_group": "medium",
+      "psnr": 24.250298817952473,
+      "ssim": 0.8357435464859009,
+      "lpips": 0.20287970205148062
+    },
+    {
+      "scene": "1b65111d34f57bb0",
+      "targets": 3,
+      "overlap": 0.41596001386642456,
+      "overlap_group": "medium",
+      "psnr": 22.954331080118816,
+      "ssim": 0.8112761179606119,
+      "lpips": 0.15390125662088394
+    },
+    {
+      "scene": "1bf49251fdd23cc0",
+      "targets": 3,
+      "overlap": 0.4873400032520294,
+      "overlap_group": "medium",
+      "psnr": 23.693615595499676,
+      "ssim": 0.8849420150121053,
+      "lpips": 0.13365010420481363
+    },
+    {
+      "scene": "1c11709814a1a2f2",
+      "targets": 3,
+      "overlap": 0.16767999529838562,
+      "overlap_group": "small",
+      "psnr": 18.237587610880535,
+      "ssim": 0.6208993295828501,
+      "lpips": 0.3417227864265442
+    },
+    {
+      "scene": "1ca4db19711258a0",
+      "targets": 3,
+      "overlap": 0.4013800024986267,
+      "overlap_group": "medium",
+      "psnr": 25.46965154012044,
+      "ssim": 0.8725882569948832,
+      "lpips": 0.20508675773938498
+    },
+    {
+      "scene": "1d1cafa3e27da040",
+      "targets": 3,
+      "overlap": 0.5934399962425232,
+      "overlap_group": "large",
+      "psnr": 27.973086675008137,
+      "ssim": 0.9012214342753092,
+      "lpips": 0.12700281540552774
+    },
+    {
+      "scene": "1d8017cad8dc1d56",
+      "targets": 3,
+      "overlap": 0.7254800200462341,
+      "overlap_group": "large",
+      "psnr": 21.985280354817707,
+      "ssim": 0.8282222151756287,
+      "lpips": 0.19706818958123526
+    },
+    {
+      "scene": "1dd869f66c3c9497",
+      "targets": 3,
+      "overlap": 0.4386500120162964,
+      "overlap_group": "medium",
+      "psnr": 20.29470698038737,
+      "ssim": 0.748331348101298,
+      "lpips": 0.2053041160106659
+    },
+    {
+      "scene": "1deec169175eb15b",
+      "targets": 3,
+      "overlap": 0.3075000047683716,
+      "overlap_group": "medium",
+      "psnr": 20.913838068644207,
+      "ssim": 0.8219922780990601,
+      "lpips": 0.18504241605599722
+    },
+    {
+      "scene": "1e5548d951e91a40",
+      "targets": 3,
+      "overlap": 0.4703400135040283,
+      "overlap_group": "medium",
+      "psnr": 22.979214986165363,
+      "ssim": 0.8169028361638387,
+      "lpips": 0.16690291464328766
+    },
+    {
+      "scene": "1f7b2e0fd123b93c",
+      "targets": 3,
+      "overlap": 0.35315999388694763,
+      "overlap_group": "medium",
+      "psnr": 21.60137430826823,
+      "ssim": 0.8029552499453226,
+      "lpips": 0.16993831098079681
+    },
+    {
+      "scene": "1fe394077e7c3de0",
+      "targets": 3,
+      "overlap": 0.6238700151443481,
+      "overlap_group": "large",
+      "psnr": 26.01423708597819,
+      "ssim": 0.9028126994768778,
+      "lpips": 0.14620056748390198
+    },
+    {
+      "scene": "20422596003ac855",
+      "targets": 3,
+      "overlap": 0.5537199974060059,
+      "overlap_group": "large",
+      "psnr": 15.423732121785482,
+      "ssim": 0.6262858510017395,
+      "lpips": 0.48710383971532184
+    },
+    {
+      "scene": "20d86cff490c0c42",
+      "targets": 3,
+      "overlap": 0.24632999300956726,
+      "overlap_group": "small",
+      "psnr": 23.330350240071613,
+      "ssim": 0.823366661866506,
+      "lpips": 0.24561124046643576
+    },
+    {
+      "scene": "22598e2596e6bae7",
+      "targets": 3,
+      "overlap": 0.4827199876308441,
+      "overlap_group": "medium",
+      "psnr": 23.792287190755207,
+      "ssim": 0.8084491689999899,
+      "lpips": 0.17187793056170145
+    },
+    {
+      "scene": "227e06087cbffb2b",
+      "targets": 3,
+      "overlap": 0.6127600073814392,
+      "overlap_group": "large",
+      "psnr": 22.544270197550457,
+      "ssim": 0.8217033942540487,
+      "lpips": 0.15636002520720163
+    },
+    {
+      "scene": "22d6e3fefb1ee7fe",
+      "targets": 3,
+      "overlap": 0.49608999490737915,
+      "overlap_group": "medium",
+      "psnr": 21.160815556844074,
+      "ssim": 0.6631266872088114,
+      "lpips": 0.32400447130203247
+    },
+    {
+      "scene": "237ef12cd69e2aa0",
+      "targets": 3,
+      "overlap": 0.24066999554634094,
+      "overlap_group": "small",
+      "psnr": 22.027825037638348,
+      "ssim": 0.7921932737032572,
+      "lpips": 0.21660429735978445
+    },
+    {
+      "scene": "2412e9f45282fd15",
+      "targets": 3,
+      "overlap": 0.4644699990749359,
+      "overlap_group": "medium",
+      "psnr": 19.725531260172527,
+      "ssim": 0.695031464099884,
+      "lpips": 0.3814043303330739
+    },
+    {
+      "scene": "24bcb936908f3a31",
+      "targets": 3,
+      "overlap": 0.21640999615192413,
+      "overlap_group": "small",
+      "psnr": 18.667929967244465,
+      "ssim": 0.7075557510058085,
+      "lpips": 0.2864757478237152
+    },
+    {
+      "scene": "25eb909bc9207b62",
+      "targets": 3,
+      "overlap": 0.5350800156593323,
+      "overlap_group": "medium",
+      "psnr": 26.14352862040202,
+      "ssim": 0.8888965050379435,
+      "lpips": 0.13812777400016785
+    },
+    {
+      "scene": "273f87958aea6f51",
+      "targets": 3,
+      "overlap": 0.7848299741744995,
+      "overlap_group": "large",
+      "psnr": 27.319164911905926,
+      "ssim": 0.8407268722852071,
+      "lpips": 0.18947545687357584
+    },
+    {
+      "scene": "27b21afa9b2ef71c",
+      "targets": 3,
+      "overlap": 0.5499699711799622,
+      "overlap_group": "medium",
+      "psnr": 24.436262130737305,
+      "ssim": 0.7841693162918091,
+      "lpips": 0.1254312222202619
+    },
+    {
+      "scene": "27f3ccfb3199499e",
+      "targets": 3,
+      "overlap": 0.5898299813270569,
+      "overlap_group": "large",
+      "psnr": 24.27869923909505,
+      "ssim": 0.8334251443545023,
+      "lpips": 0.1548318068186442
+    },
+    {
+      "scene": "29f0d7c051d80035",
+      "targets": 3,
+      "overlap": 0.38113999366760254,
+      "overlap_group": "medium",
+      "psnr": 20.74201774597168,
+      "ssim": 0.7156772216161092,
+      "lpips": 0.26711257298787433
+    },
+    {
+      "scene": "2b3e3c5d30c17bd9",
+      "targets": 3,
+      "overlap": 0.32488998770713806,
+      "overlap_group": "medium",
+      "psnr": 24.629467646280926,
+      "ssim": 0.8499183456103007,
+      "lpips": 0.19815163811047873
+    },
+    {
+      "scene": "2b81fbc1af01f0ad",
+      "targets": 3,
+      "overlap": 0.4467200040817261,
+      "overlap_group": "medium",
+      "psnr": 16.127072016398113,
+      "ssim": 0.5620554884274801,
+      "lpips": 0.5149601499239603
+    },
+    {
+      "scene": "2c596a5abfd67267",
+      "targets": 3,
+      "overlap": 0.4851199984550476,
+      "overlap_group": "medium",
+      "psnr": 17.624160766601562,
+      "ssim": 0.6236311992009481,
+      "lpips": 0.2641377051671346
+    },
+    {
+      "scene": "2ce75a0f430e2387",
+      "targets": 3,
+      "overlap": 0.40222999453544617,
+      "overlap_group": "medium",
+      "psnr": 18.68677584330241,
+      "ssim": 0.6563096841176351,
+      "lpips": 0.27289000153541565
+    },
+    {
+      "scene": "2dd67f5e68c8d72b",
+      "targets": 3,
+      "overlap": 0.5987200140953064,
+      "overlap_group": "large",
+      "psnr": 20.80085627237956,
+      "ssim": 0.4947173098723094,
+      "lpips": 0.42457114656766254
+    },
+    {
+      "scene": "2e64a2d17f9a76f7",
+      "targets": 3,
+      "overlap": 0.38694998621940613,
+      "overlap_group": "medium",
+      "psnr": 20.423051198323567,
+      "ssim": 0.7239835460980734,
+      "lpips": 0.26481643319129944
+    },
+    {
+      "scene": "2e6876c6c1e40652",
+      "targets": 3,
+      "overlap": 0.5188599824905396,
+      "overlap_group": "medium",
+      "psnr": 21.888094584147137,
+      "ssim": 0.7412441968917847,
+      "lpips": 0.1791572024424871
+    },
+    {
+      "scene": "2f7f2369486cc959",
+      "targets": 3,
+      "overlap": 0.5100200176239014,
+      "overlap_group": "medium",
+      "psnr": 23.91640345255534,
+      "ssim": 0.8231797615687052,
+      "lpips": 0.12540276845296225
+    },
+    {
+      "scene": "2ff40df261e17697",
+      "targets": 3,
+      "overlap": 0.3167099952697754,
+      "overlap_group": "medium",
+      "psnr": 19.32651964823405,
+      "ssim": 0.7678062121073405,
+      "lpips": 0.2471132775147756
+    },
+    {
+      "scene": "30127e00a789ed7c",
+      "targets": 3,
+      "overlap": 0.514519989490509,
+      "overlap_group": "medium",
+      "psnr": 22.964914957682293,
+      "ssim": 0.8234320878982544,
+      "lpips": 0.1500936895608902
+    },
+    {
+      "scene": "31b5667e16de1d94",
+      "targets": 3,
+      "overlap": 0.547950029373169,
+      "overlap_group": "medium",
+      "psnr": 22.462348302205402,
+      "ssim": 0.5999078353246053,
+      "lpips": 0.22874934474627176
+    },
+    {
+      "scene": "31bf989cb15492d4",
+      "targets": 3,
+      "overlap": 0.6668000221252441,
+      "overlap_group": "large",
+      "psnr": 25.781033833821613,
+      "ssim": 0.8715218305587769,
+      "lpips": 0.11549148708581924
+    },
+    {
+      "scene": "31c79c843555c2c6",
+      "targets": 3,
+      "overlap": 0.7381299734115601,
+      "overlap_group": "large",
+      "psnr": 18.83782450358073,
+      "ssim": 0.6332850058873495,
+      "lpips": 0.21366232633590698
+    },
+    {
+      "scene": "31d903660e1647c5",
+      "targets": 3,
+      "overlap": 0.6380699872970581,
+      "overlap_group": "large",
+      "psnr": 23.246938705444336,
+      "ssim": 0.8488659461339315,
+      "lpips": 0.1373363435268402
+    },
+    {
+      "scene": "333c649f75c3c7bc",
+      "targets": 3,
+      "overlap": 0.36869001388549805,
+      "overlap_group": "medium",
+      "psnr": 21.23270034790039,
+      "ssim": 0.7877496282259623,
+      "lpips": 0.2210586021343867
+    },
+    {
+      "scene": "33517e9838fe5f20",
+      "targets": 3,
+      "overlap": 0.6498900055885315,
+      "overlap_group": "large",
+      "psnr": 24.160147349039715,
+      "ssim": 0.8147149880727133,
+      "lpips": 0.11779782921075821
+    },
+    {
+      "scene": "33c37aeeda88c3bf",
+      "targets": 3,
+      "overlap": 0.1836100071668625,
+      "overlap_group": "small",
+      "psnr": 19.870943069458008,
+      "ssim": 0.7407405773798624,
+      "lpips": 0.23245641589164734
+    },
+    {
+      "scene": "34766105ea9d7a2b",
+      "targets": 3,
+      "overlap": 0.491349995136261,
+      "overlap_group": "medium",
+      "psnr": 22.080250422159832,
+      "ssim": 0.7428901394208273,
+      "lpips": 0.20697729786237082
+    },
+    {
+      "scene": "35859f964a7edcb9",
+      "targets": 3,
+      "overlap": 0.2780799865722656,
+      "overlap_group": "small",
+      "psnr": 21.58639971415202,
+      "ssim": 0.7831088304519653,
+      "lpips": 0.22081048786640167
+    },
+    {
+      "scene": "36977643258aa392",
+      "targets": 3,
+      "overlap": 0.3336299955844879,
+      "overlap_group": "medium",
+      "psnr": 18.14042790730794,
+      "ssim": 0.6986035704612732,
+      "lpips": 0.2814241945743561
+    },
+    {
+      "scene": "3776e900791c1553",
+      "targets": 3,
+      "overlap": 0.2660500109195709,
+      "overlap_group": "small",
+      "psnr": 26.84099578857422,
+      "ssim": 0.7777367432912191,
+      "lpips": 0.2082232932249705
+    },
+    {
+      "scene": "37b0b70a1a0c25d3",
+      "targets": 3,
+      "overlap": 0.5119100213050842,
+      "overlap_group": "medium",
+      "psnr": 25.287017822265625,
+      "ssim": 0.8339008887608846,
+      "lpips": 0.14899996419747671
+    },
+    {
+      "scene": "37d09bda74c92a93",
+      "targets": 3,
+      "overlap": 0.2037000060081482,
+      "overlap_group": "small",
+      "psnr": 23.36663754781087,
+      "ssim": 0.8460912903149923,
+      "lpips": 0.1819968024889628
+    },
+    {
+      "scene": "38f7ba7fd9a83069",
+      "targets": 3,
+      "overlap": 0.5418099761009216,
+      "overlap_group": "medium",
+      "psnr": 22.19900385538737,
+      "ssim": 0.8222267627716064,
+      "lpips": 0.21135478715101877
+    },
+    {
+      "scene": "3970859f54703c88",
+      "targets": 3,
+      "overlap": 0.7634099721908569,
+      "overlap_group": "large",
+      "psnr": 22.2194029490153,
+      "ssim": 0.7746540705362955,
+      "lpips": 0.15060248970985413
+    },
+    {
+      "scene": "39b3e7b2a8bf30a6",
+      "targets": 3,
+      "overlap": 0.6708400249481201,
+      "overlap_group": "large",
+      "psnr": 21.237868626912434,
+      "ssim": 0.6500509182612101,
+      "lpips": 0.20664945244789124
+    },
+    {
+      "scene": "39c41be5e76c79c1",
+      "targets": 3,
+      "overlap": 0.5281500220298767,
+      "overlap_group": "medium",
+      "psnr": 25.446109135945637,
+      "ssim": 0.9226116140683492,
+      "lpips": 0.12067635109027226
+    },
+    {
+      "scene": "39f1b33acc70ad7b",
+      "targets": 3,
+      "overlap": 0.6409800052642822,
+      "overlap_group": "large",
+      "psnr": 23.001361846923828,
+      "ssim": 0.8298413952191671,
+      "lpips": 0.14555850128332773
+    },
+    {
+      "scene": "39f444469cf39006",
+      "targets": 3,
+      "overlap": 0.18352000415325165,
+      "overlap_group": "small",
+      "psnr": 17.547388076782227,
+      "ssim": 0.6208930810292562,
+      "lpips": 0.3500031928221385
+    },
+    {
+      "scene": "3b67613d97aac1df",
+      "targets": 3,
+      "overlap": 0.5739099979400635,
+      "overlap_group": "large",
+      "psnr": 21.776004791259766,
+      "ssim": 0.7248627344767252,
+      "lpips": 0.21749635537465414
+    },
+    {
+      "scene": "3bb1007fcf0e03ff",
+      "targets": 3,
+      "overlap": 0.5732899904251099,
+      "overlap_group": "large",
+      "psnr": 25.681861241658527,
+      "ssim": 0.8605891068776449,
+      "lpips": 0.19823950032393137
+    },
+    {
+      "scene": "3bceca99e87d64c5",
+      "targets": 3,
+      "overlap": 0.4305399954319,
+      "overlap_group": "medium",
+      "psnr": 20.934043248494465,
+      "ssim": 0.7688394983609518,
+      "lpips": 0.29239001870155334
+    },
+    {
+      "scene": "3c90ad3bb72adcf8",
+      "targets": 3,
+      "overlap": 0.21578000485897064,
+      "overlap_group": "small",
+      "psnr": 17.657813390096027,
+      "ssim": 0.6691790024439493,
+      "lpips": 0.3356176018714905
+    },
+    {
+      "scene": "3dfaa97cd48a0332",
+      "targets": 3,
+      "overlap": 0.5007200241088867,
+      "overlap_group": "medium",
+      "psnr": 19.167850494384766,
+      "ssim": 0.7367803454399109,
+      "lpips": 0.23842533926169077
+    },
+    {
+      "scene": "3e02762a89de4c7d",
+      "targets": 3,
+      "overlap": 0.2042900025844574,
+      "overlap_group": "small",
+      "psnr": 16.23742167154948,
+      "ssim": 0.4476787845293681,
+      "lpips": 0.47516364355882007
+    },
+    {
+      "scene": "3f5454f2f53e2103",
+      "targets": 3,
+      "overlap": 0.723580002784729,
+      "overlap_group": "large",
+      "psnr": 25.87683931986491,
+      "ssim": 0.6612531741460165,
+      "lpips": 0.2802681525548299
+    },
+    {
+      "scene": "414e2bf42ee45cc4",
+      "targets": 3,
+      "overlap": 0.17563000321388245,
+      "overlap_group": "small",
+      "psnr": 8.011746565500895,
+      "ssim": 0.3782855073610942,
+      "lpips": 0.6029598514238993
+    },
+    {
+      "scene": "41aa58e688a04336",
+      "targets": 3,
+      "overlap": 0.6190599799156189,
+      "overlap_group": "large",
+      "psnr": 21.27015558878581,
+      "ssim": 0.6480178236961365,
+      "lpips": 0.3386540710926056
+    },
+    {
+      "scene": "41d8b4350913ca64",
+      "targets": 3,
+      "overlap": 0.37891000509262085,
+      "overlap_group": "medium",
+      "psnr": 16.99042002360026,
+      "ssim": 0.5997640291849772,
+      "lpips": 0.33092693487803143
+    },
+    {
+      "scene": "41e428b3c7a16695",
+      "targets": 3,
+      "overlap": 0.23492999374866486,
+      "overlap_group": "small",
+      "psnr": 19.267807006835938,
+      "ssim": 0.7101692159970602,
+      "lpips": 0.29180246591567993
+    },
+    {
+      "scene": "432a9cfcf53ef717",
+      "targets": 3,
+      "overlap": 0.25718000531196594,
+      "overlap_group": "small",
+      "psnr": 24.830639521280926,
+      "ssim": 0.8632818857828776,
+      "lpips": 0.16791755457719168
+    },
+    {
+      "scene": "43c329f7c0b40258",
+      "targets": 3,
+      "overlap": 0.5539900064468384,
+      "overlap_group": "large",
+      "psnr": 23.31716791788737,
+      "ssim": 0.8226474722226461,
+      "lpips": 0.18475331862767538
+    },
+    {
+      "scene": "4422b38e60e3bc2f",
+      "targets": 3,
+      "overlap": 0.10008999705314636,
+      "overlap_group": "small",
+      "psnr": 13.795074462890625,
+      "ssim": 0.5229700207710266,
+      "lpips": 0.5763734579086304
+    },
+    {
+      "scene": "443e5a7e679e3e94",
+      "targets": 3,
+      "overlap": 0.7317600250244141,
+      "overlap_group": "large",
+      "psnr": 20.013466517130535,
+      "ssim": 0.6418815652529398,
+      "lpips": 0.22391530871391296
+    },
+    {
+      "scene": "44d2532c5b5296a1",
+      "targets": 3,
+      "overlap": 0.2623000144958496,
+      "overlap_group": "small",
+      "psnr": 21.212595621744793,
+      "ssim": 0.7073741356531779,
+      "lpips": 0.26698456207911175
+    },
+    {
+      "scene": "45064c8142f3a360",
+      "targets": 3,
+      "overlap": 0.4517500102519989,
+      "overlap_group": "medium",
+      "psnr": 25.28312619527181,
+      "ssim": 0.789956251780192,
+      "lpips": 0.14029456426699957
+    },
+    {
+      "scene": "450cf402f042bfd2",
+      "targets": 3,
+      "overlap": 0.508400022983551,
+      "overlap_group": "medium",
+      "psnr": 24.34563954671224,
+      "ssim": 0.8216067552566528,
+      "lpips": 0.1769888997077942
+    },
+    {
+      "scene": "455964aa4ead1e2f",
+      "targets": 3,
+      "overlap": 0.18908999860286713,
+      "overlap_group": "small",
+      "psnr": 21.772809346516926,
+      "ssim": 0.7419846852620443,
+      "lpips": 0.24535147845745087
+    },
+    {
+      "scene": "457a1ed78b1ddb01",
+      "targets": 3,
+      "overlap": 0.3900200128555298,
+      "overlap_group": "medium",
+      "psnr": 24.1725591023763,
+      "ssim": 0.842090924580892,
+      "lpips": 0.22250924011071524
+    },
+    {
+      "scene": "46502a6038bd288f",
+      "targets": 3,
+      "overlap": 0.3110699951648712,
+      "overlap_group": "medium",
+      "psnr": 20.02786382039388,
+      "ssim": 0.7614132165908813,
+      "lpips": 0.2553657392660777
+    },
+    {
+      "scene": "46889bb1803c5cd7",
+      "targets": 3,
+      "overlap": 0.19147999584674835,
+      "overlap_group": "small",
+      "psnr": 18.855100631713867,
+      "ssim": 0.5044511059919993,
+      "lpips": 0.3793315490086873
+    },
+    {
+      "scene": "474d403238a41315",
+      "targets": 3,
+      "overlap": 0.24621999263763428,
+      "overlap_group": "small",
+      "psnr": 22.99466387430827,
+      "ssim": 0.8071191708246866,
+      "lpips": 0.24416949848333994
+    },
+    {
+      "scene": "47a66fa042406908",
+      "targets": 3,
+      "overlap": 0.5897899866104126,
+      "overlap_group": "large",
+      "psnr": 24.930238723754883,
+      "ssim": 0.7554826935132345,
+      "lpips": 0.14935960868994394
+    },
+    {
+      "scene": "48638883e537ccda",
+      "targets": 3,
+      "overlap": 0.7387800216674805,
+      "overlap_group": "large",
+      "psnr": 22.275590896606445,
+      "ssim": 0.5924328962961832,
+      "lpips": 0.2872378130753835
+    },
+    {
+      "scene": "48b1808c546c7e87",
+      "targets": 3,
+      "overlap": 0.6727700233459473,
+      "overlap_group": "large",
+      "psnr": 23.970024744669598,
+      "ssim": 0.8238201936086019,
+      "lpips": 0.15490746001402536
+    },
+    {
+      "scene": "4a1d79baac733df7",
+      "targets": 3,
+      "overlap": 0.3116599917411804,
+      "overlap_group": "medium",
+      "psnr": 20.09101104736328,
+      "ssim": 0.7216225663820902,
+      "lpips": 0.2820372184117635
+    },
+    {
+      "scene": "4ac044dcaa428723",
+      "targets": 3,
+      "overlap": 0.6869699954986572,
+      "overlap_group": "large",
+      "psnr": 20.782387415568035,
+      "ssim": 0.674560010433197,
+      "lpips": 0.24660471578439078
+    },
+    {
+      "scene": "4b41d03353967b40",
+      "targets": 3,
+      "overlap": 0.1520799994468689,
+      "overlap_group": "small",
+      "psnr": 21.279274622599285,
+      "ssim": 0.6570744713147482,
+      "lpips": 0.32454252739747363
+    },
+    {
+      "scene": "4b4c0c27204604a3",
+      "targets": 3,
+      "overlap": 0.3563700020313263,
+      "overlap_group": "medium",
+      "psnr": 16.343470573425293,
+      "ssim": 0.497174471616745,
+      "lpips": 0.3285004297892253
+    },
+    {
+      "scene": "4b7e7de9132f4149",
+      "targets": 3,
+      "overlap": 0.32763001322746277,
+      "overlap_group": "medium",
+      "psnr": 21.043277104695637,
+      "ssim": 0.8086550235748291,
+      "lpips": 0.18634867171446481
+    },
+    {
+      "scene": "4bdfa30358809038",
+      "targets": 3,
+      "overlap": 0.5062900185585022,
+      "overlap_group": "medium",
+      "psnr": 18.844359079996746,
+      "ssim": 0.6913372278213501,
+      "lpips": 0.23331327239672342
+    },
+    {
+      "scene": "4cc4c8a8cfa8e944",
+      "targets": 3,
+      "overlap": 0.4561600089073181,
+      "overlap_group": "medium",
+      "psnr": 21.52871831258138,
+      "ssim": 0.7753951946894327,
+      "lpips": 0.27135103940963745
+    },
+    {
+      "scene": "4da7a2864295c0ca",
+      "targets": 3,
+      "overlap": 0.2701599895954132,
+      "overlap_group": "small",
+      "psnr": 20.674762725830078,
+      "ssim": 0.7136492530504862,
+      "lpips": 0.2569534381230672
+    },
+    {
+      "scene": "4e0c15e5810c0ab2",
+      "targets": 3,
+      "overlap": 0.6235399842262268,
+      "overlap_group": "large",
+      "psnr": 24.426427205403645,
+      "ssim": 0.6859495043754578,
+      "lpips": 0.2150328407684962
+    },
+    {
+      "scene": "4e79d56376422ec3",
+      "targets": 3,
+      "overlap": 0.5024099946022034,
+      "overlap_group": "medium",
+      "psnr": 25.57282257080078,
+      "ssim": 0.9031667908032736,
+      "lpips": 0.12012686083714168
+    },
+    {
+      "scene": "4fe53e010f46a558",
+      "targets": 3,
+      "overlap": 0.5000399947166443,
+      "overlap_group": "medium",
+      "psnr": 20.99445088704427,
+      "ssim": 0.5958187977472941,
+      "lpips": 0.347991406917572
+    },
+    {
+      "scene": "5041e63659c90693",
+      "targets": 3,
+      "overlap": 0.36844998598098755,
+      "overlap_group": "medium",
+      "psnr": 22.419426600138348,
+      "ssim": 0.82351020971934,
+      "lpips": 0.2411089837551117
+    },
+    {
+      "scene": "51170ef694154b08",
+      "targets": 3,
+      "overlap": 0.2669300138950348,
+      "overlap_group": "small",
+      "psnr": 24.703656514485676,
+      "ssim": 0.810817301273346,
+      "lpips": 0.19428936640421549
+    },
+    {
+      "scene": "51f4e2352699e799",
+      "targets": 3,
+      "overlap": 0.31784000992774963,
+      "overlap_group": "medium",
+      "psnr": 19.391831080118816,
+      "ssim": 0.7359225749969482,
+      "lpips": 0.30834072828292847
+    },
+    {
+      "scene": "526983ce4ca81a90",
+      "targets": 3,
+      "overlap": 0.47415998578071594,
+      "overlap_group": "medium",
+      "psnr": 22.761699676513672,
+      "ssim": 0.7900924881299337,
+      "lpips": 0.2686086098353068
+    },
+    {
+      "scene": "548134d9cebf9854",
+      "targets": 3,
+      "overlap": 0.5273399949073792,
+      "overlap_group": "medium",
+      "psnr": 24.24260139465332,
+      "ssim": 0.8982498645782471,
+      "lpips": 0.14721470574537912
+    },
+    {
+      "scene": "54f97b513d76b3fb",
+      "targets": 3,
+      "overlap": 0.34365999698638916,
+      "overlap_group": "medium",
+      "psnr": 16.588307062784832,
+      "ssim": 0.42501426736513775,
+      "lpips": 0.5175790389378866
+    },
+    {
+      "scene": "55b8f1d06d9170b4",
+      "targets": 3,
+      "overlap": 0.43224000930786133,
+      "overlap_group": "medium",
+      "psnr": 20.628232955932617,
+      "ssim": 0.8148778279622396,
+      "lpips": 0.22405998408794403
+    },
+    {
+      "scene": "55ccecc5c63d0c14",
+      "targets": 3,
+      "overlap": 0.31207001209259033,
+      "overlap_group": "medium",
+      "psnr": 24.812928517659504,
+      "ssim": 0.8399839401245117,
+      "lpips": 0.22352074086666107
+    },
+    {
+      "scene": "56320b37680175b6",
+      "targets": 3,
+      "overlap": 0.469870001077652,
+      "overlap_group": "medium",
+      "psnr": 27.55090077718099,
+      "ssim": 0.8803011775016785,
+      "lpips": 0.1252437656124433
+    },
+    {
+      "scene": "565e02ef3d0d7726",
+      "targets": 3,
+      "overlap": 0.21633000671863556,
+      "overlap_group": "small",
+      "psnr": 17.996524810791016,
+      "ssim": 0.5757340987523397,
+      "lpips": 0.4642358620961507
+    },
+    {
+      "scene": "56710f709149dd7a",
+      "targets": 3,
+      "overlap": 0.481550008058548,
+      "overlap_group": "medium",
+      "psnr": 20.943971633911133,
+      "ssim": 0.6024642586708069,
+      "lpips": 0.27376097440719604
+    },
+    {
+      "scene": "56a815b163efd61d",
+      "targets": 3,
+      "overlap": 0.5418199896812439,
+      "overlap_group": "medium",
+      "psnr": 20.378023783365887,
+      "ssim": 0.6385132869084676,
+      "lpips": 0.19243442018826803
+    },
+    {
+      "scene": "56b103273d116e5c",
+      "targets": 3,
+      "overlap": 0.2179899960756302,
+      "overlap_group": "small",
+      "psnr": 11.813630104064941,
+      "ssim": 0.27741900086402893,
+      "lpips": 0.6417466203371683
+    },
+    {
+      "scene": "56d52adb40f43006",
+      "targets": 3,
+      "overlap": 0.5947999954223633,
+      "overlap_group": "large",
+      "psnr": 27.448014577229817,
+      "ssim": 0.8718451857566833,
+      "lpips": 0.12427245577176411
+    },
+    {
+      "scene": "56f149ddad20c6bf",
+      "targets": 3,
+      "overlap": 0.19916999340057373,
+      "overlap_group": "small",
+      "psnr": 21.980595270792644,
+      "ssim": 0.7834203839302063,
+      "lpips": 0.24341920018196106
+    },
+    {
+      "scene": "570df8491b7dbe68",
+      "targets": 3,
+      "overlap": 0.552049994468689,
+      "overlap_group": "large",
+      "psnr": 28.418530146280926,
+      "ssim": 0.916649599870046,
+      "lpips": 0.15132257839043936
+    },
+    {
+      "scene": "57a6be6d97e7c9dc",
+      "targets": 3,
+      "overlap": 0.3430100083351135,
+      "overlap_group": "medium",
+      "psnr": 16.3364470799764,
+      "ssim": 0.43166252970695496,
+      "lpips": 0.3167867163817088
+    },
+    {
+      "scene": "57d0ba14855f013e",
+      "targets": 3,
+      "overlap": 0.5228300094604492,
+      "overlap_group": "medium",
+      "psnr": 25.988887151082356,
+      "ssim": 0.8381605744361877,
+      "lpips": 0.1597494582335154
+    },
+    {
+      "scene": "57ec3b103fa7ac0d",
+      "targets": 3,
+      "overlap": 0.4506700038909912,
+      "overlap_group": "medium",
+      "psnr": 19.04707209269206,
+      "ssim": 0.6488023002942404,
+      "lpips": 0.2562490254640579
+    },
+    {
+      "scene": "586004f337ead821",
+      "targets": 3,
+      "overlap": 0.3790600001811981,
+      "overlap_group": "medium",
+      "psnr": 18.732227325439453,
+      "ssim": 0.6923269430796305,
+      "lpips": 0.27172963817914325
+    },
+    {
+      "scene": "58ac12f1f515c560",
+      "targets": 3,
+      "overlap": 0.7240099906921387,
+      "overlap_group": "large",
+      "psnr": 23.27668825785319,
+      "ssim": 0.6910563111305237,
+      "lpips": 0.22574242452780405
+    },
+    {
+      "scene": "58c077a368758659",
+      "targets": 3,
+      "overlap": 0.6431300044059753,
+      "overlap_group": "large",
+      "psnr": 23.21185048421224,
+      "ssim": 0.6370821992556254,
+      "lpips": 0.30853883425394696
+    },
+    {
+      "scene": "58c7cd265dad22c4",
+      "targets": 3,
+      "overlap": 0.61913001537323,
+      "overlap_group": "large",
+      "psnr": 21.890122095743816,
+      "ssim": 0.6201154589653015,
+      "lpips": 0.17437719802061716
+    },
+    {
+      "scene": "5a2c2af8cf1765b2",
+      "targets": 3,
+      "overlap": 0.31415998935699463,
+      "overlap_group": "medium",
+      "psnr": 18.8154239654541,
+      "ssim": 0.6208770871162415,
+      "lpips": 0.27937234938144684
+    },
+    {
+      "scene": "5c1a8b644385c3e0",
+      "targets": 3,
+      "overlap": 0.39945998787879944,
+      "overlap_group": "medium",
+      "psnr": 21.022541046142578,
+      "ssim": 0.7963951627413431,
+      "lpips": 0.19961907466252646
+    },
+    {
+      "scene": "5c9274b41b9510f7",
+      "targets": 3,
+      "overlap": 0.46132999658584595,
+      "overlap_group": "medium",
+      "psnr": 20.3760248819987,
+      "ssim": 0.7076037923494974,
+      "lpips": 0.22235344350337982
+    },
+    {
+      "scene": "5d9dcdbe9a0d737d",
+      "targets": 3,
+      "overlap": 0.31352001428604126,
+      "overlap_group": "medium",
+      "psnr": 20.675527572631836,
+      "ssim": 0.6653136412302653,
+      "lpips": 0.22211688260237375
+    },
+    {
+      "scene": "5d9f7f0205f7bee5",
+      "targets": 3,
+      "overlap": 0.7965899705886841,
+      "overlap_group": "large",
+      "psnr": 22.45935821533203,
+      "ssim": 0.7893722852071127,
+      "lpips": 0.11948309590419133
+    },
+    {
+      "scene": "5dcd7861e0c26df5",
+      "targets": 3,
+      "overlap": 0.48941999673843384,
+      "overlap_group": "medium",
+      "psnr": 16.269529342651367,
+      "ssim": 0.5602813263734182,
+      "lpips": 0.39334505796432495
+    },
+    {
+      "scene": "5e275e7af840e344",
+      "targets": 3,
+      "overlap": 0.23907999694347382,
+      "overlap_group": "small",
+      "psnr": 15.271914800008139,
+      "ssim": 0.618123730023702,
+      "lpips": 0.37859004735946655
+    },
+    {
+      "scene": "5ed81b3d975b3525",
+      "targets": 3,
+      "overlap": 0.28937000036239624,
+      "overlap_group": "small",
+      "psnr": 18.195985794067383,
+      "ssim": 0.6950168410936991,
+      "lpips": 0.30774979790051776
+    },
+    {
+      "scene": "5f08606bd070be09",
+      "targets": 3,
+      "overlap": 0.7766900062561035,
+      "overlap_group": "large",
+      "psnr": 18.24332110087077,
+      "ssim": 0.49695418278376263,
+      "lpips": 0.2774592737356822
+    },
+    {
+      "scene": "60446524157d9f3e",
+      "targets": 3,
+      "overlap": 0.34821000695228577,
+      "overlap_group": "medium",
+      "psnr": 26.1757074991862,
+      "ssim": 0.7613120873769125,
+      "lpips": 0.30236145853996277
+    },
+    {
+      "scene": "60a79bac7c8a4e1d",
+      "targets": 3,
+      "overlap": 0.6814900040626526,
+      "overlap_group": "large",
+      "psnr": 26.640515009562176,
+      "ssim": 0.8931076924006144,
+      "lpips": 0.12713225682576498
+    },
+    {
+      "scene": "615a7cd0a6777887",
+      "targets": 3,
+      "overlap": 0.5723599791526794,
+      "overlap_group": "large",
+      "psnr": 23.2534236907959,
+      "ssim": 0.8255746165911356,
+      "lpips": 0.17950406670570374
+    },
+    {
+      "scene": "61cd6fd0d589ceb4",
+      "targets": 3,
+      "overlap": 0.6170499920845032,
+      "overlap_group": "large",
+      "psnr": 25.888286590576172,
+      "ssim": 0.817682147026062,
+      "lpips": 0.12194262941678365
+    },
+    {
+      "scene": "625372351e3ff4dd",
+      "targets": 3,
+      "overlap": 0.37525999546051025,
+      "overlap_group": "medium",
+      "psnr": 26.348527272542317,
+      "ssim": 0.8858497937520345,
+      "lpips": 0.1470213681459427
+    },
+    {
+      "scene": "6295bc2f0a008d9c",
+      "targets": 3,
+      "overlap": 0.700689971446991,
+      "overlap_group": "large",
+      "psnr": 24.945504506429035,
+      "ssim": 0.8774351080258688,
+      "lpips": 0.16012131671110788
+    },
+    {
+      "scene": "62caae272179f01a",
+      "targets": 3,
+      "overlap": 0.25863000750541687,
+      "overlap_group": "small",
+      "psnr": 20.858004252115887,
+      "ssim": 0.7630345622698466,
+      "lpips": 0.30922163526217145
+    },
+    {
+      "scene": "62d43eb863c52706",
+      "targets": 3,
+      "overlap": 0.43182000517845154,
+      "overlap_group": "medium",
+      "psnr": 20.491776784261067,
+      "ssim": 0.6275487343470255,
+      "lpips": 0.26201488077640533
+    },
+    {
+      "scene": "632a121cf77513a2",
+      "targets": 3,
+      "overlap": 0.16388000547885895,
+      "overlap_group": "small",
+      "psnr": 19.50136375427246,
+      "ssim": 0.5743094285329183,
+      "lpips": 0.3936401804288228
+    },
+    {
+      "scene": "639c54e6e404830a",
+      "targets": 3,
+      "overlap": 0.15306000411510468,
+      "overlap_group": "small",
+      "psnr": 18.902359008789062,
+      "ssim": 0.6691961089769999,
+      "lpips": 0.302150363723437
+    },
+    {
+      "scene": "651e26c7f3ceb8aa",
+      "targets": 3,
+      "overlap": 0.4110400080680847,
+      "overlap_group": "medium",
+      "psnr": 20.282793680826824,
+      "ssim": 0.7495850125948588,
+      "lpips": 0.2970847984155019
+    },
+    {
+      "scene": "6526abea7675f573",
+      "targets": 3,
+      "overlap": 0.2781200110912323,
+      "overlap_group": "small",
+      "psnr": 20.63823890686035,
+      "ssim": 0.6755743622779846,
+      "lpips": 0.26471347113450366
+    },
+    {
+      "scene": "65f1ad35757c4a1f",
+      "targets": 3,
+      "overlap": 0.4708000123500824,
+      "overlap_group": "medium",
+      "psnr": 17.640037536621094,
+      "ssim": 0.4819990297158559,
+      "lpips": 0.3271613121032715
+    },
+    {
+      "scene": "666e2f9e9ea0fadc",
+      "targets": 3,
+      "overlap": 0.24192999303340912,
+      "overlap_group": "small",
+      "psnr": 23.848412195841473,
+      "ssim": 0.8205717007319132,
+      "lpips": 0.1841020236412684
+    },
+    {
+      "scene": "66f246f9d67adef7",
+      "targets": 3,
+      "overlap": 0.28158000111579895,
+      "overlap_group": "small",
+      "psnr": 20.692038853963215,
+      "ssim": 0.8181682427724203,
+      "lpips": 0.22878987590471903
+    },
+    {
+      "scene": "67203c7bd53e260b",
+      "targets": 3,
+      "overlap": 0.1795099973678589,
+      "overlap_group": "small",
+      "psnr": 22.72326596577962,
+      "ssim": 0.7850681145985922,
+      "lpips": 0.212371697028478
+    },
+    {
+      "scene": "68a17cc5d6e41d9c",
+      "targets": 3,
+      "overlap": 0.26262998580932617,
+      "overlap_group": "small",
+      "psnr": 19.363468805948894,
+      "ssim": 0.7179703911145529,
+      "lpips": 0.293501357237498
+    },
+    {
+      "scene": "68aaef5b574f98d5",
+      "targets": 3,
+      "overlap": 0.4530700147151947,
+      "overlap_group": "medium",
+      "psnr": 22.091690063476562,
+      "ssim": 0.7831999063491821,
+      "lpips": 0.2070519377787908
+    },
+    {
+      "scene": "6945e06868818a6b",
+      "targets": 3,
+      "overlap": 0.3500699996948242,
+      "overlap_group": "medium",
+      "psnr": 23.746000289916992,
+      "ssim": 0.8240621089935303,
+      "lpips": 0.14049210647741953
+    },
+    {
+      "scene": "699d4a33932c2025",
+      "targets": 3,
+      "overlap": 0.3695000112056732,
+      "overlap_group": "medium",
+      "psnr": 20.39849789937337,
+      "ssim": 0.7592284480730692,
+      "lpips": 0.25751855969429016
+    },
+    {
+      "scene": "69f3b2b70edd586d",
+      "targets": 3,
+      "overlap": 0.4614799916744232,
+      "overlap_group": "medium",
+      "psnr": 18.45720863342285,
+      "ssim": 0.78464275598526,
+      "lpips": 0.19246130685011545
+    },
+    {
+      "scene": "6a48d6d9c297367a",
+      "targets": 3,
+      "overlap": 0.4405199885368347,
+      "overlap_group": "medium",
+      "psnr": 20.861562093098957,
+      "ssim": 0.8584197958310446,
+      "lpips": 0.2326485812664032
+    },
+    {
+      "scene": "6b5dfd943f483c8e",
+      "targets": 3,
+      "overlap": 0.4138199985027313,
+      "overlap_group": "medium",
+      "psnr": 20.992573420206707,
+      "ssim": 0.809344748655955,
+      "lpips": 0.2941940426826477
+    },
+    {
+      "scene": "6b658b1d8562dc85",
+      "targets": 3,
+      "overlap": 0.40580999851226807,
+      "overlap_group": "medium",
+      "psnr": 21.81378682454427,
+      "ssim": 0.7519643505414327,
+      "lpips": 0.1857781559228897
+    },
+    {
+      "scene": "6b6d20c6a46b9fe9",
+      "targets": 3,
+      "overlap": 0.48947998881340027,
+      "overlap_group": "medium",
+      "psnr": 21.19906489054362,
+      "ssim": 0.5208469033241272,
+      "lpips": 0.3671559194723765
+    },
+    {
+      "scene": "6cbea20651231bd1",
+      "targets": 3,
+      "overlap": 0.31610000133514404,
+      "overlap_group": "medium",
+      "psnr": 15.484585126241049,
+      "ssim": 0.547622561454773,
+      "lpips": 0.4264439145723979
+    },
+    {
+      "scene": "6da3a9910fddd89e",
+      "targets": 3,
+      "overlap": 0.5188800096511841,
+      "overlap_group": "medium",
+      "psnr": 26.79539616902669,
+      "ssim": 0.8772464593251547,
+      "lpips": 0.1781643827756246
+    },
+    {
+      "scene": "6ea698b2758e7b75",
+      "targets": 3,
+      "overlap": 0.6792200207710266,
+      "overlap_group": "large",
+      "psnr": 21.131635030110676,
+      "ssim": 0.6728387276331583,
+      "lpips": 0.24123258392016092
+    },
+    {
+      "scene": "6ecda7688473aa25",
+      "targets": 3,
+      "overlap": 0.523829996585846,
+      "overlap_group": "medium",
+      "psnr": 23.148319880167644,
+      "ssim": 0.8289946516354879,
+      "lpips": 0.16566828886667886
+    },
+    {
+      "scene": "6ed6893b1247e1aa",
+      "targets": 3,
+      "overlap": 0.6235399842262268,
+      "overlap_group": "large",
+      "psnr": 23.991164525349934,
+      "ssim": 0.8182216882705688,
+      "lpips": 0.18390992283821106
+    },
+    {
+      "scene": "6f0ec56192a25862",
+      "targets": 3,
+      "overlap": 0.377920001745224,
+      "overlap_group": "medium",
+      "psnr": 19.10343869527181,
+      "ssim": 0.5749795834223429,
+      "lpips": 0.3691430389881134
+    },
+    {
+      "scene": "6f243139ca86b4e5",
+      "targets": 3,
+      "overlap": 0.21422000229358673,
+      "overlap_group": "small",
+      "psnr": 26.34081776936849,
+      "ssim": 0.8587642113367716,
+      "lpips": 0.19982940455277762
+    },
+    {
+      "scene": "6f39ec95b78cff82",
+      "targets": 3,
+      "overlap": 0.4163999855518341,
+      "overlap_group": "medium",
+      "psnr": 20.087419509887695,
+      "ssim": 0.7126208941141764,
+      "lpips": 0.24055642386277518
+    },
+    {
+      "scene": "700528d00b3f9c2d",
+      "targets": 3,
+      "overlap": 0.4003100097179413,
+      "overlap_group": "medium",
+      "psnr": 23.717564900716145,
+      "ssim": 0.8588019212086996,
+      "lpips": 0.14074345429738364
+    },
+    {
+      "scene": "71a27a839592fb3a",
+      "targets": 3,
+      "overlap": 0.23266999423503876,
+      "overlap_group": "small",
+      "psnr": 17.926965077718098,
+      "ssim": 0.5087311069170634,
+      "lpips": 0.35269926985104877
+    },
+    {
+      "scene": "71f92f3fca96eec7",
+      "targets": 3,
+      "overlap": 0.5900300145149231,
+      "overlap_group": "large",
+      "psnr": 27.726455052693684,
+      "ssim": 0.9013540148735046,
+      "lpips": 0.1426500827074051
+    },
+    {
+      "scene": "724928496fafcf03",
+      "targets": 3,
+      "overlap": 0.33605000376701355,
+      "overlap_group": "medium",
+      "psnr": 15.77099641164144,
+      "ssim": 0.48983030517896015,
+      "lpips": 0.6091980735460917
+    },
+    {
+      "scene": "72bd3214b39e7146",
+      "targets": 3,
+      "overlap": 0.29552000761032104,
+      "overlap_group": "small",
+      "psnr": 12.060489336649576,
+      "ssim": 0.34000326444705326,
+      "lpips": 0.5897065897782644
+    },
+    {
+      "scene": "72d5e94d038ad4a5",
+      "targets": 3,
+      "overlap": 0.7866700291633606,
+      "overlap_group": "large",
+      "psnr": 24.913553873697918,
+      "ssim": 0.8573731581370035,
+      "lpips": 0.13127666463454565
+    },
+    {
+      "scene": "730a0a3a46474007",
+      "targets": 3,
+      "overlap": 0.29910001158714294,
+      "overlap_group": "small",
+      "psnr": 21.26287778218587,
+      "ssim": 0.7241725524266561,
+      "lpips": 0.2964664101600647
+    },
+    {
+      "scene": "732c551c857ea8ef",
+      "targets": 3,
+      "overlap": 0.3262900114059448,
+      "overlap_group": "medium",
+      "psnr": 18.54836908976237,
+      "ssim": 0.747855524222056,
+      "lpips": 0.27119318147500354
+    },
+    {
+      "scene": "73a98e142bd1d057",
+      "targets": 3,
+      "overlap": 0.3664500117301941,
+      "overlap_group": "medium",
+      "psnr": 18.155155817667644,
+      "ssim": 0.5445785919825236,
+      "lpips": 0.33965209126472473
+    },
+    {
+      "scene": "73fe0649b05d9fcb",
+      "targets": 3,
+      "overlap": 0.3828200101852417,
+      "overlap_group": "medium",
+      "psnr": 22.348503748575848,
+      "ssim": 0.7836401462554932,
+      "lpips": 0.18199850618839264
+    },
+    {
+      "scene": "74dce1dd5e07754e",
+      "targets": 3,
+      "overlap": 0.25216999650001526,
+      "overlap_group": "small",
+      "psnr": 17.19923273722331,
+      "ssim": 0.6079429984092712,
+      "lpips": 0.388828565677007
+    },
+    {
+      "scene": "750ddf09bd6d1eab",
+      "targets": 3,
+      "overlap": 0.4449999928474426,
+      "overlap_group": "medium",
+      "psnr": 19.90818723042806,
+      "ssim": 0.6570479075113932,
+      "lpips": 0.27757681409517926
+    },
+    {
+      "scene": "753ccd3da86a8cd8",
+      "targets": 3,
+      "overlap": 0.3606100082397461,
+      "overlap_group": "medium",
+      "psnr": 15.738204002380371,
+      "ssim": 0.5838335951169332,
+      "lpips": 0.3971134424209595
+    },
+    {
+      "scene": "75c71c5a68be71ed",
+      "targets": 3,
+      "overlap": 0.5956699848175049,
+      "overlap_group": "large",
+      "psnr": 27.247074127197266,
+      "ssim": 0.9062240918477377,
+      "lpips": 0.18640868862469992
+    },
+    {
+      "scene": "769bdea6a09d2bf9",
+      "targets": 3,
+      "overlap": 0.4850099980831146,
+      "overlap_group": "medium",
+      "psnr": 25.742373784383137,
+      "ssim": 0.8587914903958639,
+      "lpips": 0.14418635269006094
+    },
+    {
+      "scene": "76f2d6981e00d952",
+      "targets": 3,
+      "overlap": 0.2328999936580658,
+      "overlap_group": "small",
+      "psnr": 21.432337443033855,
+      "ssim": 0.7846089005470276,
+      "lpips": 0.292046199242274
+    },
+    {
+      "scene": "774712243467068c",
+      "targets": 3,
+      "overlap": 0.6558300256729126,
+      "overlap_group": "large",
+      "psnr": 17.615067799886067,
+      "ssim": 0.6708357334136963,
+      "lpips": 0.2785714566707611
+    },
+    {
+      "scene": "77917a56e2650f83",
+      "targets": 3,
+      "overlap": 0.23797999322414398,
+      "overlap_group": "small",
+      "psnr": 21.505359649658203,
+      "ssim": 0.8436058561007181,
+      "lpips": 0.20568764209747314
+    },
+    {
+      "scene": "7842e7dce39cae03",
+      "targets": 3,
+      "overlap": 0.6292700171470642,
+      "overlap_group": "large",
+      "psnr": 26.971975962320965,
+      "ssim": 0.8556219339370728,
+      "lpips": 0.15825661520163217
+    },
+    {
+      "scene": "7983738c2b4adad4",
+      "targets": 3,
+      "overlap": 0.2820799946784973,
+      "overlap_group": "small",
+      "psnr": 22.06222089131673,
+      "ssim": 0.7823925614356995,
+      "lpips": 0.20398109157880148
+    },
+    {
+      "scene": "7a0a8563edcb2777",
+      "targets": 3,
+      "overlap": 0.3387799859046936,
+      "overlap_group": "medium",
+      "psnr": 23.137160619099934,
+      "ssim": 0.7889637351036072,
+      "lpips": 0.21986056367556253
+    },
+    {
+      "scene": "7a0bd438433e00db",
+      "targets": 3,
+      "overlap": 0.571399986743927,
+      "overlap_group": "large",
+      "psnr": 27.838783899943035,
+      "ssim": 0.8150007327397665,
+      "lpips": 0.22064119080702463
+    },
+    {
+      "scene": "7a13c5debea977a8",
+      "targets": 3,
+      "overlap": 0.57218998670578,
+      "overlap_group": "large",
+      "psnr": 22.58500798543294,
+      "ssim": 0.814757506052653,
+      "lpips": 0.19062203665574393
+    },
+    {
+      "scene": "7a514b19147f6c9b",
+      "targets": 3,
+      "overlap": 0.29322999715805054,
+      "overlap_group": "small",
+      "psnr": 22.13122495015462,
+      "ssim": 0.7766794562339783,
+      "lpips": 0.2564951181411743
+    },
+    {
+      "scene": "7a748f56536918c2",
+      "targets": 3,
+      "overlap": 0.7608399987220764,
+      "overlap_group": "large",
+      "psnr": 26.784459431966145,
+      "ssim": 0.8108163873354594,
+      "lpips": 0.15351156890392303
+    },
+    {
+      "scene": "7b4f433a15f523aa",
+      "targets": 3,
+      "overlap": 0.15185000002384186,
+      "overlap_group": "small",
+      "psnr": 20.36633809407552,
+      "ssim": 0.69901043176651,
+      "lpips": 0.2692920466264089
+    },
+    {
+      "scene": "7bab7b21dbaf38ab",
+      "targets": 3,
+      "overlap": 0.5060799717903137,
+      "overlap_group": "medium",
+      "psnr": 17.782310485839844,
+      "ssim": 0.6248612403869629,
+      "lpips": 0.35203010340531665
+    },
+    {
+      "scene": "7be4141d6dc4a3e4",
+      "targets": 3,
+      "overlap": 0.47734999656677246,
+      "overlap_group": "medium",
+      "psnr": 24.416831334431965,
+      "ssim": 0.9128201405207316,
+      "lpips": 0.15962834656238556
+    },
+    {
+      "scene": "7c9971fb046c8d9a",
+      "targets": 3,
+      "overlap": 0.34492000937461853,
+      "overlap_group": "medium",
+      "psnr": 21.60644467671712,
+      "ssim": 0.8638870716094971,
+      "lpips": 0.1920503924290339
+    },
+    {
+      "scene": "7cf899a59a83fbea",
+      "targets": 3,
+      "overlap": 0.5044999718666077,
+      "overlap_group": "medium",
+      "psnr": 21.43740463256836,
+      "ssim": 0.6013134717941284,
+      "lpips": 0.2482237716515859
+    },
+    {
+      "scene": "7d4586cbfe1889db",
+      "targets": 3,
+      "overlap": 0.354420006275177,
+      "overlap_group": "medium",
+      "psnr": 20.688835779825848,
+      "ssim": 0.7421494921048483,
+      "lpips": 0.1741655170917511
+    },
+    {
+      "scene": "7e2b6bda04b2dadf",
+      "targets": 3,
+      "overlap": 0.5191500186920166,
+      "overlap_group": "medium",
+      "psnr": 22.18174680074056,
+      "ssim": 0.7342189153035482,
+      "lpips": 0.21575616796811423
+    },
+    {
+      "scene": "7ea24d7b4e174a36",
+      "targets": 3,
+      "overlap": 0.3367300033569336,
+      "overlap_group": "medium",
+      "psnr": 19.574445724487305,
+      "ssim": 0.6488927205403646,
+      "lpips": 0.348021924495697
+    },
+    {
+      "scene": "8048759d08d312ca",
+      "targets": 3,
+      "overlap": 0.24668000638484955,
+      "overlap_group": "small",
+      "psnr": 20.417211532592773,
+      "ssim": 0.7499133348464966,
+      "lpips": 0.30027860403060913
+    },
+    {
+      "scene": "8108a9c5100498bd",
+      "targets": 3,
+      "overlap": 0.4680599868297577,
+      "overlap_group": "medium",
+      "psnr": 18.11835479736328,
+      "ssim": 0.3242461582024892,
+      "lpips": 0.3649570842583974
+    },
+    {
+      "scene": "818ddc806c9e8f79",
+      "targets": 3,
+      "overlap": 0.6140699982643127,
+      "overlap_group": "large",
+      "psnr": 22.518081029256184,
+      "ssim": 0.6283400257428488,
+      "lpips": 0.2327826072772344
+    },
+    {
+      "scene": "818f878fa36ae7bd",
+      "targets": 3,
+      "overlap": 0.5841500163078308,
+      "overlap_group": "large",
+      "psnr": 23.00052007039388,
+      "ssim": 0.7766315937042236,
+      "lpips": 0.2061491310596466
+    },
+    {
+      "scene": "819c07566240fff6",
+      "targets": 3,
+      "overlap": 0.5694100260734558,
+      "overlap_group": "large",
+      "psnr": 27.002864837646484,
+      "ssim": 0.8903818925221761,
+      "lpips": 0.16569138069947562
+    },
+    {
+      "scene": "81cb0c6e650961b2",
+      "targets": 3,
+      "overlap": 0.24032999575138092,
+      "overlap_group": "small",
+      "psnr": 16.909753163655598,
+      "ssim": 0.5889315406481425,
+      "lpips": 0.39128578702608746
+    },
+    {
+      "scene": "82041f060168dbe1",
+      "targets": 3,
+      "overlap": 0.549589991569519,
+      "overlap_group": "medium",
+      "psnr": 17.633232752482098,
+      "ssim": 0.48570900162061054,
+      "lpips": 0.3538094361623128
+    },
+    {
+      "scene": "8206395dfe75be01",
+      "targets": 3,
+      "overlap": 0.4600900113582611,
+      "overlap_group": "medium",
+      "psnr": 24.600422541300457,
+      "ssim": 0.8381693164507548,
+      "lpips": 0.14685850342114767
+    },
+    {
+      "scene": "830b9cfa875eccfb",
+      "targets": 3,
+      "overlap": 0.3242200016975403,
+      "overlap_group": "medium",
+      "psnr": 18.282037099202473,
+      "ssim": 0.5952335993448893,
+      "lpips": 0.36679330468177795
+    },
+    {
+      "scene": "836886836b646366",
+      "targets": 3,
+      "overlap": 0.7172099947929382,
+      "overlap_group": "large",
+      "psnr": 25.34132448832194,
+      "ssim": 0.8546789487202963,
+      "lpips": 0.17527252932389578
+    },
+    {
+      "scene": "84029656238003da",
+      "targets": 3,
+      "overlap": 0.5258700251579285,
+      "overlap_group": "medium",
+      "psnr": 19.366411844889324,
+      "ssim": 0.6139662265777588,
+      "lpips": 0.2086044450600942
+    },
+    {
+      "scene": "842cc3728f93d1f4",
+      "targets": 3,
+      "overlap": 0.28363001346588135,
+      "overlap_group": "small",
+      "psnr": 18.971542994181316,
+      "ssim": 0.6861136754353842,
+      "lpips": 0.3369528253873189
+    },
+    {
+      "scene": "84759cb1a8176b80",
+      "targets": 3,
+      "overlap": 0.47433000802993774,
+      "overlap_group": "medium",
+      "psnr": 21.396174748738606,
+      "ssim": 0.763857344786326,
+      "lpips": 0.15665983160336813
+    },
+    {
+      "scene": "847a157c5c998d15",
+      "targets": 3,
+      "overlap": 0.3719399869441986,
+      "overlap_group": "medium",
+      "psnr": 21.270105997721355,
+      "ssim": 0.7330192724863688,
+      "lpips": 0.2213420271873474
+    },
+    {
+      "scene": "856d8616c018f019",
+      "targets": 3,
+      "overlap": 0.2858000099658966,
+      "overlap_group": "small",
+      "psnr": 22.787804921468098,
+      "ssim": 0.7325839996337891,
+      "lpips": 0.2089128941297531
+    },
+    {
+      "scene": "85d5e67f108f6d25",
+      "targets": 3,
+      "overlap": 0.6159899830818176,
+      "overlap_group": "large",
+      "psnr": 23.123249689737957,
+      "ssim": 0.8567078908284506,
+      "lpips": 0.14312235762675604
+    },
+    {
+      "scene": "85e9836f5ec2a532",
+      "targets": 3,
+      "overlap": 0.6124100089073181,
+      "overlap_group": "large",
+      "psnr": 18.771926879882812,
+      "ssim": 0.537357230981191,
+      "lpips": 0.2502839167912801
+    },
+    {
+      "scene": "8610164dfd89cd44",
+      "targets": 3,
+      "overlap": 0.6781499981880188,
+      "overlap_group": "large",
+      "psnr": 21.22089385986328,
+      "ssim": 0.6546896696090698,
+      "lpips": 0.19249372680981955
+    },
+    {
+      "scene": "86746275bb619279",
+      "targets": 3,
+      "overlap": 0.43066999316215515,
+      "overlap_group": "medium",
+      "psnr": 21.495647430419922,
+      "ssim": 0.6803145408630371,
+      "lpips": 0.2082140694061915
+    },
+    {
+      "scene": "8721ff06e7e2ea93",
+      "targets": 3,
+      "overlap": 0.5484899878501892,
+      "overlap_group": "medium",
+      "psnr": 23.115983963012695,
+      "ssim": 0.8811346491177877,
+      "lpips": 0.16896536946296692
+    },
+    {
+      "scene": "8753cbd548f7680d",
+      "targets": 3,
+      "overlap": 0.5789600014686584,
+      "overlap_group": "large",
+      "psnr": 24.418249766031902,
+      "ssim": 0.834983209768931,
+      "lpips": 0.11339471489191055
+    },
+    {
+      "scene": "87bbc64b6844b3b9",
+      "targets": 3,
+      "overlap": 0.7717800140380859,
+      "overlap_group": "large",
+      "psnr": 20.276146570841473,
+      "ssim": 0.6948855121930441,
+      "lpips": 0.27570439378420514
+    },
+    {
+      "scene": "885c1a66b4025d94",
+      "targets": 3,
+      "overlap": 0.1733900010585785,
+      "overlap_group": "small",
+      "psnr": 17.449588775634766,
+      "ssim": 0.4510640601317088,
+      "lpips": 0.6248090664545695
+    },
+    {
+      "scene": "890ace92226368a8",
+      "targets": 3,
+      "overlap": 0.2278600037097931,
+      "overlap_group": "small",
+      "psnr": 17.615761121114094,
+      "ssim": 0.6038680771986643,
+      "lpips": 0.40961070855458576
+    },
+    {
+      "scene": "89179e2c743535c0",
+      "targets": 3,
+      "overlap": 0.50204998254776,
+      "overlap_group": "medium",
+      "psnr": 23.424327214558918,
+      "ssim": 0.796487549940745,
+      "lpips": 0.2112740824619929
+    },
+    {
+      "scene": "8951e64bab803550",
+      "targets": 3,
+      "overlap": 0.7387599945068359,
+      "overlap_group": "large",
+      "psnr": 24.427135467529297,
+      "ssim": 0.8499291141827902,
+      "lpips": 0.14994797110557556
+    },
+    {
+      "scene": "89989ea1cdde53bd",
+      "targets": 3,
+      "overlap": 0.1961199939250946,
+      "overlap_group": "small",
+      "psnr": 24.719205220540363,
+      "ssim": 0.8752011855443319,
+      "lpips": 0.214452197154363
+    },
+    {
+      "scene": "8a8289629784b1ba",
+      "targets": 3,
+      "overlap": 0.23301999270915985,
+      "overlap_group": "small",
+      "psnr": 20.716957092285156,
+      "ssim": 0.7656086484591166,
+      "lpips": 0.2853309015432994
+    },
+    {
+      "scene": "8aa095ac49d8b483",
+      "targets": 3,
+      "overlap": 0.703499972820282,
+      "overlap_group": "large",
+      "psnr": 23.14013608296712,
+      "ssim": 0.7308449347813925,
+      "lpips": 0.17333937187989554
+    },
+    {
+      "scene": "8ab933b10c307f96",
+      "targets": 3,
+      "overlap": 0.5432900190353394,
+      "overlap_group": "medium",
+      "psnr": 26.57453982035319,
+      "ssim": 0.8715940713882446,
+      "lpips": 0.1607776383558909
+    },
+    {
+      "scene": "8b0ad2e14b8f1cd3",
+      "targets": 3,
+      "overlap": 0.19638000428676605,
+      "overlap_group": "small",
+      "psnr": 19.228499094645183,
+      "ssim": 0.7266315420468649,
+      "lpips": 0.29996296763420105
+    },
+    {
+      "scene": "8b5b10275b8a2d7e",
+      "targets": 3,
+      "overlap": 0.48763999342918396,
+      "overlap_group": "medium",
+      "psnr": 18.083686192830402,
+      "ssim": 0.45596960186958313,
+      "lpips": 0.347284068663915
+    },
+    {
+      "scene": "8b6aa37cde3638a6",
+      "targets": 3,
+      "overlap": 0.6279600262641907,
+      "overlap_group": "large",
+      "psnr": 24.482559204101562,
+      "ssim": 0.8735757867495219,
+      "lpips": 0.12841261426607767
+    },
+    {
+      "scene": "8d671600d1ff117c",
+      "targets": 3,
+      "overlap": 0.5084999799728394,
+      "overlap_group": "medium",
+      "psnr": 21.685349146525066,
+      "ssim": 0.7867444356282552,
+      "lpips": 0.2338042010863622
+    },
+    {
+      "scene": "8d6d08d1824c6dc5",
+      "targets": 3,
+      "overlap": 0.16801999509334564,
+      "overlap_group": "small",
+      "psnr": 23.030163447062176,
+      "ssim": 0.8137258291244507,
+      "lpips": 0.17246400813261667
+    },
+    {
+      "scene": "8df1dd08f3e0a8b5",
+      "targets": 3,
+      "overlap": 0.16774000227451324,
+      "overlap_group": "small",
+      "psnr": 16.507578531901043,
+      "ssim": 0.4623059531052907,
+      "lpips": 0.41466155648231506
+    },
+    {
+      "scene": "8f8c517cfcccb122",
+      "targets": 3,
+      "overlap": 0.195700004696846,
+      "overlap_group": "small",
+      "psnr": 19.537726084391277,
+      "ssim": 0.5845847924550375,
+      "lpips": 0.33266811569531757
+    },
+    {
+      "scene": "8fc8e232944734bc",
+      "targets": 3,
+      "overlap": 0.5300899744033813,
+      "overlap_group": "medium",
+      "psnr": 24.249799092610676,
+      "ssim": 0.617471863826116,
+      "lpips": 0.25742582480112713
+    },
+    {
+      "scene": "903c965fc1bd748f",
+      "targets": 3,
+      "overlap": 0.20048999786376953,
+      "overlap_group": "small",
+      "psnr": 16.06031068166097,
+      "ssim": 0.5316344598929087,
+      "lpips": 0.4756459693113963
+    },
+    {
+      "scene": "907a4a1d42f08d9e",
+      "targets": 3,
+      "overlap": 0.31637001037597656,
+      "overlap_group": "medium",
+      "psnr": 19.65712547302246,
+      "ssim": 0.5921496748924255,
+      "lpips": 0.3675517737865448
+    },
+    {
+      "scene": "91003e6d8ca5edff",
+      "targets": 3,
+      "overlap": 0.6931800246238708,
+      "overlap_group": "large",
+      "psnr": 20.136486053466797,
+      "ssim": 0.5714864333470663,
+      "lpips": 0.22208734353383383
+    },
+    {
+      "scene": "915b32960b74b4cd",
+      "targets": 3,
+      "overlap": 0.41958001255989075,
+      "overlap_group": "medium",
+      "psnr": 26.287436803181965,
+      "ssim": 0.8696370124816895,
+      "lpips": 0.14087547361850739
+    },
+    {
+      "scene": "91bfc35b8ff7e593",
+      "targets": 3,
+      "overlap": 0.5219299793243408,
+      "overlap_group": "medium",
+      "psnr": 13.995160420735678,
+      "ssim": 0.5987070997556051,
+      "lpips": 0.5187808871269226
+    },
+    {
+      "scene": "92a4b012b58e507c",
+      "targets": 3,
+      "overlap": 0.5131499767303467,
+      "overlap_group": "medium",
+      "psnr": 24.151313145955402,
+      "ssim": 0.8707181215286255,
+      "lpips": 0.14109545201063156
+    },
+    {
+      "scene": "92f44dc314454f19",
+      "targets": 3,
+      "overlap": 0.7549099922180176,
+      "overlap_group": "large",
+      "psnr": 21.07659657796224,
+      "ssim": 0.7189358671506246,
+      "lpips": 0.16836564739545187
+    },
+    {
+      "scene": "93c4c4dcce1ad9a0",
+      "targets": 3,
+      "overlap": 0.5738099813461304,
+      "overlap_group": "large",
+      "psnr": 20.565863291422527,
+      "ssim": 0.4529542326927185,
+      "lpips": 0.28943659365177155
+    },
+    {
+      "scene": "940c65ee33e2a577",
+      "targets": 3,
+      "overlap": 0.7143300175666809,
+      "overlap_group": "large",
+      "psnr": 21.5701904296875,
+      "ssim": 0.6429598132769266,
+      "lpips": 0.2428870846827825
+    },
+    {
+      "scene": "94189d6c5b0645bf",
+      "targets": 3,
+      "overlap": 0.36100998520851135,
+      "overlap_group": "medium",
+      "psnr": 21.987220128377277,
+      "ssim": 0.7606423695882162,
+      "lpips": 0.19704502820968628
+    },
+    {
+      "scene": "94a2675785393082",
+      "targets": 3,
+      "overlap": 0.48993998765945435,
+      "overlap_group": "medium",
+      "psnr": 22.588382085164387,
+      "ssim": 0.854482630888621,
+      "lpips": 0.1863312621911367
+    },
+    {
+      "scene": "94d5e6280f699e08",
+      "targets": 3,
+      "overlap": 0.22668999433517456,
+      "overlap_group": "small",
+      "psnr": 21.023217519124348,
+      "ssim": 0.7332994143168131,
+      "lpips": 0.24106794595718384
+    },
+    {
+      "scene": "95aa74ae988f60d8",
+      "targets": 3,
+      "overlap": 0.4583800137042999,
+      "overlap_group": "medium",
+      "psnr": 21.00351333618164,
+      "ssim": 0.6810314456621805,
+      "lpips": 0.22550738354523978
+    },
+    {
+      "scene": "96e79d128e6b1630",
+      "targets": 3,
+      "overlap": 0.2535899877548218,
+      "overlap_group": "small",
+      "psnr": 23.836652119954426,
+      "ssim": 0.8405445218086243,
+      "lpips": 0.19383874038855234
+    },
+    {
+      "scene": "975e3b9c0ee44348",
+      "targets": 3,
+      "overlap": 0.29965999722480774,
+      "overlap_group": "small",
+      "psnr": 15.219358762105307,
+      "ssim": 0.5985243618488312,
+      "lpips": 0.40709800521532696
+    },
+    {
+      "scene": "97f02f8e86e73725",
+      "targets": 3,
+      "overlap": 0.1734600067138672,
+      "overlap_group": "small",
+      "psnr": 22.534147262573242,
+      "ssim": 0.7719690998395284,
+      "lpips": 0.24031716088453928
+    },
+    {
+      "scene": "990e2f1ddc581d87",
+      "targets": 3,
+      "overlap": 0.5891500115394592,
+      "overlap_group": "large",
+      "psnr": 21.948845545450848,
+      "ssim": 0.7546897530555725,
+      "lpips": 0.17995170255502066
+    },
+    {
+      "scene": "9978a9d37b39f9c4",
+      "targets": 3,
+      "overlap": 0.6018900275230408,
+      "overlap_group": "large",
+      "psnr": 24.78859265645345,
+      "ssim": 0.7769940296808878,
+      "lpips": 0.17635014653205872
+    },
+    {
+      "scene": "99a31a640af1a74a",
+      "targets": 3,
+      "overlap": 0.6140999794006348,
+      "overlap_group": "large",
+      "psnr": 21.489447911580402,
+      "ssim": 0.7801439960797628,
+      "lpips": 0.2115278790394465
+    },
+    {
+      "scene": "99d974438c80802c",
+      "targets": 3,
+      "overlap": 0.4075700044631958,
+      "overlap_group": "medium",
+      "psnr": 25.769336064656574,
+      "ssim": 0.8379069368044535,
+      "lpips": 0.16899856428305307
+    },
+    {
+      "scene": "9a1b51f094189756",
+      "targets": 3,
+      "overlap": 0.7548199892044067,
+      "overlap_group": "large",
+      "psnr": 24.663211822509766,
+      "ssim": 0.7879745364189148,
+      "lpips": 0.17877536763747534
+    },
+    {
+      "scene": "9a7f9603257027fc",
+      "targets": 3,
+      "overlap": 0.19291000068187714,
+      "overlap_group": "small",
+      "psnr": 19.262439092000324,
+      "ssim": 0.5736725727717081,
+      "lpips": 0.29748756686846417
+    },
+    {
+      "scene": "9a809a86bef6bf4b",
+      "targets": 3,
+      "overlap": 0.5859500169754028,
+      "overlap_group": "large",
+      "psnr": 23.861207326253254,
+      "ssim": 0.8641121983528137,
+      "lpips": 0.1489545851945877
+    },
+    {
+      "scene": "9ac574fc9983bd1c",
+      "targets": 3,
+      "overlap": 0.21493999660015106,
+      "overlap_group": "small",
+      "psnr": 17.66265614827474,
+      "ssim": 0.7656861344973246,
+      "lpips": 0.21141345302263895
+    },
+    {
+      "scene": "9c1cd390ea3e2dd1",
+      "targets": 3,
+      "overlap": 0.22095000743865967,
+      "overlap_group": "small",
+      "psnr": 19.713205973307293,
+      "ssim": 0.5314198732376099,
+      "lpips": 0.30318670471509296
+    },
+    {
+      "scene": "9d0081de499eaa12",
+      "targets": 3,
+      "overlap": 0.7269700169563293,
+      "overlap_group": "large",
+      "psnr": 20.65636952718099,
+      "ssim": 0.6957491238911947,
+      "lpips": 0.20099858939647675
+    },
+    {
+      "scene": "9e1f1beb4ba8e5da",
+      "targets": 3,
+      "overlap": 0.4622499942779541,
+      "overlap_group": "medium",
+      "psnr": 22.5738951365153,
+      "ssim": 0.8513217767079672,
+      "lpips": 0.18456924458344778
+    },
+    {
+      "scene": "9e4159a4f15bf582",
+      "targets": 3,
+      "overlap": 0.7547799944877625,
+      "overlap_group": "large",
+      "psnr": 22.697832107543945,
+      "ssim": 0.8147157231966654,
+      "lpips": 0.17936187982559204
+    },
+    {
+      "scene": "9e561f2486d0afb6",
+      "targets": 3,
+      "overlap": 0.19109000265598297,
+      "overlap_group": "small",
+      "psnr": 17.82419776916504,
+      "ssim": 0.6327144503593445,
+      "lpips": 0.2990478078524272
+    },
+    {
+      "scene": "9e9abcf868def66b",
+      "targets": 3,
+      "overlap": 0.4269999861717224,
+      "overlap_group": "medium",
+      "psnr": 27.433948516845703,
+      "ssim": 0.9036418199539185,
+      "lpips": 0.11997124056021373
+    },
+    {
+      "scene": "9ec2d6d07cd5ebe2",
+      "targets": 3,
+      "overlap": 0.563510000705719,
+      "overlap_group": "large",
+      "psnr": 23.276397069295246,
+      "ssim": 0.771970788637797,
+      "lpips": 0.24333194891611734
+    },
+    {
+      "scene": "9f9028e08bf69fee",
+      "targets": 3,
+      "overlap": 0.44933000206947327,
+      "overlap_group": "medium",
+      "psnr": 27.314041137695312,
+      "ssim": 0.9053365389506022,
+      "lpips": 0.12058651447296143
+    },
+    {
+      "scene": "a064f626c5b33e8f",
+      "targets": 3,
+      "overlap": 0.23871000111103058,
+      "overlap_group": "small",
+      "psnr": 18.366790771484375,
+      "ssim": 0.7041338682174683,
+      "lpips": 0.3305414815743764
+    },
+    {
+      "scene": "a1c6063584e754a2",
+      "targets": 3,
+      "overlap": 0.6267099976539612,
+      "overlap_group": "large",
+      "psnr": 17.154524485270183,
+      "ssim": 0.2952777643998464,
+      "lpips": 0.4127446512381236
+    },
+    {
+      "scene": "a1f17ffb3774a402",
+      "targets": 3,
+      "overlap": 0.2962299883365631,
+      "overlap_group": "small",
+      "psnr": 21.809620539347332,
+      "ssim": 0.7873815099398295,
+      "lpips": 0.2680506706237793
+    },
+    {
+      "scene": "a26e4bee5c7f90c5",
+      "targets": 3,
+      "overlap": 0.5400199890136719,
+      "overlap_group": "medium",
+      "psnr": 21.143511454264324,
+      "ssim": 0.4386453529198964,
+      "lpips": 0.279997060696284
+    },
+    {
+      "scene": "a34483ee2255ec8b",
+      "targets": 3,
+      "overlap": 0.6949499845504761,
+      "overlap_group": "large",
+      "psnr": 21.37452761332194,
+      "ssim": 0.7624988357226054,
+      "lpips": 0.18642019232114157
+    },
+    {
+      "scene": "a361562dded27501",
+      "targets": 3,
+      "overlap": 0.20774999260902405,
+      "overlap_group": "small",
+      "psnr": 21.107228597005207,
+      "ssim": 0.7578551967938741,
+      "lpips": 0.24333585302035013
+    },
+    {
+      "scene": "a3679fb63dda3a83",
+      "targets": 3,
+      "overlap": 0.6495199799537659,
+      "overlap_group": "large",
+      "psnr": 20.989524205525715,
+      "ssim": 0.7470755378405253,
+      "lpips": 0.23228312035401663
+    },
+    {
+      "scene": "a3d90d636ad7d7bc",
+      "targets": 3,
+      "overlap": 0.3555299937725067,
+      "overlap_group": "medium",
+      "psnr": 19.42572275797526,
+      "ssim": 0.6042537490526835,
+      "lpips": 0.3035270671049754
+    },
+    {
+      "scene": "a40b587bef7a29a6",
+      "targets": 3,
+      "overlap": 0.4890199899673462,
+      "overlap_group": "medium",
+      "psnr": 23.352640787760418,
+      "ssim": 0.8589362104733785,
+      "lpips": 0.15042037516832352
+    },
+    {
+      "scene": "a4dc71631f707b9e",
+      "targets": 3,
+      "overlap": 0.6007500290870667,
+      "overlap_group": "large",
+      "psnr": 24.695981979370117,
+      "ssim": 0.8477856318155924,
+      "lpips": 0.14862744510173798
+    },
+    {
+      "scene": "a4f441c4ffd46a8d",
+      "targets": 3,
+      "overlap": 0.5819200277328491,
+      "overlap_group": "large",
+      "psnr": 21.146447499593098,
+      "ssim": 0.7222894231478373,
+      "lpips": 0.20015733440717062
+    },
+    {
+      "scene": "a5596bb58d65e134",
+      "targets": 3,
+      "overlap": 0.45952001214027405,
+      "overlap_group": "medium",
+      "psnr": 25.71113650004069,
+      "ssim": 0.8673156897226969,
+      "lpips": 0.17637785275777182
+    },
+    {
+      "scene": "a5fbd051828e4672",
+      "targets": 3,
+      "overlap": 0.15241000056266785,
+      "overlap_group": "small",
+      "psnr": 25.758913040161133,
+      "ssim": 0.8367817401885986,
+      "lpips": 0.19411853949228922
+    },
+    {
+      "scene": "a674ca864ad8992d",
+      "targets": 3,
+      "overlap": 0.3556100130081177,
+      "overlap_group": "medium",
+      "psnr": 19.375261306762695,
+      "ssim": 0.6744406223297119,
+      "lpips": 0.27113155523935956
+    },
+    {
+      "scene": "a74d69eaa0dc81fe",
+      "targets": 3,
+      "overlap": 0.3544999957084656,
+      "overlap_group": "medium",
+      "psnr": 20.631669362386067,
+      "ssim": 0.7283887267112732,
+      "lpips": 0.2713286578655243
+    },
+    {
+      "scene": "a75565ce57aae546",
+      "targets": 3,
+      "overlap": 0.17542000114917755,
+      "overlap_group": "small",
+      "psnr": 20.115573247273762,
+      "ssim": 0.6715068419774374,
+      "lpips": 0.35782016317049664
+    },
+    {
+      "scene": "a7813af2c5f05291",
+      "targets": 3,
+      "overlap": 0.5925599932670593,
+      "overlap_group": "large",
+      "psnr": 22.04298273722331,
+      "ssim": 0.7227227886517843,
+      "lpips": 0.2230842262506485
+    },
+    {
+      "scene": "a7849dbe8e0a9e87",
+      "targets": 3,
+      "overlap": 0.604200005531311,
+      "overlap_group": "large",
+      "psnr": 23.210198084513348,
+      "ssim": 0.8092408974965414,
+      "lpips": 0.19152860343456268
+    },
+    {
+      "scene": "a7c9e9a3be7b16cb",
+      "targets": 3,
+      "overlap": 0.5367599725723267,
+      "overlap_group": "medium",
+      "psnr": 21.65431849161784,
+      "ssim": 0.8229925235112509,
+      "lpips": 0.19182529052098593
+    },
+    {
+      "scene": "a7cb00e197a15a99",
+      "targets": 3,
+      "overlap": 0.7102699875831604,
+      "overlap_group": "large",
+      "psnr": 17.99510320027669,
+      "ssim": 0.5047131379445394,
+      "lpips": 0.2630374034245809
+    },
+    {
+      "scene": "a88f58e7c2580c06",
+      "targets": 3,
+      "overlap": 0.6319400072097778,
+      "overlap_group": "large",
+      "psnr": 22.375054041544598,
+      "ssim": 0.8107195695241293,
+      "lpips": 0.15439343204100928
+    },
+    {
+      "scene": "a8cc9d1e56928758",
+      "targets": 3,
+      "overlap": 0.3708899915218353,
+      "overlap_group": "medium",
+      "psnr": 21.800666173299152,
+      "ssim": 0.7358258962631226,
+      "lpips": 0.30382564663887024
+    },
+    {
+      "scene": "a9a3cf44b0b34ade",
+      "targets": 3,
+      "overlap": 0.6848599910736084,
+      "overlap_group": "large",
+      "psnr": 24.25586001078288,
+      "ssim": 0.8050941030184428,
+      "lpips": 0.25712744394938153
+    },
+    {
+      "scene": "a9b3ff60b213e099",
+      "targets": 3,
+      "overlap": 0.512220025062561,
+      "overlap_group": "medium",
+      "psnr": 15.778888702392578,
+      "ssim": 0.6034104625384012,
+      "lpips": 0.3057362735271454
+    },
+    {
+      "scene": "a9cf9def8f36c3b3",
+      "targets": 3,
+      "overlap": 0.6829500198364258,
+      "overlap_group": "large",
+      "psnr": 25.520331700642902,
+      "ssim": 0.8610748648643494,
+      "lpips": 0.1522635519504547
+    },
+    {
+      "scene": "a9f5fa43e4bd154b",
+      "targets": 3,
+      "overlap": 0.2980799973011017,
+      "overlap_group": "small",
+      "psnr": 18.53040949503581,
+      "ssim": 0.6632250944773356,
+      "lpips": 0.355323851108551
+    },
+    {
+      "scene": "aa604fe5b2e59274",
+      "targets": 3,
+      "overlap": 0.4603100121021271,
+      "overlap_group": "medium",
+      "psnr": 25.41801579793294,
+      "ssim": 0.8357981642087301,
+      "lpips": 0.17758587996164957
+    },
+    {
+      "scene": "aae255306b6aacf9",
+      "targets": 3,
+      "overlap": 0.17614999413490295,
+      "overlap_group": "small",
+      "psnr": 19.8378963470459,
+      "ssim": 0.7228895028432211,
+      "lpips": 0.28632451097170514
+    },
+    {
+      "scene": "ab3d616a3d001515",
+      "targets": 3,
+      "overlap": 0.24998000264167786,
+      "overlap_group": "small",
+      "psnr": 26.38869031270345,
+      "ssim": 0.8911320964495341,
+      "lpips": 0.15336319307486215
+    },
+    {
+      "scene": "ab7bc777bfe89560",
+      "targets": 3,
+      "overlap": 0.7839099764823914,
+      "overlap_group": "large",
+      "psnr": 20.47234535217285,
+      "ssim": 0.4160798092683156,
+      "lpips": 0.28613588213920593
+    },
+    {
+      "scene": "abe09fde3f158d83",
+      "targets": 3,
+      "overlap": 0.7004799842834473,
+      "overlap_group": "large",
+      "psnr": 24.71329180399577,
+      "ssim": 0.845236599445343,
+      "lpips": 0.19893043239911398
+    },
+    {
+      "scene": "ac3a468aec7604e7",
+      "targets": 3,
+      "overlap": 0.507889986038208,
+      "overlap_group": "medium",
+      "psnr": 26.375673294067383,
+      "ssim": 0.8220177292823792,
+      "lpips": 0.16907032082478204
+    },
+    {
+      "scene": "accea1caf1d2eb90",
+      "targets": 3,
+      "overlap": 0.1755400002002716,
+      "overlap_group": "small",
+      "psnr": 20.265385309855144,
+      "ssim": 0.5923083821932474,
+      "lpips": 0.3235742648442586
+    },
+    {
+      "scene": "afb299939df7fc75",
+      "targets": 3,
+      "overlap": 0.7932000160217285,
+      "overlap_group": "large",
+      "psnr": 20.198191960652668,
+      "ssim": 0.7149690588315328,
+      "lpips": 0.213816836476326
+    },
+    {
+      "scene": "b142a3b0f2424c63",
+      "targets": 3,
+      "overlap": 0.29881998896598816,
+      "overlap_group": "small",
+      "psnr": 17.50074863433838,
+      "ssim": 0.7217270930608114,
+      "lpips": 0.3195954958597819
+    },
+    {
+      "scene": "b15cb192eba0ae9b",
+      "targets": 3,
+      "overlap": 0.6968700289726257,
+      "overlap_group": "large",
+      "psnr": 19.365148544311523,
+      "ssim": 0.7617222666740417,
+      "lpips": 0.21740992863972983
+    },
+    {
+      "scene": "b16d261e94f32108",
+      "targets": 3,
+      "overlap": 0.26109999418258667,
+      "overlap_group": "small",
+      "psnr": 23.286038080851238,
+      "ssim": 0.7778360446294149,
+      "lpips": 0.22072550654411316
+    },
+    {
+      "scene": "b1c52eac61190f01",
+      "targets": 3,
+      "overlap": 0.5733699798583984,
+      "overlap_group": "large",
+      "psnr": 20.23463503519694,
+      "ssim": 0.6524979074796041,
+      "lpips": 0.20295660197734833
+    },
+    {
+      "scene": "b27f1bede464ab39",
+      "targets": 3,
+      "overlap": 0.5110099911689758,
+      "overlap_group": "medium",
+      "psnr": 16.31127103169759,
+      "ssim": 0.35769616564114887,
+      "lpips": 0.28989796837170917
+    },
+    {
+      "scene": "b325dadd4c13e439",
+      "targets": 3,
+      "overlap": 0.19572000205516815,
+      "overlap_group": "small",
+      "psnr": 20.762882232666016,
+      "ssim": 0.7131056785583496,
+      "lpips": 0.24076644082864126
+    },
+    {
+      "scene": "b3f998bea78e350b",
+      "targets": 3,
+      "overlap": 0.6993899941444397,
+      "overlap_group": "large",
+      "psnr": 22.668612162272137,
+      "ssim": 0.8002359867095947,
+      "lpips": 0.2125586991508802
+    },
+    {
+      "scene": "b4ad7779e82513ad",
+      "targets": 3,
+      "overlap": 0.3663899898529053,
+      "overlap_group": "medium",
+      "psnr": 20.876216252644856,
+      "ssim": 0.5290532310803732,
+      "lpips": 0.3474188844362895
+    },
+    {
+      "scene": "b4b95f8961518954",
+      "targets": 3,
+      "overlap": 0.2757599949836731,
+      "overlap_group": "small",
+      "psnr": 16.674956639607746,
+      "ssim": 0.685965895652771,
+      "lpips": 0.3110783100128174
+    },
+    {
+      "scene": "b62fcc6856e45647",
+      "targets": 3,
+      "overlap": 0.27865999937057495,
+      "overlap_group": "small",
+      "psnr": 17.53069241841634,
+      "ssim": 0.45903374751408893,
+      "lpips": 0.3564348717530568
+    },
+    {
+      "scene": "b76be69049c01063",
+      "targets": 3,
+      "overlap": 0.6392199993133545,
+      "overlap_group": "large",
+      "psnr": 26.46158218383789,
+      "ssim": 0.9044197201728821,
+      "lpips": 0.12419845660527547
+    },
+    {
+      "scene": "b7ba4d55d4c1cd63",
+      "targets": 3,
+      "overlap": 0.26583001017570496,
+      "overlap_group": "small",
+      "psnr": 18.9137020111084,
+      "ssim": 0.4811174273490906,
+      "lpips": 0.3508622944355011
+    },
+    {
+      "scene": "b9f3542583ffacd3",
+      "targets": 3,
+      "overlap": 0.5115200281143188,
+      "overlap_group": "medium",
+      "psnr": 23.1569766998291,
+      "ssim": 0.8394357164700826,
+      "lpips": 0.1882334997256597
+    },
+    {
+      "scene": "ba604e2b0ab1be25",
+      "targets": 3,
+      "overlap": 0.285290002822876,
+      "overlap_group": "small",
+      "psnr": 23.464085896809895,
+      "ssim": 0.7895170251528422,
+      "lpips": 0.21583698193232217
+    },
+    {
+      "scene": "bab3ccbc42fb073c",
+      "targets": 3,
+      "overlap": 0.19960999488830566,
+      "overlap_group": "small",
+      "psnr": 24.957333246866863,
+      "ssim": 0.8071336547533671,
+      "lpips": 0.3456977804501851
+    },
+    {
+      "scene": "bb68958771bd013e",
+      "targets": 3,
+      "overlap": 0.4368099868297577,
+      "overlap_group": "medium",
+      "psnr": 16.850480397542317,
+      "ssim": 0.6059632500012716,
+      "lpips": 0.3766406675179799
+    },
+    {
+      "scene": "bbd202e75328f2eb",
+      "targets": 3,
+      "overlap": 0.30237001180648804,
+      "overlap_group": "medium",
+      "psnr": 13.85113271077474,
+      "ssim": 0.3784657559202363,
+      "lpips": 0.5152886460224787
+    },
+    {
+      "scene": "bcc76b58e2585320",
+      "targets": 3,
+      "overlap": 0.4228299856185913,
+      "overlap_group": "medium",
+      "psnr": 20.345197677612305,
+      "ssim": 0.6735189159711202,
+      "lpips": 0.22885888814926147
+    },
+    {
+      "scene": "bd124cbcc8499c35",
+      "targets": 3,
+      "overlap": 0.6766499876976013,
+      "overlap_group": "large",
+      "psnr": 24.388850529988606,
+      "ssim": 0.8874121904373169,
+      "lpips": 0.16679852704207102
+    },
+    {
+      "scene": "bd28c059c79b701f",
+      "targets": 3,
+      "overlap": 0.2004700005054474,
+      "overlap_group": "small",
+      "psnr": 16.683854420979817,
+      "ssim": 0.6973747809727987,
+      "lpips": 0.37574591239293414
+    },
+    {
+      "scene": "bd6f17493a9d5eeb",
+      "targets": 3,
+      "overlap": 0.4915499985218048,
+      "overlap_group": "medium",
+      "psnr": 25.268561045328777,
+      "ssim": 0.7336673140525818,
+      "lpips": 0.22828901807467142
+    },
+    {
+      "scene": "bdca5b7cf748f034",
+      "targets": 3,
+      "overlap": 0.2999599874019623,
+      "overlap_group": "small",
+      "psnr": 22.364238739013672,
+      "ssim": 0.8263545831044515,
+      "lpips": 0.16714358826478323
+    },
+    {
+      "scene": "bde72676dac5dc06",
+      "targets": 3,
+      "overlap": 0.5333399772644043,
+      "overlap_group": "medium",
+      "psnr": 21.3739070892334,
+      "ssim": 0.7331717610359192,
+      "lpips": 0.21424555281798044
+    },
+    {
+      "scene": "bdf02051908f1fa7",
+      "targets": 3,
+      "overlap": 0.4770599901676178,
+      "overlap_group": "medium",
+      "psnr": 21.58419354756673,
+      "ssim": 0.7840887904167175,
+      "lpips": 0.21358288327852884
+    },
+    {
+      "scene": "be46ebf723a08b6e",
+      "targets": 3,
+      "overlap": 0.21619999408721924,
+      "overlap_group": "small",
+      "psnr": 19.740240732828777,
+      "ssim": 0.7055895924568176,
+      "lpips": 0.2591215670108795
+    },
+    {
+      "scene": "bf2f95468d2f3a94",
+      "targets": 3,
+      "overlap": 0.38523998856544495,
+      "overlap_group": "medium",
+      "psnr": 24.343455632527668,
+      "ssim": 0.8558171590169271,
+      "lpips": 0.16624757647514343
+    },
+    {
+      "scene": "bf6491a3966ff9d7",
+      "targets": 3,
+      "overlap": 0.24650000035762787,
+      "overlap_group": "small",
+      "psnr": 28.833424886067707,
+      "ssim": 0.9014999866485596,
+      "lpips": 0.19839768608411154
+    },
+    {
+      "scene": "c06de0966927fe2d",
+      "targets": 3,
+      "overlap": 0.37786000967025757,
+      "overlap_group": "medium",
+      "psnr": 15.970159848531088,
+      "ssim": 0.7255103786786398,
+      "lpips": 0.3561011254787445
+    },
+    {
+      "scene": "c0b4b9d69f8694e1",
+      "targets": 3,
+      "overlap": 0.26052001118659973,
+      "overlap_group": "small",
+      "psnr": 17.546513239542644,
+      "ssim": 0.6024198134740194,
+      "lpips": 0.36953599254290265
+    },
+    {
+      "scene": "c1a28d4a283118d3",
+      "targets": 3,
+      "overlap": 0.7081900238990784,
+      "overlap_group": "large",
+      "psnr": 19.13543701171875,
+      "ssim": 0.5491862893104553,
+      "lpips": 0.32238810261090595
+    },
+    {
+      "scene": "c27cfc716fe937f9",
+      "targets": 3,
+      "overlap": 0.5498200058937073,
+      "overlap_group": "medium",
+      "psnr": 23.978235880533855,
+      "ssim": 0.7476567427317301,
+      "lpips": 0.21921989818414053
+    },
+    {
+      "scene": "c30ce1a9890c8bdb",
+      "targets": 3,
+      "overlap": 0.30324000120162964,
+      "overlap_group": "medium",
+      "psnr": 21.796868006388348,
+      "ssim": 0.770187517007192,
+      "lpips": 0.2725374797979991
+    },
+    {
+      "scene": "c31a5a509ab9c526",
+      "targets": 3,
+      "overlap": 0.23388999700546265,
+      "overlap_group": "small",
+      "psnr": 19.825406392415363,
+      "ssim": 0.5202074845631918,
+      "lpips": 0.3261972963809967
+    },
+    {
+      "scene": "c323b0dccaa46d8b",
+      "targets": 3,
+      "overlap": 0.5730000138282776,
+      "overlap_group": "large",
+      "psnr": 25.614651997884113,
+      "ssim": 0.9065991640090942,
+      "lpips": 0.13712131480375925
+    },
+    {
+      "scene": "c32a9cc7859744ca",
+      "targets": 3,
+      "overlap": 0.4602000117301941,
+      "overlap_group": "medium",
+      "psnr": 21.44209861755371,
+      "ssim": 0.7725524504979452,
+      "lpips": 0.19347097476323447
+    },
+    {
+      "scene": "c44e247cfebc8863",
+      "targets": 3,
+      "overlap": 0.3692399859428406,
+      "overlap_group": "medium",
+      "psnr": 20.540646235148113,
+      "ssim": 0.7537441651026408,
+      "lpips": 0.19590685268243155
+    },
+    {
+      "scene": "c48f19e2ffa52523",
+      "targets": 3,
+      "overlap": 0.34703001379966736,
+      "overlap_group": "medium",
+      "psnr": 10.518552462259928,
+      "ssim": 0.32617850104967755,
+      "lpips": 0.5893056591351827
+    },
+    {
+      "scene": "c4a3fdc24d1ae332",
+      "targets": 3,
+      "overlap": 0.2520900070667267,
+      "overlap_group": "small",
+      "psnr": 16.223265012105305,
+      "ssim": 0.4962811569372813,
+      "lpips": 0.40983901421229046
+    },
+    {
+      "scene": "c4ce0cccee5000c4",
+      "targets": 3,
+      "overlap": 0.6397799849510193,
+      "overlap_group": "large",
+      "psnr": 19.404123942057293,
+      "ssim": 0.6860857009887695,
+      "lpips": 0.23015708724657694
+    },
+    {
+      "scene": "c51da147c5b6f88f",
+      "targets": 3,
+      "overlap": 0.5319499969482422,
+      "overlap_group": "medium",
+      "psnr": 19.91655667622884,
+      "ssim": 0.7294226288795471,
+      "lpips": 0.2543857793013255
+    },
+    {
+      "scene": "c522082d96305ccd",
+      "targets": 3,
+      "overlap": 0.45190000534057617,
+      "overlap_group": "medium",
+      "psnr": 15.518953005472818,
+      "ssim": 0.45072516798973083,
+      "lpips": 0.4648233950138092
+    },
+    {
+      "scene": "c55446a3809d1cfe",
+      "targets": 3,
+      "overlap": 0.43775999546051025,
+      "overlap_group": "medium",
+      "psnr": 25.84479268391927,
+      "ssim": 0.8468671441078186,
+      "lpips": 0.16524243354797363
+    },
+    {
+      "scene": "c58fe32a990d73ac",
+      "targets": 3,
+      "overlap": 0.558899998664856,
+      "overlap_group": "large",
+      "psnr": 25.469971974690754,
+      "ssim": 0.7746003071467081,
+      "lpips": 0.18252024054527283
+    },
+    {
+      "scene": "c6366971043851e3",
+      "targets": 3,
+      "overlap": 0.7081900238990784,
+      "overlap_group": "large",
+      "psnr": 22.49082374572754,
+      "ssim": 0.7248996297518412,
+      "lpips": 0.22250615060329437
+    },
+    {
+      "scene": "c6eb0b0980e5451c",
+      "targets": 3,
+      "overlap": 0.6145600080490112,
+      "overlap_group": "large",
+      "psnr": 22.681362787882488,
+      "ssim": 0.8344936966896057,
+      "lpips": 0.1920140932003657
+    },
+    {
+      "scene": "c6f50806957eeab3",
+      "targets": 3,
+      "overlap": 0.17803999781608582,
+      "overlap_group": "small",
+      "psnr": 21.173672358194988,
+      "ssim": 0.7350673079490662,
+      "lpips": 0.2307383418083191
+    },
+    {
+      "scene": "c87dd7b841d77114",
+      "targets": 3,
+      "overlap": 0.4331299960613251,
+      "overlap_group": "medium",
+      "psnr": 24.494155883789062,
+      "ssim": 0.7977449893951416,
+      "lpips": 0.1381297012170156
+    },
+    {
+      "scene": "c887543e0e2d2a89",
+      "targets": 3,
+      "overlap": 0.527999997138977,
+      "overlap_group": "medium",
+      "psnr": 24.79248873392741,
+      "ssim": 0.8378578027089437,
+      "lpips": 0.12849027911822
+    },
+    {
+      "scene": "c936902cf1e99bc3",
+      "targets": 3,
+      "overlap": 0.5744900107383728,
+      "overlap_group": "large",
+      "psnr": 25.741545995076496,
+      "ssim": 0.9031899174054464,
+      "lpips": 0.14744274814923605
+    },
+    {
+      "scene": "ca12e642e93fc13a",
+      "targets": 3,
+      "overlap": 0.20492999255657196,
+      "overlap_group": "small",
+      "psnr": 20.421815872192383,
+      "ssim": 0.7208213011423746,
+      "lpips": 0.40215155482292175
+    },
+    {
+      "scene": "ca896b9824333d2f",
+      "targets": 3,
+      "overlap": 0.6520400047302246,
+      "overlap_group": "large",
+      "psnr": 16.59438641866048,
+      "ssim": 0.43615442514419556,
+      "lpips": 0.2837008486191432
+    },
+    {
+      "scene": "cb83984bb39b1b27",
+      "targets": 3,
+      "overlap": 0.5476800203323364,
+      "overlap_group": "medium",
+      "psnr": 20.10129165649414,
+      "ssim": 0.7686968445777893,
+      "lpips": 0.2450972000757853
+    },
+    {
+      "scene": "cc3f88e1e2a4f262",
+      "targets": 3,
+      "overlap": 0.7838600277900696,
+      "overlap_group": "large",
+      "psnr": 25.271759668986004,
+      "ssim": 0.9036465485890707,
+      "lpips": 0.10225185751914978
+    },
+    {
+      "scene": "cca122d2455673ff",
+      "targets": 3,
+      "overlap": 0.6428700089454651,
+      "overlap_group": "large",
+      "psnr": 25.653996149698894,
+      "ssim": 0.8816980719566345,
+      "lpips": 0.1648406684398651
+    },
+    {
+      "scene": "cdd1956f97be9e04",
+      "targets": 3,
+      "overlap": 0.27897998690605164,
+      "overlap_group": "small",
+      "psnr": 18.57052230834961,
+      "ssim": 0.7080427209536234,
+      "lpips": 0.288670818010966
+    },
+    {
+      "scene": "cdd7331ebf3d97dc",
+      "targets": 3,
+      "overlap": 0.4716300070285797,
+      "overlap_group": "medium",
+      "psnr": 24.225562413533527,
+      "ssim": 0.8493614792823792,
+      "lpips": 0.14735392232735953
+    },
+    {
+      "scene": "ce784ea362258600",
+      "targets": 3,
+      "overlap": 0.6096699833869934,
+      "overlap_group": "large",
+      "psnr": 17.12897491455078,
+      "ssim": 0.4674476385116577,
+      "lpips": 0.3658933440844218
+    },
+    {
+      "scene": "cee475fc8a99c826",
+      "targets": 3,
+      "overlap": 0.5930799841880798,
+      "overlap_group": "large",
+      "psnr": 21.191526412963867,
+      "ssim": 0.8273784716924032,
+      "lpips": 0.277017538746198
+    },
+    {
+      "scene": "cfa3b8068b6c4aea",
+      "targets": 3,
+      "overlap": 0.7864000201225281,
+      "overlap_group": "large",
+      "psnr": 26.86866823832194,
+      "ssim": 0.9056401054064432,
+      "lpips": 0.11460121969381969
+    },
+    {
+      "scene": "cfae28b337f6d169",
+      "targets": 3,
+      "overlap": 0.5244699716567993,
+      "overlap_group": "medium",
+      "psnr": 22.751156489054363,
+      "ssim": 0.7292124430338541,
+      "lpips": 0.20003226399421692
+    },
+    {
+      "scene": "d064c864bda4430e",
+      "targets": 3,
+      "overlap": 0.22439000010490417,
+      "overlap_group": "small",
+      "psnr": 21.102579752604168,
+      "ssim": 0.786508838335673,
+      "lpips": 0.30440659324328107
+    },
+    {
+      "scene": "d06bad5707840a88",
+      "targets": 3,
+      "overlap": 0.4098699986934662,
+      "overlap_group": "medium",
+      "psnr": 20.92140007019043,
+      "ssim": 0.7272039651870728,
+      "lpips": 0.21013417840003967
+    },
+    {
+      "scene": "d0d176ef9f64504c",
+      "targets": 3,
+      "overlap": 0.43775999546051025,
+      "overlap_group": "medium",
+      "psnr": 15.701278686523438,
+      "ssim": 0.5815688172976176,
+      "lpips": 0.5172284444173177
+    },
+    {
+      "scene": "d148537296a4925e",
+      "targets": 3,
+      "overlap": 0.4181300103664398,
+      "overlap_group": "medium",
+      "psnr": 14.744130452473959,
+      "ssim": 0.698310931523641,
+      "lpips": 0.324777215719223
+    },
+    {
+      "scene": "d38139cf5c8c1d40",
+      "targets": 3,
+      "overlap": 0.2879999876022339,
+      "overlap_group": "small",
+      "psnr": 22.105775197347004,
+      "ssim": 0.7351884245872498,
+      "lpips": 0.18502098818620047
+    },
+    {
+      "scene": "d4763fa4edc33917",
+      "targets": 3,
+      "overlap": 0.1871899962425232,
+      "overlap_group": "small",
+      "psnr": 19.63266118367513,
+      "ssim": 0.7432909806569418,
+      "lpips": 0.203108419974645
+    },
+    {
+      "scene": "d4e33e3311d155c4",
+      "targets": 3,
+      "overlap": 0.5745800137519836,
+      "overlap_group": "large",
+      "psnr": 27.0624205271403,
+      "ssim": 0.8581950863202413,
+      "lpips": 0.15244394540786743
+    },
+    {
+      "scene": "d64b96bbfad60d1c",
+      "targets": 3,
+      "overlap": 0.7633000016212463,
+      "overlap_group": "large",
+      "psnr": 19.190963745117188,
+      "ssim": 0.7021265228589376,
+      "lpips": 0.18800035119056702
+    },
+    {
+      "scene": "d6b3d15ff42247fb",
+      "targets": 3,
+      "overlap": 0.7349399924278259,
+      "overlap_group": "large",
+      "psnr": 22.920115152994793,
+      "ssim": 0.8008437951405843,
+      "lpips": 0.15798773368199667
+    },
+    {
+      "scene": "d71d8269b397199e",
+      "targets": 3,
+      "overlap": 0.3363099992275238,
+      "overlap_group": "medium",
+      "psnr": 20.644205729166668,
+      "ssim": 0.6135191321372986,
+      "lpips": 0.3378451665242513
+    },
+    {
+      "scene": "d74b35cd503f62e7",
+      "targets": 3,
+      "overlap": 0.2198300063610077,
+      "overlap_group": "small",
+      "psnr": 20.256778081258137,
+      "ssim": 0.720094362894694,
+      "lpips": 0.2671382923920949
+    },
+    {
+      "scene": "d7a9486c2d6ea7ca",
+      "targets": 3,
+      "overlap": 0.17564000189304352,
+      "overlap_group": "small",
+      "psnr": 13.748738288879395,
+      "ssim": 0.5373265743255615,
+      "lpips": 0.5140671133995056
+    },
+    {
+      "scene": "d8a6f5f5687ee167",
+      "targets": 3,
+      "overlap": 0.23134000599384308,
+      "overlap_group": "small",
+      "psnr": 19.217002232869465,
+      "ssim": 0.8070223132769266,
+      "lpips": 0.2418994903564453
+    },
+    {
+      "scene": "d91b11f2b4072ee7",
+      "targets": 3,
+      "overlap": 0.5302900075912476,
+      "overlap_group": "medium",
+      "psnr": 27.032224655151367,
+      "ssim": 0.8439266482988993,
+      "lpips": 0.1875467151403427
+    },
+    {
+      "scene": "d9642c8efc01481d",
+      "targets": 3,
+      "overlap": 0.5969399809837341,
+      "overlap_group": "large",
+      "psnr": 21.062551498413086,
+      "ssim": 0.7490840554237366,
+      "lpips": 0.183639923731486
+    },
+    {
+      "scene": "d9d58d0994e19d7d",
+      "targets": 3,
+      "overlap": 0.5594800114631653,
+      "overlap_group": "large",
+      "psnr": 19.90734926859538,
+      "ssim": 0.6252780357996622,
+      "lpips": 0.25153494874636334
+    },
+    {
+      "scene": "daa3d11727e7d9c8",
+      "targets": 3,
+      "overlap": 0.5470200181007385,
+      "overlap_group": "medium",
+      "psnr": 23.820878982543945,
+      "ssim": 0.8201794226964315,
+      "lpips": 0.17791188259919485
+    },
+    {
+      "scene": "daa58af9dd5a2d0c",
+      "targets": 3,
+      "overlap": 0.16825999319553375,
+      "overlap_group": "small",
+      "psnr": 15.341829935709635,
+      "ssim": 0.808595617612203,
+      "lpips": 0.46526509523391724
+    },
+    {
+      "scene": "dab11e3658de864c",
+      "targets": 3,
+      "overlap": 0.3050900101661682,
+      "overlap_group": "medium",
+      "psnr": 21.583363215128582,
+      "ssim": 0.7939611077308655,
+      "lpips": 0.2409883290529251
+    },
+    {
+      "scene": "daceae3c5381041b",
+      "targets": 3,
+      "overlap": 0.2048799991607666,
+      "overlap_group": "small",
+      "psnr": 22.279237747192383,
+      "ssim": 0.809989333152771,
+      "lpips": 0.25705935557683307
+    },
+    {
+      "scene": "dafb6e5578f28159",
+      "targets": 3,
+      "overlap": 0.6902199983596802,
+      "overlap_group": "large",
+      "psnr": 20.733353932698567,
+      "ssim": 0.7045608758926392,
+      "lpips": 0.23011783262093863
+    },
+    {
+      "scene": "db10fafa3193be4d",
+      "targets": 3,
+      "overlap": 0.7636299729347229,
+      "overlap_group": "large",
+      "psnr": 24.108051935831707,
+      "ssim": 0.8351895809173584,
+      "lpips": 0.21335645020008087
+    },
+    {
+      "scene": "db44fb48949d572f",
+      "targets": 3,
+      "overlap": 0.6495299935340881,
+      "overlap_group": "large",
+      "psnr": 21.410510381062824,
+      "ssim": 0.770653486251831,
+      "lpips": 0.20640755693117777
+    },
+    {
+      "scene": "db50799f4ed823f8",
+      "targets": 3,
+      "overlap": 0.4525099992752075,
+      "overlap_group": "medium",
+      "psnr": 18.90697733561198,
+      "ssim": 0.6340465545654297,
+      "lpips": 0.27457470695177716
+    },
+    {
+      "scene": "dbb340f63c6ae50b",
+      "targets": 3,
+      "overlap": 0.15665000677108765,
+      "overlap_group": "small",
+      "psnr": 21.630382537841797,
+      "ssim": 0.7075794736544291,
+      "lpips": 0.3027382393678029
+    },
+    {
+      "scene": "dbdeb6adf84634d4",
+      "targets": 3,
+      "overlap": 0.392300009727478,
+      "overlap_group": "medium",
+      "psnr": 23.049763361612957,
+      "ssim": 0.7921734849611918,
+      "lpips": 0.20039997001489004
+    },
+    {
+      "scene": "dc321ea878f93a88",
+      "targets": 3,
+      "overlap": 0.47411999106407166,
+      "overlap_group": "medium",
+      "psnr": 26.20199203491211,
+      "ssim": 0.8505334854125977,
+      "lpips": 0.21062621474266052
+    },
+    {
+      "scene": "dd5288bacc7da7cf",
+      "targets": 3,
+      "overlap": 0.23399999737739563,
+      "overlap_group": "small",
+      "psnr": 21.40898259480794,
+      "ssim": 0.7719502449035645,
+      "lpips": 0.26918090879917145
+    },
+    {
+      "scene": "dd62298bc00b4ba5",
+      "targets": 3,
+      "overlap": 0.296889990568161,
+      "overlap_group": "small",
+      "psnr": 23.17169698079427,
+      "ssim": 0.8208345572153727,
+      "lpips": 0.18006188670794168
+    },
+    {
+      "scene": "dd6f5db17e7d568a",
+      "targets": 3,
+      "overlap": 0.353300005197525,
+      "overlap_group": "medium",
+      "psnr": 25.079675038655598,
+      "ssim": 0.8018944462140402,
+      "lpips": 0.3089657525221507
+    },
+    {
+      "scene": "ddc7f2033a69be92",
+      "targets": 3,
+      "overlap": 0.4968799948692322,
+      "overlap_group": "medium",
+      "psnr": 24.75039227803548,
+      "ssim": 0.8858114083607992,
+      "lpips": 0.14363464216391245
+    },
+    {
+      "scene": "de1bfd4c6e39109e",
+      "targets": 3,
+      "overlap": 0.1809699982404709,
+      "overlap_group": "small",
+      "psnr": 18.027058919270832,
+      "ssim": 0.6325380802154541,
+      "lpips": 0.4103368620077769
+    },
+    {
+      "scene": "df3e36111358ee98",
+      "targets": 3,
+      "overlap": 0.4299300014972687,
+      "overlap_group": "medium",
+      "psnr": 22.661303838094074,
+      "ssim": 0.821072498957316,
+      "lpips": 0.1898718625307083
+    },
+    {
+      "scene": "e01dfda8df8ab7ca",
+      "targets": 3,
+      "overlap": 0.47391000390052795,
+      "overlap_group": "medium",
+      "psnr": 25.277209599812824,
+      "ssim": 0.8464814027150472,
+      "lpips": 0.17965522408485413
+    },
+    {
+      "scene": "e1242403844f68dd",
+      "targets": 3,
+      "overlap": 0.35387998819351196,
+      "overlap_group": "medium",
+      "psnr": 23.422176996866863,
+      "ssim": 0.8037426670392355,
+      "lpips": 0.1845108618338903
+    },
+    {
+      "scene": "e246e146c2368f02",
+      "targets": 3,
+      "overlap": 0.4765399992465973,
+      "overlap_group": "medium",
+      "psnr": 23.901949564615887,
+      "ssim": 0.8313455382982889,
+      "lpips": 0.20317394534746805
+    },
+    {
+      "scene": "e246e21cf08b2748",
+      "targets": 3,
+      "overlap": 0.28953999280929565,
+      "overlap_group": "small",
+      "psnr": 20.129472096761067,
+      "ssim": 0.7549231052398682,
+      "lpips": 0.17911510169506073
+    },
+    {
+      "scene": "e301f70fea73282e",
+      "targets": 3,
+      "overlap": 0.4248400032520294,
+      "overlap_group": "medium",
+      "psnr": 21.816953659057617,
+      "ssim": 0.7387459476788839,
+      "lpips": 0.28517090280850727
+    },
+    {
+      "scene": "e345566eff5bc31c",
+      "targets": 3,
+      "overlap": 0.6405400037765503,
+      "overlap_group": "large",
+      "psnr": 21.13978322347005,
+      "ssim": 0.7885504364967346,
+      "lpips": 0.18726639449596405
+    },
+    {
+      "scene": "e35714cd85b7ebf6",
+      "targets": 3,
+      "overlap": 0.5969399809837341,
+      "overlap_group": "large",
+      "psnr": 20.00347963968913,
+      "ssim": 0.5633403857549032,
+      "lpips": 0.23127789795398712
+    },
+    {
+      "scene": "e37a3ccac0ec67df",
+      "targets": 3,
+      "overlap": 0.751259982585907,
+      "overlap_group": "large",
+      "psnr": 22.807924270629883,
+      "ssim": 0.5770694017410278,
+      "lpips": 0.2793263991673787
+    },
+    {
+      "scene": "e598846d7523a734",
+      "targets": 3,
+      "overlap": 0.46733999252319336,
+      "overlap_group": "medium",
+      "psnr": 27.226542790730793,
+      "ssim": 0.8990593155225118,
+      "lpips": 0.17339952290058136
+    },
+    {
+      "scene": "e621b4536f4da311",
+      "targets": 3,
+      "overlap": 0.5907999873161316,
+      "overlap_group": "large",
+      "psnr": 20.868181864420574,
+      "ssim": 0.7110902468363444,
+      "lpips": 0.2404890557130178
+    },
+    {
+      "scene": "e62fac7a92e28294",
+      "targets": 3,
+      "overlap": 0.2865400016307831,
+      "overlap_group": "small",
+      "psnr": 21.704472223917644,
+      "ssim": 0.8460959196090698,
+      "lpips": 0.1687235732873281
+    },
+    {
+      "scene": "e78acf2f0d88e894",
+      "targets": 3,
+      "overlap": 0.5916100144386292,
+      "overlap_group": "large",
+      "psnr": 18.859580993652344,
+      "ssim": 0.6520664691925049,
+      "lpips": 0.25472378234068555
+    },
+    {
+      "scene": "e81a09ef63b432f1",
+      "targets": 3,
+      "overlap": 0.5488399863243103,
+      "overlap_group": "medium",
+      "psnr": 21.901716232299805,
+      "ssim": 0.7305062015851339,
+      "lpips": 0.1835797925790151
+    },
+    {
+      "scene": "e8345a0f8fbd9dd9",
+      "targets": 3,
+      "overlap": 0.2931300103664398,
+      "overlap_group": "small",
+      "psnr": 19.327181498209637,
+      "ssim": 0.6082992752393087,
+      "lpips": 0.32548224925994873
+    },
+    {
+      "scene": "e941a7fdae79934d",
+      "targets": 3,
+      "overlap": 0.6401399970054626,
+      "overlap_group": "large",
+      "psnr": 20.652667999267578,
+      "ssim": 0.654154102007548,
+      "lpips": 0.240192711353302
+    },
+    {
+      "scene": "e98995e13069078f",
+      "targets": 3,
+      "overlap": 0.36289000511169434,
+      "overlap_group": "medium",
+      "psnr": 14.92445182800293,
+      "ssim": 0.649667094151179,
+      "lpips": 0.5214357574780782
+    },
+    {
+      "scene": "ea375208efc37f2b",
+      "targets": 3,
+      "overlap": 0.43327000737190247,
+      "overlap_group": "medium",
+      "psnr": 23.266908645629883,
+      "ssim": 0.7798709869384766,
+      "lpips": 0.19272318482398987
+    },
+    {
+      "scene": "ea4e3898f3aae6dd",
+      "targets": 3,
+      "overlap": 0.3906799852848053,
+      "overlap_group": "medium",
+      "psnr": 23.24975840250651,
+      "ssim": 0.7613443533579508,
+      "lpips": 0.2193069408337275
+    },
+    {
+      "scene": "ea8c1cd719d90460",
+      "targets": 3,
+      "overlap": 0.351500004529953,
+      "overlap_group": "medium",
+      "psnr": 28.13203303019206,
+      "ssim": 0.886515200138092,
+      "lpips": 0.14128673324982324
+    },
+    {
+      "scene": "eb727ea52bf2e2ce",
+      "targets": 3,
+      "overlap": 0.3579399883747101,
+      "overlap_group": "medium",
+      "psnr": 18.66985575358073,
+      "ssim": 0.729696532090505,
+      "lpips": 0.22512722512086233
+    },
+    {
+      "scene": "ebc791d01753783a",
+      "targets": 3,
+      "overlap": 0.4865399897098541,
+      "overlap_group": "medium",
+      "psnr": 23.013051986694336,
+      "ssim": 0.7950753569602966,
+      "lpips": 0.15875685960054398
+    },
+    {
+      "scene": "ebf9eb32e850ea81",
+      "targets": 3,
+      "overlap": 0.11014000326395035,
+      "overlap_group": "small",
+      "psnr": 13.851816813151041,
+      "ssim": 0.3739025394121806,
+      "lpips": 0.6835981806119283
+    },
+    {
+      "scene": "ec717ef4a8b15e98",
+      "targets": 3,
+      "overlap": 0.3424600064754486,
+      "overlap_group": "medium",
+      "psnr": 15.714206059773764,
+      "ssim": 0.3683488915363948,
+      "lpips": 0.40330492456754047
+    },
+    {
+      "scene": "ed718fd9c28f6265",
+      "targets": 3,
+      "overlap": 0.502269983291626,
+      "overlap_group": "medium",
+      "psnr": 16.07532024383545,
+      "ssim": 0.6159196694691976,
+      "lpips": 0.5128073592980703
+    },
+    {
+      "scene": "ed952d18d27ec9c8",
+      "targets": 3,
+      "overlap": 0.47053998708724976,
+      "overlap_group": "medium",
+      "psnr": 20.915341059366863,
+      "ssim": 0.7614086469014486,
+      "lpips": 0.2052020529905955
+    },
+    {
+      "scene": "efb2d866bc8c5550",
+      "targets": 3,
+      "overlap": 0.6616399884223938,
+      "overlap_group": "large",
+      "psnr": 20.076581954956055,
+      "ssim": 0.6483960946400961,
+      "lpips": 0.1860730101664861
+    },
+    {
+      "scene": "efc1d7e7854b61e0",
+      "targets": 3,
+      "overlap": 0.20140999555587769,
+      "overlap_group": "small",
+      "psnr": 20.253549575805664,
+      "ssim": 0.7037759820620219,
+      "lpips": 0.2368935545285543
+    },
+    {
+      "scene": "f05d9bf59c496548",
+      "targets": 3,
+      "overlap": 0.5491799712181091,
+      "overlap_group": "medium",
+      "psnr": 24.248125076293945,
+      "ssim": 0.7970315416653951,
+      "lpips": 0.1933007836341858
+    },
+    {
+      "scene": "f087cde338a19ca0",
+      "targets": 3,
+      "overlap": 0.5350300073623657,
+      "overlap_group": "medium",
+      "psnr": 20.809054692586262,
+      "ssim": 0.5579415857791901,
+      "lpips": 0.2645614246527354
+    },
+    {
+      "scene": "f1226d5483f1c1cd",
+      "targets": 3,
+      "overlap": 0.3587599992752075,
+      "overlap_group": "medium",
+      "psnr": 21.184537887573242,
+      "ssim": 0.7909071644147238,
+      "lpips": 0.24596803387006125
+    },
+    {
+      "scene": "f1ae3f5c04336f9a",
+      "targets": 3,
+      "overlap": 0.5103099942207336,
+      "overlap_group": "medium",
+      "psnr": 21.295913696289062,
+      "ssim": 0.7997605800628662,
+      "lpips": 0.15012896557648978
+    },
+    {
+      "scene": "f1cf2e1b45e3c789",
+      "targets": 3,
+      "overlap": 0.22499999403953552,
+      "overlap_group": "small",
+      "psnr": 19.414644877115887,
+      "ssim": 0.7368826667467753,
+      "lpips": 0.36795992652575177
+    },
+    {
+      "scene": "f218fca4a9ad27ab",
+      "targets": 3,
+      "overlap": 0.5724700093269348,
+      "overlap_group": "large",
+      "psnr": 27.4258975982666,
+      "ssim": 0.9094625314076742,
+      "lpips": 0.17225714524586996
+    },
+    {
+      "scene": "f22f531f065d44d2",
+      "targets": 3,
+      "overlap": 0.33250001072883606,
+      "overlap_group": "medium",
+      "psnr": 14.470311482747396,
+      "ssim": 0.2529817223548889,
+      "lpips": 0.6247183879216512
+    },
+    {
+      "scene": "f29b5228969d056f",
+      "targets": 3,
+      "overlap": 0.523140013217926,
+      "overlap_group": "medium",
+      "psnr": 27.143598556518555,
+      "ssim": 0.8740877509117126,
+      "lpips": 0.1474775324265162
+    },
+    {
+      "scene": "f30fabe79ec592b0",
+      "targets": 3,
+      "overlap": 0.3249799907207489,
+      "overlap_group": "medium",
+      "psnr": 22.777108510335285,
+      "ssim": 0.7606253027915955,
+      "lpips": 0.1748283455769221
+    },
+    {
+      "scene": "f31cf77e0547f39c",
+      "targets": 3,
+      "overlap": 0.2905200123786926,
+      "overlap_group": "small",
+      "psnr": 15.710050582885742,
+      "ssim": 0.33777086933453876,
+      "lpips": 0.45770485202471417
+    },
+    {
+      "scene": "f388a5a0be1474f8",
+      "targets": 3,
+      "overlap": 0.4337500035762787,
+      "overlap_group": "medium",
+      "psnr": 20.969276428222656,
+      "ssim": 0.7454906503359476,
+      "lpips": 0.18656173845132193
+    },
+    {
+      "scene": "f45c428e89a06af3",
+      "targets": 3,
+      "overlap": 0.2813900113105774,
+      "overlap_group": "small",
+      "psnr": 18.578576405843098,
+      "ssim": 0.6130738854408264,
+      "lpips": 0.3574873705705007
+    },
+    {
+      "scene": "f4fedc70483e9546",
+      "targets": 3,
+      "overlap": 0.37446001172065735,
+      "overlap_group": "medium",
+      "psnr": 22.027148564656574,
+      "ssim": 0.7691795031229655,
+      "lpips": 0.26629749437173206
+    },
+    {
+      "scene": "f6f1a6c3444ce705",
+      "targets": 3,
+      "overlap": 0.7615600228309631,
+      "overlap_group": "large",
+      "psnr": 22.529088973999023,
+      "ssim": 0.6991575161616007,
+      "lpips": 0.21635904411474863
+    },
+    {
+      "scene": "f793e374e29bbd16",
+      "targets": 3,
+      "overlap": 0.38822999596595764,
+      "overlap_group": "medium",
+      "psnr": 20.771013895670574,
+      "ssim": 0.6224122246106466,
+      "lpips": 0.28699731826782227
+    },
+    {
+      "scene": "f956425e6e6f9863",
+      "targets": 3,
+      "overlap": 0.4720500111579895,
+      "overlap_group": "medium",
+      "psnr": 27.896899541219074,
+      "ssim": 0.8293994863828024,
+      "lpips": 0.2118434359629949
+    },
+    {
+      "scene": "f95804db8b3419ef",
+      "targets": 3,
+      "overlap": 0.6482800245285034,
+      "overlap_group": "large",
+      "psnr": 20.397919336954754,
+      "ssim": 0.694027046362559,
+      "lpips": 0.20932292441527048
+    },
+    {
+      "scene": "f9f0a9d133947ddf",
+      "targets": 3,
+      "overlap": 0.7007799744606018,
+      "overlap_group": "large",
+      "psnr": 21.320297241210938,
+      "ssim": 0.7374217510223389,
+      "lpips": 0.17816899716854095
+    },
+    {
+      "scene": "fa82d71146e33555",
+      "targets": 3,
+      "overlap": 0.3136500120162964,
+      "overlap_group": "medium",
+      "psnr": 14.509319305419922,
+      "ssim": 0.2849549800157547,
+      "lpips": 0.5992515087127686
+    },
+    {
+      "scene": "fadc00ad10f04bff",
+      "targets": 3,
+      "overlap": 0.4971100091934204,
+      "overlap_group": "medium",
+      "psnr": 18.818002065022785,
+      "ssim": 0.7590530316034952,
+      "lpips": 0.24732466042041779
+    },
+    {
+      "scene": "fb63a2c634287906",
+      "targets": 3,
+      "overlap": 0.6550800204277039,
+      "overlap_group": "large",
+      "psnr": 20.304216384887695,
+      "ssim": 0.6490469574928284,
+      "lpips": 0.19475451608498892
+    },
+    {
+      "scene": "fba51feb5da86961",
+      "targets": 3,
+      "overlap": 0.4275699853897095,
+      "overlap_group": "medium",
+      "psnr": 23.826993306477863,
+      "ssim": 0.8446772893269857,
+      "lpips": 0.1613331933816274
+    },
+    {
+      "scene": "fd2132722704d610",
+      "targets": 3,
+      "overlap": 0.7504500150680542,
+      "overlap_group": "large",
+      "psnr": 23.79517428080241,
+      "ssim": 0.7716969052950541,
+      "lpips": 0.19574780265490213
+    },
+    {
+      "scene": "fdceb26461ef9adb",
+      "targets": 3,
+      "overlap": 0.29287999868392944,
+      "overlap_group": "small",
+      "psnr": 20.09161440531413,
+      "ssim": 0.7801352938016256,
+      "lpips": 0.23578027884165445
+    },
+    {
+      "scene": "fe26ad446164cb32",
+      "targets": 3,
+      "overlap": 0.4703800082206726,
+      "overlap_group": "medium",
+      "psnr": 21.69227917989095,
+      "ssim": 0.7495174407958984,
+      "lpips": 0.1835447053114573
+    },
+    {
+      "scene": "fe2fadf89a84e92a",
+      "targets": 3,
+      "overlap": 0.503600001335144,
+      "overlap_group": "medium",
+      "psnr": 19.104386647542317,
+      "ssim": 0.6920957366625468,
+      "lpips": 0.20754474898179373
+    },
+    {
+      "scene": "fe42422857682683",
+      "targets": 3,
+      "overlap": 0.625540018081665,
+      "overlap_group": "large",
+      "psnr": 21.375145594278973,
+      "ssim": 0.8555066386858622,
+      "lpips": 0.1797876457373301
+    },
+    {
+      "scene": "fe5d83963503b41f",
+      "targets": 3,
+      "overlap": 0.6647700071334839,
+      "overlap_group": "large",
+      "psnr": 21.146804173787434,
+      "ssim": 0.7050418456395467,
+      "lpips": 0.16528955598672232
+    },
+    {
+      "scene": "fea544b472e9abd1",
+      "targets": 3,
+      "overlap": 0.31088998913764954,
+      "overlap_group": "medium",
+      "psnr": 15.523910204569498,
+      "ssim": 0.5393383701642355,
+      "lpips": 0.3480611940224965
+    },
+    {
+      "scene": "fef6f87f0eb94f9d",
+      "targets": 3,
+      "overlap": 0.21477000415325165,
+      "overlap_group": "small",
+      "psnr": 21.8104190826416,
+      "ssim": 0.7628852128982544,
+      "lpips": 0.24372957150141397
+    },
+    {
+      "scene": "ff6d8ab35e042db5",
+      "targets": 3,
+      "overlap": 0.4358200132846832,
+      "overlap_group": "medium",
+      "psnr": 23.50440851847331,
+      "ssim": 0.7698897123336792,
+      "lpips": 0.18979178865750632
+    },
+    {
+      "scene": "ff887646981745a6",
+      "targets": 3,
+      "overlap": 0.32284000515937805,
+      "overlap_group": "medium",
+      "psnr": 23.456828435262043,
+      "ssim": 0.7695734898249308,
+      "lpips": 0.21267821391423544
+    }
+  ],
+  "aggregation_note": "scene_mean gives each scene equal weight; image_mean gives each target equal weight. No missing group is fabricated.",
+  "elapsed_this_invocation_seconds": 2300.2898697145283,
+  "scope": "Identical explicit fixed subset; not paper population mean"
+}
