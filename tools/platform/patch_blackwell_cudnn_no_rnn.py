@@ -1,3 +1,4 @@
+import os
 """Do not build cuDNN APIs removed in v9 and unused by NoPoSplat.
 
 This explicitly disables legacy cuDNN RNN operators in this private environment.
@@ -6,7 +7,7 @@ It does not implement substitute RNNs or alter convolution/NoPoSplat math.
 from pathlib import Path
 import hashlib,json
 
-root=Path('/root/nps-blackwell');p=root/'venv/lib/python3.10/site-packages/jittor/compile_extern.py';s=p.read_text()
+root=Path(os.environ.get('NPS_BLACKWELL_PREFIX','/root/nps-blackwell'));p=root/'venv/lib/python3.10/site-packages/jittor/compile_extern.py';s=p.read_text()
 needle='''        for fname in f:
             culib_src_files.append(os.path.join(r, fname))'''
 replacement='''        for fname in f:

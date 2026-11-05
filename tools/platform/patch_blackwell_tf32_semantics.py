@@ -1,3 +1,4 @@
+import os
 """Match PyTorch convolution TF32 permission without FP16 down-conversion.
 
 Jittor's global flag==1 selects CUBLAS_COMPUTE_32F_FAST_TF32 for matmuls, but
@@ -7,7 +8,7 @@ other modes unchanged; mode 1 instead uses CUDNN_DEFAULT_MATH, as PyTorch.
 from pathlib import Path
 import hashlib,json
 
-root=Path('/root/nps-blackwell');base=root/'venv/lib/python3.10/site-packages/jittor/extern/cuda/cudnn/ops'
+root=Path(os.environ.get('NPS_BLACKWELL_PREFIX','/root/nps-blackwell'));base=root/'venv/lib/python3.10/site-packages/jittor/extern/cuda/cudnn/ops'
 report={'scope':__doc__,'files':[],'qualification':'Patched source only; numerical and throughput checks still required.'}
 for path in sorted(base.glob('*.cc')):
     text=path.read_text()

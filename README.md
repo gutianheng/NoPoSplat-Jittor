@@ -2,6 +2,8 @@
 
 **非官方研究迁移 · ICLR 2025 Oral · Gu Tianheng / 顾天恒**
 
+[中文说明](README_zh.md) | English
+
 [原论文](https://proceedings.iclr.cc/paper_files/paper/2025/hash/857b34d81f0a8bfe3e18879dee3b5086-Abstract-Conference.html) · [作者项目](https://github.com/cvg/NoPoSplat) · [环境与运行](docs/RUNNING.md) · [实验协议](docs/EXPERIMENTS.md) · [已知限制](docs/LIMITATIONS.md) · [许可与来源](THIRD_PARTY.md)
 
 This repository implements the **default two-view, 256×256 NoPoSplat path in Jittor**, including the ViT/DPT network, Gaussian post-processing, a Jittor differentiable wrapper around the original CUDA rasterisation kernels, LPIPS/AdamW, training and target-pose-aligned NVS evaluation. PyTorch is used only for offline export and an **independent reference**, never to execute the Jittor model.

@@ -8,7 +8,7 @@ Tested early GPU: RTX4090D, CUDA11.8, SM89. Final extended experiments: RTXPRO60
 
 On Linux, create Python3.10 venv, install `-e .`, set `NPS_CUDA_ARCH` to the actual GPU architecture and run `scripts/build_rasterizer.sh`. C++ compiler, CMake and nvcc are required. See `scripts/server_preflight.sh` and `tools/check_native.py`.
 
-**Blackwell caution:** unmodified Jittor1.3.11.0 and CUDA11.8 are not a tested SM120 stack. `tools/platform` preserves architecture/cuDNN compatibility patch sources from the experiment. These scripts use an isolated `/root/nps-blackwell` prefix and assert the expected installed-source text. They are diagnostic, version-specific patches, not a universal installer. In addition to SM120 selection, cuDNN9 consolidated-library discovery must be adapted; the generic quick start is for the earlier Ada toolchain. A ready-to-use Blackwell container is not claimed to be published. Never reuse a compiled Ada cache on SM120.
+**Blackwell caution:** unmodified Jittor1.3.11.0 and CUDA11.8 are not a tested SM120 stack. `tools/platform` preserves architecture/cuDNN compatibility patch sources from the experiment. These scripts use an isolated `/root/nps-blackwell` prefix and assert the expected installed-source text. They are diagnostic, version-specific patches, not a universal installer. The companion `patch_cudnn9_discovery.py` handles cuDNN9 consolidated-library discovery; the generic quick start is for the earlier Ada toolchain. A ready-to-use Blackwell container is not claimed to be published. Never reuse a compiled Ada cache on SM120.
 
 ## 2. Prepare original checkout, data and weights (reference environment)
 
@@ -76,3 +76,5 @@ bash scripts/test_official.sh acid
 ```
 
 Set `NPS_INIT_WEIGHTS`, `NPS_WEIGHTS`, `NPS_LPIPS_WEIGHTS`, `NPS_OFFICIAL_DIR` and `NPS_OUTPUT` when using other local paths. Do not reuse one output directory for different protocols.
+
+Detailed prefix, patch order and qualification limits: [BLACKWELL.md](BLACKWELL.md).

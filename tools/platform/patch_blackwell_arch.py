@@ -1,8 +1,9 @@
+import os
 """Honor nvcc12.8 SM120 support instead of Jittor's hardcoded SM90 ceiling."""
 from pathlib import Path
 import hashlib,json,shutil,subprocess
 
-root=Path('/root/nps-blackwell');p=root/'venv/lib/python3.10/site-packages/jittor/compiler.py';s=p.read_text()
+root=Path(os.environ.get('NPS_BLACKWELL_PREFIX','/root/nps-blackwell'));p=root/'venv/lib/python3.10/site-packages/jittor/compiler.py';s=p.read_text()
 codes=subprocess.check_output([str(root/'cuda-12.8/bin/nvcc'),'--list-gpu-code'],text=True).split()
 if 'sm_120' not in codes:raise ValueError('Compiler cannot build SM120')
 needle='''    max_arch = 90
