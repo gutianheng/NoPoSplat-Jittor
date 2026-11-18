@@ -1,45 +1,165 @@
-# NoPoSplat的Jittor迁移与配对复现实验
+# NoPoSplat的Jittor实现
 
-[English README](README.md) · [环境与完整命令](docs/RUNNING.md) · [Blackwell适配](docs/BLACKWELL.md) · [实验协议](docs/EXPERIMENTS.md) · [未通过项](docs/LIMITATIONS.md)
+基于ICLR 2025 Oral论文《No Pose, No Problem: Surprisingly Simple 3D Gaussian Splats from Sparse Unposed Images》。
 
-这是顾天恒整理的**非官方研究迁移**，对应ICLR2025 Oral论文《No Pose, No Problem: Surprisingly Simple 3D Gaussian Splats from Sparse Unposed Images》。采用作者默认双视图256×256路径，在Jittor中实现ViT/DPT、高斯参数后处理、可微渲染接口、MSE+LPIPS、AdamW与训练/测试循环。原CUDA数学内核保留，框架桥接不依赖ATen或libtorch；PyTorch只用于离线转换和独立参考。
+[English](README.md) · 中文
 
-## 已完成与尚未完成
+[论文](https://proceedings.iclr.cc/paper_files/paper/2025/hash/857b34d81f0a8bfe3e18879dee3b5086-Abstract-Conference.html) · [原项目](https://github.com/cvg/NoPoSplat) · [运行指南](docs/RUNNING.md) · [实验设置](docs/EXPERIMENTS.md)
 
-- 官方RE10K、ACID权重各500场景测试，每场景3目标、100步目标相机对齐。
-- 默认、去内参嵌入、去RGB捷径三配置分别在Torch/Jittor训练3000更新，共六模型；每模型24000次样本出现，实际涉及2819个不同训练场景。
-- 两框架及三配置的6000个微批次输入记录相同；训练与测试场景ID不重合。
-- 五组配对中，四组满足全部预设均值差目标。**默认短训PSNR差+0.342768dB超过原0.3dB阈值；历史严格梯度检查仍有629/1129项未通过。**
-- 不宣称完整论文训练收敛、完整官方测试集、全部位姿AUC/多视图/512模型或所有消融已经复现。
+NoPoSplat以两张图片和相机内参为输入，直接重建三维高斯场景，并渲染新的观察视角。这个项目用Jittor实现了它的双视图、256 × 256流程，涵盖特征提取、高斯预测、可微渲染、训练和评估。
 
-## 如何运行
+仓库中提供了RealEstate10K和ACID上的官方权重迁移结果、PyTorch与Jittor的配对训练、消融实验，以及相应的日志和可视化。
 
-1. Linux配置Python3.10、Jittor1.3.11.0、C++/CMake/nvcc开发环境。Ada早期使用CUDA11.8；Blackwell扩展使用CUDA12.8并需文档中的兼容适配。
-2. 按作者说明获取合法数据和官方权重，在**独立Torch环境**转换成不依赖Torch运行的NPZ。训练使用MASt3R过滤初始化，不把官方已训练NoPoSplat权重当作从头初始化。
-3. 默认与去内参使用默认初始化；去RGB需要匹配的DPT属性头初始化。转换、目录、源计划与固定候选索引见RUNNING.md。
-4. 完成tiny和原生渲染/梯度检查后，再执行完整网络；tiny不是论文模型。
+## 主要功能
+
+- 共享ViT编码器、跨视图注意力、规范空间高斯预测和相机内参token。
+- DPT预测头、RGB捷径、高斯协方差与球谐属性。
+- 通过C ABI桥接原CUDA光栅化内核，并接入Jittor的`jt.Function`求导接口。
+- MSE + 0.05 VGG LPIPS、AdamW、学习率调度、梯度累积及断点续训。
+- 数据与权重转换、目标相机对齐，以及PSNR、SSIM、LPIPS评估。
+
+模型和训练循环由Jittor运行。另设PyTorch环境，负责权重导出和参考实验。
+
+## 快速开始
+
+使用Linux、Python 3.10、带`nvcc`的CUDA开发工具包及C++编译器。下面以RTX 4090或4090D等Ada显卡为例，采用CUDA 11.8，计算能力为8.9。
 
 ```bash
+git clone https://github.com/gutianheng/NoPoSplat-Jittor.git
+cd NoPoSplat-Jittor
+python3.10 -m venv .venv
+source .venv/bin/activate
+python -m pip install -e .
+
+# 按实际GPU的计算能力设置。
+export NPS_CUDA_ARCH=89
+bash scripts/build_rasterizer.sh
+
+# 检查轻量网络和原生渲染器。
+python -m noposplat_jittor.cli smoke --config configs/tiny.yaml --output runs/tiny
+python tools/check_native.py --output runs/native_check.json
+```
+
+tiny配置便于先检查张量形状和梯度传递，再运行完整模型。Blackwell显卡使用CUDA 12.8，并按[适配指南](docs/BLACKWELL.md)配置实验中用到的Jittor和cuDNN兼容补丁。
+
+### 准备数据和权重
+
+1. 按[原项目的数据说明](https://github.com/cvg/NoPoSplat/blob/main/DATASETS.md)准备数据，并下载[官方权重](https://huggingface.co/botaoye/NoPoSplat)。
+2. 在PyTorch环境中，将权重转为NPZ，导出LPIPS权重，并整理图像和相机数组。
+3. 训练使用MASt3R初始化。去掉RGB捷径的配置需要导出与其属性预测头对应的初始化参数。
+4. 在实验配置中填写数据和权重路径。
+
+具体转换命令、目录结构和配置路径见[运行指南](docs/RUNNING.md)。
+
+### 训练与评估
+
+数据和权重准备好后，运行：
+
+```bash
+# 在Jittor中训练三种配置。
 bash scripts/train_reduced.sh jittor default
 bash scripts/train_reduced.sh jittor no_intrinsics
 bash scripts/train_reduced.sh jittor no_rgb
+
+# 评估迁移后的官方权重。
 bash scripts/test_official.sh re10k
 bash scripts/test_official.sh acid
 ```
 
-这些入口需要先准备数据、权重和正确环境；完整参数与Torch参考命令见[运行指南](docs/RUNNING.md)。配置保留5000更新学习率周期，但显式在3000停止，不能把配置上限记为实际完成5000步。
+训练脚本执行3,000次更新。在参考环境中将第一个参数改成`torch`，即可运行对应的PyTorch训练。断点恢复、评估续跑和自定义路径见[运行指南](docs/RUNNING.md)。
 
-## 从结果到证据
+## 实验结果
 
-- [README三指标总表与实际曲线](README.md#measured-results)
-- [六份训练日志](results/train)与[十组评估记录](results/evaluation)
-- [公开核心源码SHA](docs/executed_core_sha256.json)：26份核心数学/桥接文件与实际服务器源码字节一致。
-- [CPU发布检查](results/release_cpu_validation.json)：74项中71项通过；3项需要可选Torch档案测试依赖，在当前CPU解释器中明确跳过。它不替代GPU数值检查。
+每个数据集使用固定的**500个测试场景**，每个场景评估3张目标图，分辨率为**256 × 256**。评分前固定高斯，以真实目标图为参照优化目标相机**100步**。下表使用场景均值，计算精度为FP32。PSNR和SSIM越高越好，LPIPS越低越好。
 
-定性样例为事后高质量展示，不替代500场景总体指标。原始分辨率256，无锐化/超分；官方与自训训练预算不同；每模型独立优化目标相机。原固定子集存在RE10K43/1500、ACID32/1500个目标索引与输入重合，原结果保留并披露，展示目标排除这些重合项。
+### 官方权重迁移
 
-## 署名与使用边界
+| 数据集 | 框架 | PSNR ↑ | SSIM ↑ | LPIPS ↓ |
+|---|---|---:|---:|---:|
+| RealEstate10K | PyTorch | 25.1335 | 0.841114 | 0.160214 |
+| RealEstate10K | Jittor | 25.1312 | 0.841173 | 0.160151 |
+| ACID | PyTorch | 25.8857 | 0.780518 | 0.194136 |
+| ACID | Jittor | 25.8854 | 0.780618 | 0.194162 |
 
-保留NoPoSplat、CroCo/DUSt3R/DPT、原可微高斯光栅化器、GLM和LPIPS的来源。项目**不是统一MIT，也不提供无限制商用授权**；派生组件的非商业条款和渲染器独立许可见[THIRD_PARTY.md](THIRD_PARTY.md)。原始数据、第三方预训练权重与大优化器断点不放在Git仓库中。
+官方权重迁移后，两框架在两个数据集上的三项指标都比较接近。
 
-下一步优先固定相同权重与相机，分段定位网络、渲染与损失梯度差异，再做多种子和更大训练暴露；这些是后续计划，不作为当前已完成成果。
+### 配对训练与消融
+
+每种配置在RealEstate10K上训练**3,000次更新**，从对应的MASt3R初始化出发。两框架使用相同的输入序列和随机种子。
+
+| 配置 | 框架 | PSNR ↑ | SSIM ↑ | LPIPS ↓ |
+|---|---|---:|---:|---:|
+| 默认模型 | PyTorch | 21.5675 | 0.728219 | 0.245821 |
+| 默认模型 | Jittor | 21.9102 | 0.737643 | 0.241951 |
+| 去掉内参嵌入 | PyTorch | 21.1486 | 0.702251 | 0.262351 |
+| 去掉内参嵌入 | Jittor | 21.0059 | 0.694324 | 0.261660 |
+| 去掉RGB捷径 | PyTorch | 20.9745 | 0.682022 | 0.314568 |
+| 去掉RGB捷径 | Jittor | 21.0484 | 0.681424 | 0.311519 |
+
+两框架呈现出一致的整体趋势：默认模型的重建质量最好，去掉RGB捷径对纹理和感知质量的影响更明显。
+
+### 训练曲线
+
+![PyTorch与Jittor中默认模型及两种消融的训练损失曲线](assets/training_curves.png)
+
+每次处理4组输入，累积2次梯度后更新，有效批量为8。每个模型共处理6,000个微批次、24,000次样本，涉及2,819个不同训练场景。全部配置和两框架的损失记录见[六份训练日志](results/train)。
+
+### 图像对比
+
+**RealEstate10K官方权重：客厅场景。** 从左到右依次是两张输入图、真实目标图、PyTorch渲染和Jittor渲染。
+
+![官方权重在PyTorch和Jittor中的客厅重建对比](assets/qualitative/re10k_R08_1d1cafa3e27da040.png)
+
+**ACID官方权重：灯塔场景。** 各列排列顺序与上图相同。
+
+![官方权重在PyTorch和Jittor中的灯塔重建对比](assets/qualitative/acid_A02_b5e1320081d73234.png)
+
+**RealEstate10K自行训练与消融：卧室场景。** 下排对比两框架训练的默认模型，以及Jittor中去掉内参嵌入和RGB捷径的结果。
+
+![配对训练与模块消融后的卧室重建对比](assets/qualitative/R13_56320b37680175b6.png)
+
+场景编号、目标帧和逐图指标可在[样例索引](results/showcase_selection.csv)中查询。固定测试子集的完整结果见[评估记录](results/evaluation)，采样与评分流程见[实验说明](docs/EXPERIMENTS.md)。
+
+## 项目结构
+
+```text
+noposplat_jittor/     网络、渲染、数据、损失与优化器
+native/              CUDA光栅化器的C ABI桥接
+vendor/              光栅化器源码与上游声明
+configs/             模型配置和固定实验索引
+tools/               转换、训练、评估与诊断工具
+scripts/             环境、编译与实验入口
+tests/               数据、配置及工具函数的CPU测试
+results/train/       训练CSV日志
+results/evaluation/  评估汇总与逐图、逐场景指标
+assets/              训练曲线与图像对比
+docs/                环境配置与实验文档
+```
+
+## 检查与实验记录
+
+运行CPU测试：
+
+```bash
+python -m pip install numpy==1.26.4 Pillow==10.4.0 PyYAML==6.0.2 scipy==1.13.1 scikit-image==0.24.0
+python -m unittest discover -s tests -p 'test_*.py'
+```
+
+Windows下可将`NPS_TEST_TMP`设置为较短的可写路径，运行CPU测试。CUDA渲染和训练使用Linux。
+
+发布检查记录了71项通过和3项可选Torch档案测试跳过。更多实现细节和核对记录见[检查结果](results/release_cpu_validation.json)、[实际运行源码哈希](docs/executed_core_sha256.json)及[数值诊断](docs/LIMITATIONS.md)。
+
+## 致谢与引用
+
+项目基于[NoPoSplat](https://github.com/cvg/NoPoSplat)、CroCo/DUSt3R/DPT、原可微高斯光栅化器、GLM和LPIPS构建。各组件的许可与来源见[LICENSE](LICENSE)和[THIRD_PARTY.md](THIRD_PARTY.md)，数据及预训练权重遵循发布方的条款。
+
+文档组织参考了[Self-Blind-VSR-with-Jittor](https://github.com/Athena-Re/Self-Blind-VSR-with-Jittor)。
+
+```bibtex
+@inproceedings{ye2025noposplat,
+  title={No Pose, No Problem: Surprisingly Simple 3D Gaussian Splats from Sparse Unposed Images},
+  author={Ye, Botao and Liu, Sifei and Xu, Haofei and Li, Xueting and Pollefeys, Marc and Yang, Ming-Hsuan and Peng, Songyou},
+  booktitle={International Conference on Learning Representations},
+  year={2025}
+}
+```
